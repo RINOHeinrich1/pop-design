@@ -109,16 +109,42 @@ const panelBodyRenderers = {
       </div>
     </div>
   ),
-  team: ({ panel, chat }) => (
-    <div className="panel-grid panel-grid--team">
-      <div className="panel-grid__col panel-grid__col--text">
-        <Markdown text={panel.text} enabled={chat.markdown} />
+  team: ({ panel, chat }) => {
+    if (Array.isArray(panel.members) && panel.members.length > 0) {
+      return (
+        <>
+          {panel.text ? <Markdown text={panel.text} enabled={chat.markdown} /> : null}
+          <div className="team-grid">
+            {panel.members.map((member, index) => (
+              <article className="team-card" key={`${member.name}-${index}`}>
+                {member.image ? (
+                  <img className="team-card__img" src={member.image} alt="" loading="lazy" />
+                ) : (
+                  <div className="team-card__img team-card__img--placeholder" aria-hidden="true">
+                    <Icon name="users" size={28} />
+                  </div>
+                )}
+                <div className="team-card__body">
+                  <h3>{member.name || "Membre"}</h3>
+                  {member.role ? <p>{member.role}</p> : null}
+                </div>
+              </article>
+            ))}
+          </div>
+        </>
+      );
+    }
+    return (
+      <div className="panel-grid panel-grid--team">
+        <div className="panel-grid__col panel-grid__col--text">
+          <Markdown text={panel.text} enabled={chat.markdown} />
+        </div>
+        <div className="panel-grid__col panel-grid__col--narrow">
+          <PanelImages images={panel.images} icon={panel.icon || "users"} />
+        </div>
       </div>
-      <div className="panel-grid__col panel-grid__col--narrow">
-        <PanelImages images={panel.images} icon={panel.icon || "users"} />
-      </div>
-    </div>
-  ),
+    );
+  },
   gallery: ({ panel, media, capabilities, chat, onOpenMedia, onRequestMedia }) => {
     const canMedia = Array.isArray(capabilities) && capabilities.includes("media");
     return (

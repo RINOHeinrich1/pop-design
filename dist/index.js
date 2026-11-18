@@ -1,5 +1,5 @@
 //#region \0rolldown/runtime.js
-var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e = null), t.exports), t = ":host{color:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizelegibility;font-family:Open Sans,Segoe UI,Helvetica,Arial,sans-serif;font-size:17px;font-weight:300;line-height:1.6;display:block}.pop *,.pop :before,.pop :after{box-sizing:border-box}.pop img{max-width:100%}.pop{--pop-accent:#006599;--pop-accent-ink:#fff;--pop-surface:#2c2a358c;--pop-surface-2:#35354180;--pop-surface-3:#23212973;--pop-text:#fff;--pop-muted:#ffffffb8;--pop-border:transparent;--pop-overlay:#08070c59;--pop-input-bg:#ffffff1f;--pop-input-bg-focus:#ffffff2e;--pop-page-overlay:linear-gradient(180deg, #0000002e, #00000061);--pop-shadow:0 8px 32px #0000002e;--pop-radius:20px;--pop-bubble-radius:18px;--pop-glass-blur:24px;--pop-glass-saturate:180%;--pop-glass-highlight:#ffffff38;--pop-glass-bg:#ffffff1f;--pop-glass-bg-strong:#ffffff2e;--pop-gap:16px;--pop-pad:24px;--pop-tile-size:165px;--pop-chat-min:260px;--pop-chat-max:50vh;--pop-line-height:1.72;--pop-font:\"Open Sans\", \"Segoe UI\", Helvetica, Arial, sans-serif;--pop-font-heading:var(--pop-font);--pop-font-mono:\"Cascadia Code\", Consolas, \"Courier New\", monospace;--pop-max-width:1060px;--pop-image-opacity:1;--pop-header-align:right;--pop-sidebar-width:280px;--pop-content-max:820px;--pop-space-1:4px;--pop-space-2:8px;--pop-space-3:12px;--pop-space-4:16px;--pop-space-5:24px;--pop-transition:.2s ease;min-height:100vh;color:var(--pop-text);font-family:var(--pop-font);line-height:var(--pop-line-height);flex-direction:column;padding:clamp(28px,5vw,54px) clamp(12px,3vw,22px) 28px;display:flex;position:relative;overflow-x:hidden}.pop-bg{z-index:0;opacity:var(--pop-image-opacity);background-position:50%;background-repeat:no-repeat;background-size:cover;position:absolute;inset:0}.pop-bg:after{content:\"\";background:var(--pop-page-overlay);position:absolute;inset:0}.pop-layout{z-index:1;align-items:stretch;gap:calc(var(--pop-gap) * 1.2);flex-wrap:nowrap;flex:1;width:100%;max-width:100%;min-height:0;margin:0 auto;display:flex;position:relative}.pop-col{min-width:0}.pop-col--side{flex-direction:column;flex:0 0 280px;justify-content:flex-start;min-height:0;display:flex;overflow:auto}.pop-col--main{gap:calc(var(--pop-gap) * 1.2);flex-direction:column;flex:1 1 0;min-height:0;display:flex}.pop--chat-dominant{height:100vh;height:100dvh;min-height:100vh;min-height:100dvh;max-height:100vh;max-height:100dvh;overflow:hidden}.pop--chat-dominant .pop-layout,.pop-layout{flex:auto;align-items:stretch;height:100%;min-height:0}.pop-col--main{flex:1 1 0;min-width:0;min-height:0;overflow:hidden}.pop-col--side{flex:0 0 var(--pop-sidebar-width);min-height:0;overflow:auto}.pop-main .pop-chat,.pop--chat-dominant .pop-chat{flex-direction:column;flex:auto;height:100%;min-height:0;max-height:100%;display:flex;overflow:hidden}.pop-main .pop-chat__messages,.pop--chat-dominant .pop-chat__messages{flex:auto;min-height:0;max-height:none;overflow-y:auto}.pop-mobile-nav{display:none}@media (max-width:980px){.pop--chat-dominant,.pop--entry{height:100vh;height:100dvh;max-height:100vh;max-height:100dvh}.pop-layout{flex-direction:column;height:100%}.pop-col--side.pop-sidebar{display:none}.pop-col--main{flex:1 1 0;order:1;width:100%;height:auto;min-height:0}.pop-mobile-nav{z-index:20;margin-bottom:calc(var(--pop-gap) * .5);display:block;position:relative}.pop-mobile-nav__toggle{border-radius:var(--pop-radius);background:var(--pop-glass-bg);color:var(--pop-text);font:inherit;cursor:pointer;-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate));box-shadow:0 8px 32px #0000001f, inset 0 1px 0 var(--pop-glass-highlight);border:none;align-items:center;gap:8px;padding:10px 14px;display:inline-flex}.pop-mobile-nav__menu{z-index:30;border-radius:var(--pop-radius);-webkit-backdrop-filter:none;box-shadow:none;background:0 0;max-height:60vh;padding:10px;position:absolute;top:calc(100% + 8px);left:0;right:0;overflow:auto}.pop-mobile-nav__menu .tiles{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.pop-mobile-nav__menu .tile{text-align:center;height:min(var(--pop-tile-size), 140px);flex-direction:column;justify-content:center}.pop-mobile-nav__menu .tile__icon-wrap{margin-bottom:.5rem}}.pop-header{margin:0 0 var(--pop-gap);text-align:left}.pop-logo{margin:0 0 .75rem}.pop-header h1{margin:0}.pop-underline{margin:.6rem 0 .75rem}.pop-subtitle{max-width:60ch;margin:0}.pop-sidebar .tiles{justify-content:stretch;gap:var(--pop-gap);grid-template-columns:1fr}.pop-sidebar .tile{text-align:left;flex-direction:row;justify-content:flex-start;align-items:center;gap:12px;width:100%;height:auto;min-height:96px;padding:12px 14px}.pop-sidebar .tile__icon-wrap{flex:none;margin-bottom:0}.pop-sidebar .tile__hint{display:block}.pop-main .pop-identity{max-width:min(100%,480px);margin-left:0;margin-right:auto}.pop-main .pop-chat{width:100%;max-width:100%;margin:0 auto}.pop--chat-dominant,.pop--entry{height:100vh;height:100dvh;min-height:100vh;min-height:100dvh;max-height:100vh;max-height:100dvh;padding-top:0;padding-bottom:0;overflow:hidden}.pop--chat-dominant .pop-header,.pop--entry .pop-header{display:none}.pop--chat-dominant .pop-layout,.pop--entry .pop-layout{padding-top:var(--pop-gap);padding-bottom:calc(var(--pop-gap) * .5)}.pop--entry .pop-col--main{overflow:auto}.pop--entry .pop-main .pop-identity{margin:0 auto}.pop-main .pop-chat__messages,.pop-main .pop-composer,.pop-main .pop-chat__top{width:100%}.pop-main .pop-chat__messages>*,.pop-main .pop-composer .composer__row,.pop-main .pop-composer .composer__pending,.pop-main .pop-composer .composer__footer,.pop-main .pop-composer .composer__error,.pop-main .pop-chat__top{max-width:min(100%, var(--pop-content-max));width:100%;margin-left:auto;margin-right:auto}.pop-main .msg-stack{max-width:min(88%,720px)}.pop-layout{gap:var(--pop-gap)}.pop-col--side{border-right:1px solid var(--pop-border);padding-right:var(--pop-gap)}@media (max-width:980px){.pop-sidebar .tiles{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.pop-sidebar .tile{text-align:center;height:min(var(--pop-tile-size), 140px);flex-direction:column;justify-content:center}.pop-sidebar .tile__icon-wrap{margin-bottom:.5rem}.pop-col--side{border-right:0;border-top:1px solid var(--pop-border);padding-right:0;padding-top:var(--pop-gap)}.pop--chat-dominant .pop-header{display:none}}.pop-header{text-align:var(--pop-header-align);margin:8px 10px 0}.pop-logo{width:auto;max-height:64px;margin:0 0 1rem auto;display:block}.pop-kicker{color:var(--pop-muted);letter-spacing:.18em;text-transform:uppercase;align-items:center;gap:.45rem;margin:0 0 .55rem;font-size:.7rem;font-weight:500;line-height:1.4;display:inline-flex}.pop-kicker__dot{background:var(--pop-accent);width:7px;height:7px;box-shadow:0 0 0 4px color-mix(in srgb, var(--pop-accent) 22%, transparent);border-radius:50%}.pop-header h1{font-family:var(--pop-font-heading);letter-spacing:-.02em;margin:0;font-size:clamp(2.25rem,4.8vw,3.4rem);font-weight:300;line-height:1.03}.pop-underline{width:auto;max-width:100%;height:18px;margin:.85rem 0 .9rem auto;display:block}.pop-subtitle{letter-spacing:.01em;max-width:48ch;margin:0 0 0 auto;font-size:clamp(.96rem,1.4vw,1.04rem);line-height:1.8}.tiles{grid-template-columns:repeat(2, var(--pop-tile-size));gap:calc(var(--pop-gap) * 1.1);justify-content:end;display:grid}.tile-item{min-width:0}.tile{--tile-accent:var(--pop-accent);width:var(--pop-tile-size);height:var(--pop-tile-size);border:1px solid var(--pop-border);border-radius:var(--pop-radius);background:color-mix(in srgb, var(--pop-surface) 18%, transparent);color:var(--pop-text);font:inherit;text-align:center;cursor:pointer;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);flex-direction:column;justify-content:center;align-items:center;padding:14px;transition:background-color .28s,border-color .28s,transform .28s,box-shadow .28s;display:flex;position:relative}.tile:hover,.tile:focus-visible{border-color:var(--tile-accent);background:color-mix(in srgb, var(--pop-surface) 94%, transparent);transform:translateY(-3px);box-shadow:0 16px 34px #0000003d}.tile__icon-wrap{color:var(--tile-accent);place-items:center;margin-bottom:1.15rem;display:grid;position:relative}.tile__icon{display:block}.tile__badge{background:var(--tile-accent);color:#fff;border-radius:999px;min-width:20px;padding:1px 6px;font-size:.66rem;font-weight:600;line-height:1.6;position:absolute;top:-8px;right:-12px}.tile__label{letter-spacing:.04em;font-size:1rem;font-weight:400;line-height:1.35;display:block}.tile__hint{color:var(--pop-muted);letter-spacing:.03em;margin-top:.18rem;font-size:.7rem;line-height:1.35;display:block}.pop-card{background:var(--pop-surface);border:1px solid var(--pop-border);border-radius:var(--pop-radius);width:100%;box-shadow:var(--pop-shadow);position:relative}.pop-card__title{font-family:var(--pop-font-heading);letter-spacing:.01em;margin:0 0 .9rem;font-size:clamp(1.4rem,2.6vw,1.85rem);font-weight:400;line-height:1.25}.pop-identity{width:100%;max-width:392px;padding:var(--pop-pad);background:color-mix(in srgb, var(--pop-surface) 94%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);margin-left:auto}.pop-identity__intro{color:var(--pop-muted);margin:0 0 1.1rem;font-size:.88rem;line-height:1.7}.field{letter-spacing:.04em;flex-direction:column;gap:.35rem;margin-bottom:.85rem;font-size:.82rem;font-weight:500;display:flex}.field>span{color:var(--pop-muted)}.field input,.field select,.field textarea{border:1px solid color-mix(in srgb, var(--pop-border) 70%, transparent);border-radius:calc(var(--pop-radius) * .7);background:var(--pop-input-bg);width:100%;color:var(--pop-text);font:inherit;padding:.68rem .75rem;font-size:1rem;font-weight:300;transition:background-color .2s,border-color .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pop-accent);background:var(--pop-input-bg-focus);outline:none}.field textarea{resize:vertical;line-height:1.6}.field ::placeholder{color:color-mix(in srgb, var(--pop-muted) 80%, transparent);opacity:1}.check{align-items:flex-start;gap:.55rem;margin:.15rem 0 1rem;font-size:.78rem;line-height:1.55;display:flex}.check input{width:auto;accent-color:var(--pop-accent);flex:none;margin-top:.2rem}.check a{color:var(--pop-text)}.btn{border-radius:calc(var(--pop-radius) * .7);background:var(--pop-accent);color:var(--pop-accent-ink);font:inherit;letter-spacing:.02em;cursor:pointer;border:1px solid #0000;justify-content:center;align-items:center;gap:.45rem;padding:.62rem 1.35rem;font-size:.94rem;font-weight:500;line-height:1.3;transition:filter .2s,transform .2s,background-color .2s;display:inline-flex}.btn:hover:not(:disabled){filter:brightness(1.1)}.btn:active:not(:disabled){transform:translateY(1px)}.btn:disabled{opacity:.45;cursor:not-allowed}.btn--block{width:100%}.btn--ghost{border-color:var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 78%, transparent);color:var(--pop-text)}.btn--ghost:hover:not(:disabled){background:var(--pop-surface-2);filter:none}.btn--small{padding:.38rem .68rem;font-size:.78rem}.hint{color:var(--pop-muted);margin:.65rem 0 0;font-size:.74rem;line-height:1.55}.pop-chat{background:color-mix(in srgb, var(--pop-surface) 96%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);flex-direction:column;width:100%;display:flex;overflow:hidden}.pop-chat__top{padding:calc(var(--pop-pad) * .55) var(--pop-pad);border-bottom:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 62%, transparent);justify-content:space-between;align-items:center;gap:.75rem;display:flex}.pop-chat__identity{align-items:center;gap:.65rem;min-width:0;display:flex}.pop-chat__who{min-width:0}.pop-chat__name{letter-spacing:.02em;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:.92rem;font-weight:600;line-height:1.3;overflow:hidden}.pop-chat__presence{color:var(--pop-muted);margin:.08rem 0 0;font-size:.7rem;line-height:1.3}.pop-chat__presence.is-typing{color:var(--pop-accent)}.pop-chat__tools{flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:.45rem;display:flex}.pop-status{color:var(--pop-muted);letter-spacing:.03em;font-size:.7rem}.pop-chat__messages{gap:calc(var(--pop-gap) * .85);min-height:var(--pop-chat-min);max-height:var(--pop-chat-max);padding:calc(var(--pop-pad) * .8) var(--pop-pad) calc(var(--pop-pad) * .55);overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:color-mix(in srgb, var(--pop-text) 26%, transparent) transparent;flex-direction:column;flex:auto;display:flex;position:relative;overflow-y:auto}.pop-chat__messages::-webkit-scrollbar{width:8px;height:8px}.pop-panel::-webkit-scrollbar{width:8px;height:8px}.md-pre::-webkit-scrollbar{width:8px;height:8px}.md-table::-webkit-scrollbar{width:8px;height:8px}.pop-chat__messages::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.pop-panel::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.md-pre::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.md-table::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.pop-empty{color:var(--pop-muted);margin:0;font-size:.86rem;line-height:1.6}.avatar{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-accent) 16%, var(--pop-surface-2));color:var(--pop-text);border-radius:50%;flex:none;place-items:center;display:grid;overflow:hidden}.avatar img{object-fit:cover;width:100%;height:100%;display:block}.avatar__initial{font-size:.78em;font-weight:600}.avatar--assistant{border-color:color-mix(in srgb, var(--pop-accent) 45%, var(--pop-border))}.msg-row{align-items:flex-end;gap:.55rem;max-width:100%;display:flex}.msg-row--user{flex-direction:row-reverse}.msg-stack{flex-direction:column;gap:.18rem;min-width:0;max-width:min(82%,620px);display:flex}.msg-row--user .msg-stack{align-items:flex-end}.msg__meta{color:var(--pop-muted);align-items:baseline;gap:.4rem;padding:0 .25rem;font-size:.66rem;line-height:1.3;display:flex}.msg__author{letter-spacing:.03em;font-weight:600}.msg__time{opacity:.72}.msg{border-radius:var(--pop-bubble-radius);overflow-wrap:anywhere;padding:.62rem .85rem;font-size:.97rem;line-height:1.65}.msg--assistant{border:1px solid var(--pop-border);background:var(--pop-surface-2);border-bottom-left-radius:4px}.msg--user{background:var(--pop-accent);color:var(--pop-accent-ink);border-bottom-right-radius:4px}.msg--typing{border:1px solid var(--pop-border);background:var(--pop-surface-2);gap:5px;width:-moz-fit-content;width:fit-content;padding:.72rem .9rem;display:flex}.msg--typing span{background:var(--pop-muted);border-radius:50%;width:6px;height:6px;animation:1.2s ease-in-out infinite pop-blink}.msg--typing span:nth-child(2){animation-delay:.18s}.msg--typing span:nth-child(3){animation-delay:.36s}.md{min-width:0}.md>:last-child{margin-bottom:0}.md p,.md ul,.md ol,.md pre,.md blockquote,.md .md-table{margin:0 0 .62rem}.md--plain{white-space:pre-wrap;margin:0}.md-heading{font-family:var(--pop-font-heading);margin:.15rem 0 .4rem;font-size:1.02rem;font-weight:600;line-height:1.35}.md-list{padding-left:1.15rem}.md-list li{margin:.12rem 0}.md-list li::marker{color:var(--pop-accent)}.md-code{background:color-mix(in srgb, var(--pop-text) 12%, transparent);font-family:var(--pop-font-mono);border-radius:4px;padding:.08rem .3rem;font-size:.84em}.md-pre{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, var(--pop-surface-3) 88%, #000);padding:.7rem .8rem;overflow-x:auto}.md-pre code{font-family:var(--pop-font-mono);white-space:pre;background:0 0;padding:0;font-size:.8rem;line-height:1.6}.md-quote{border-left:3px solid var(--pop-accent);color:var(--pop-muted);margin-left:0;padding:.05rem 0 .05rem .75rem}.md-hr{background:var(--pop-border);border:0;height:1px;margin:.7rem 0}.md-table{overflow-x:auto}.md-table table{border-collapse:collapse;width:100%;font-size:.84rem}.md-table th,.md-table td{border:1px solid var(--pop-border);text-align:left;vertical-align:top;padding:.32rem .45rem}.md-table th{background:color-mix(in srgb, var(--pop-text) 8%, transparent);font-weight:600}.md a{color:inherit;text-decoration:underline;-webkit-text-decoration-color:color-mix(in srgb, var(--pop-accent) 70%, transparent);text-decoration-color:color-mix(in srgb, var(--pop-accent) 70%, transparent);text-underline-offset:2px}.md a:hover{-webkit-text-decoration-color:var(--pop-accent);text-decoration-color:var(--pop-accent)}.msg__medias{flex-wrap:wrap;gap:.4rem;margin-top:.55rem;display:flex}.msg__media{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);cursor:pointer;background:0 0;max-width:16rem;padding:0;display:block;overflow:hidden}.msg__media img{width:100%;height:auto;display:block}.msg__link{border:1px solid color-mix(in srgb, currentColor 30%, transparent);background:color-mix(in srgb, currentColor 8%, transparent);color:inherit;font:inherit;text-align:left;cursor:pointer;border-radius:999px;align-items:center;gap:.3rem;padding:.32rem .55rem;font-size:.78rem;display:inline-flex}.msg__attachments{flex-wrap:wrap;gap:.35rem;margin:.55rem 0 0;padding:0;list-style:none;display:flex}.msg__attachment{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, currentColor 7%, transparent);max-width:100%;color:inherit;font:inherit;cursor:pointer;align-items:center;gap:.35rem;padding:.3rem .55rem;font-size:.75rem;display:inline-flex}.msg__attachment-name{text-overflow:ellipsis;white-space:nowrap;max-width:12rem;overflow:hidden}.msg__attachment-size{opacity:.7}.msg__knowledge{flex-wrap:wrap;gap:.35rem;margin:.55rem 0 0;padding:0;list-style:none;display:flex}.knowledge-chip{border:1px dashed color-mix(in srgb, var(--pop-accent) 55%, transparent);max-width:100%;color:var(--pop-muted);border-radius:999px;align-items:center;gap:.28rem;padding:.22rem .5rem;font-size:.7rem;display:inline-flex}.knowledge-chip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.msg__state{color:var(--pop-muted);border:1px solid;border-radius:999px;align-items:center;gap:.28rem;margin-top:.5rem;padding:.14rem .45rem;font-size:.68rem;line-height:1.5;display:inline-flex}.msg__state--content{color:#4ade80}.msg__state--triste{color:#fbbf24}.chat-empty{text-align:center;flex-direction:column;align-items:center;gap:.45rem;max-width:34rem;margin:auto;padding:1rem .4rem;display:flex}.chat-empty__icon{background:color-mix(in srgb, var(--pop-accent) 18%, transparent);width:54px;height:54px;color:var(--pop-accent);border-radius:50%;place-items:center;margin-bottom:.2rem;display:grid}.chat-empty__text{margin:0;font-size:.98rem;line-height:1.7}.pop-chat__suggestions{padding-top:.1rem}.suggestions{text-align:left;flex-direction:column;gap:.38rem;margin-top:.75rem;display:flex}.suggestions__label{color:var(--pop-muted);letter-spacing:.14em;text-transform:uppercase;font-size:.64rem;font-weight:600}.suggestions__list{flex-wrap:wrap;gap:.38rem;display:flex}.suggestion{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 72%, transparent);color:var(--pop-text);font:inherit;text-align:left;cursor:pointer;border-radius:999px;align-items:center;gap:.28rem;padding:.36rem .62rem;font-size:.78rem;line-height:1.35;transition:border-color .2s,background-color .2s;display:inline-flex}.suggestion:hover:not(:disabled){border-color:var(--pop-accent);background:color-mix(in srgb, var(--pop-accent) 12%, var(--pop-surface-2))}.suggestion:disabled{opacity:.45;cursor:not-allowed}.chat-jump{border:1px solid var(--pop-border);background:var(--pop-surface-2);color:var(--pop-text);font:inherit;cursor:pointer;border-radius:999px;align-self:center;align-items:center;gap:.28rem;margin:0 auto .25rem;padding:.26rem .62rem;font-size:.7rem;display:inline-flex}.chat-fallback{margin:0 var(--pop-pad) .5rem;border:1px dashed color-mix(in srgb, var(--pop-accent) 55%, var(--pop-border));border-radius:calc(var(--pop-radius) * .8);background:color-mix(in srgb, var(--pop-accent) 8%, var(--pop-surface));padding:.75rem}.chat-fallback__intro{margin:0 0 .55rem;font-size:.82rem;line-height:1.55}.chat-fallback__options{flex-direction:column;gap:.3rem;display:flex}.chat-fallback__option{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);background:var(--pop-surface-2);color:var(--pop-text);font:inherit;text-align:left;cursor:pointer;align-items:center;gap:.4rem;padding:.45rem .6rem;font-size:.8rem;display:flex}.chat-fallback__option:hover:not(:disabled){border-color:var(--pop-accent)}.chat-fallback__collection{margin-top:.55rem}.pop-composer{padding:calc(var(--pop-pad) * .55) var(--pop-pad) calc(var(--pop-pad) * .5);border-top:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface) 97%, transparent);flex-direction:column;gap:.4rem;display:flex}.composer__row{align-items:flex-end;gap:.42rem;display:flex}.composer__file-input{clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0;pointer-events:none;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.composer__icon-btn{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, var(--pop-surface-2) 72%, transparent);width:40px;height:40px;color:var(--pop-muted);cursor:pointer;flex:none;place-items:center;padding:0;transition:color .2s,border-color .2s;display:grid}.composer__icon-btn:hover:not(:disabled){border-color:var(--pop-accent);color:var(--pop-text)}.composer__icon-btn:disabled{opacity:.45;cursor:not-allowed}.composer__input{border:1px solid color-mix(in srgb, var(--pop-border) 70%, transparent);border-radius:calc(var(--pop-radius) * .7);background:var(--pop-input-bg);min-width:0;max-height:168px;color:var(--pop-text);font:inherit;resize:none;flex:1;padding:.62rem .75rem;font-size:.96rem;font-weight:300;line-height:1.5;transition:background-color .2s,border-color .2s;overflow-y:auto}.composer__input:focus{border-color:var(--pop-accent);background:var(--pop-input-bg-focus);outline:none}.composer__input::placeholder{color:color-mix(in srgb, var(--pop-muted) 80%, transparent);opacity:1}.composer__send{flex:none;padding:.62rem .9rem}.composer__send-label{white-space:nowrap}.composer__pending{flex-wrap:wrap;gap:.35rem;display:flex}.composer__chip{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 80%, transparent);max-width:100%;color:var(--pop-text);border-radius:999px;align-items:center;gap:.3rem;padding:.22rem .42rem;font-size:.72rem;display:inline-flex}.composer__chip-name{text-overflow:ellipsis;white-space:nowrap;max-width:13rem;overflow:hidden}.composer__chip-size{color:var(--pop-muted)}.composer__chip-remove{background:color-mix(in srgb, var(--pop-text) 10%, transparent);width:18px;height:18px;color:inherit;cursor:pointer;border:0;border-radius:50%;place-items:center;padding:0;display:grid}.composer__chip-remove:disabled{opacity:.45;cursor:not-allowed}.composer__footer{justify-content:space-between;align-items:center;gap:.6rem;min-height:1rem;display:flex}.composer__help{color:var(--pop-muted);letter-spacing:.02em;font-size:.64rem;line-height:1.4}.composer__count{color:var(--pop-muted);font-variant-numeric:tabular-nums;font-size:.68rem}.composer__count--over{color:#f87171}.composer__error{color:#fca5a5;align-items:center;gap:.3rem;margin:0;font-size:.72rem;line-height:1.45;display:flex}.pop-overlay{z-index:50;background:var(--pop-overlay);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);justify-content:center;align-items:center;padding:clamp(14px,4vw,42px);animation:.2s both pop-fade;display:flex;position:fixed;inset:0}.pop-panel{border:1px solid var(--pop-border);border-radius:var(--pop-radius);background:var(--pop-surface);width:100%;max-width:900px;max-height:calc(100vh - 60px);color:var(--pop-text);box-shadow:var(--pop-shadow);scrollbar-width:thin;scrollbar-color:color-mix(in srgb, var(--pop-text) 30%, transparent) transparent;padding:clamp(26px,4vw,48px);animation:.24s both pop-in;position:relative;overflow-y:auto}.pop-panel:focus{outline:none}.pop-panel__close{width:40px;height:40px;color:var(--pop-text);cursor:pointer;background:0 0;border:1px solid #0000;border-radius:50%;place-items:center;padding:0;transition:color .2s,background-color .2s;display:grid;position:absolute;top:10px;right:10px}.pop-panel__close:hover{background:color-mix(in srgb, var(--pop-text) 10%, transparent);color:var(--pop-accent)}.pop-panel__body{min-width:0}.pop-panel p{margin:0 0 .9rem;line-height:1.75}.panel-grid{gap:calc(var(--pop-gap) * 1.4);flex-wrap:wrap;display:flex}.panel-grid__col{flex:260px;min-width:0}.panel-grid__col--text{flex:2 320px}.panel-grid__col--narrow{flex:220px}.panel-images{flex-direction:column;gap:.75rem;display:flex}.panel-images--hero{margin-bottom:1rem}.panel-img{border-radius:calc(var(--pop-radius) * .6);width:100%;height:auto;display:block}.panel-note{color:var(--pop-muted);font-size:.8rem;line-height:1.6}.panel-empty{flex-direction:column;align-items:flex-start;gap:.5rem;display:flex}.panel-form{flex-direction:column;gap:.7rem;margin-top:1rem;display:flex}.panel-form .btn{align-self:flex-start}.gallery{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:.6rem;display:grid}.gallery__item{min-width:0;margin:0}.gallery__thumb{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);background:var(--pop-surface-2);cursor:pointer;width:100%;padding:0;transition:border-color .2s,transform .2s;display:block;overflow:hidden}.gallery__thumb:hover{border-color:var(--pop-accent);transform:translateY(-2px)}.gallery__thumb img{aspect-ratio:8/5.6;object-fit:cover;width:100%;display:block}.gallery__item figcaption{color:var(--pop-muted);padding-top:.35rem;font-size:.76rem;line-height:1.4}.gallery__links{flex-wrap:wrap;gap:.9rem;margin:1rem 0 0;padding:0;list-style:none;display:flex}.link-btn{color:var(--pop-text);font:inherit;text-underline-offset:2px;cursor:pointer;background:0 0;border:0;align-items:center;gap:.3rem;padding:0;font-size:.86rem;text-decoration:underline;display:inline-flex}.pop-footer{z-index:1;text-align:center;margin-top:30px;position:relative}.pop-footer__text{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface) 72%, transparent);color:var(--pop-text);letter-spacing:.03em;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:999px;margin:0;padding:.5rem 1.1rem;font-size:.74rem;line-height:1.6;display:inline-block}.pop-footer__text a{color:var(--pop-text)}.pop a{color:var(--pop-text);transition:color .2s}.pop a:hover{color:var(--pop-accent)}.pop :is(button,input,select,textarea,a):focus-visible{outline:2px solid color-mix(in srgb, var(--pop-accent) 70%, #fff);outline-offset:2px}.is-spinning{animation:.9s linear infinite pop-spin}@keyframes pop-blink{0%,80%,to{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}@keyframes pop-fade{0%{opacity:0}to{opacity:1}}@keyframes pop-in{0%{opacity:0;transform:translateY(12px)scale(.99)}to{opacity:1;transform:none}}@keyframes pop-spin{to{transform:rotate(360deg)}}@media (max-width:920px){.pop-layout{flex-direction:column;align-items:stretch}.pop-col--main,.pop-col--side{flex:auto;width:100%;max-width:none}.pop-col--side{justify-content:flex-start}.pop--chat-dominant{height:auto;max-height:none;overflow:auto}.pop--chat-dominant .pop-chat__messages{max-height:55vh}.pop-header{text-align:left}.pop-header h1,.pop-subtitle,.pop-logo,.pop-underline{margin-left:0}.tiles{justify-content:start}.pop-identity{max-width:none;margin-left:0}}@media (max-width:620px){.pop{padding:24px 12px 22px}.pop-layout{gap:calc(var(--pop-gap) * 1.3)}.pop-header{margin:4px 4px 0}.pop-header h1{font-size:clamp(2rem,10vw,2.7rem)}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tile{width:100%;height:min(var(--pop-tile-size), 150px)}.tile__icon-wrap{margin-bottom:.7rem}.tile__hint{display:none}.pop-chat__top{padding:calc(var(--pop-pad) * .5) calc(var(--pop-pad) * .7);align-items:flex-start}.pop-chat__tools .btn span{display:none}.pop-chat__messages{padding:calc(var(--pop-pad) * .65) calc(var(--pop-pad) * .7)}.msg-stack{max-width:90%}.pop-composer{padding:calc(var(--pop-pad) * .5) calc(var(--pop-pad) * .7)}.composer__send-label,.composer__help{display:none}.pop-panel{max-height:calc(100vh - 28px);padding:34px 20px 24px}.gallery{grid-template-columns:1fr}}@media (max-width:420px){.pop{padding:18px 10px}.pop-chat__top{gap:.4rem}.pop-chat__name{font-size:.84rem}.pop-chat__presence,.pop-status{font-size:.64rem}.avatar{display:none}.msg-stack{max-width:100%}.composer__icon-btn{width:36px;height:36px}.composer__input{font-size:.9rem}.pop-footer__text{font-size:.68rem}}@media (prefers-reduced-motion:reduce){.pop *,.pop-bg,.pop-overlay,.pop-panel{scroll-behavior:auto!important;transition:none!important;animation:none!important}}.pop,.pop *{border-color:#0000}.pop-card,.pop-chat,.pop-identity,.tile,.field input,.field select,.field textarea,.btn,.btn--ghost,.composer__icon-btn,.suggestion,.chat-jump,.chat-fallback,.chat-fallback__option,.msg,.msg__attachment,.msg__link,.knowledge-chip,.attachment-chip,.pop-panel,.pop-composer,.pop-chat__top,.pop-col--side{box-shadow:0 8px 32px #0000001f, inset 0 1px 0 var(--pop-glass-highlight);border:none!important}.pop-card,.pop-chat,.pop-identity,.pop-panel,.chat-fallback{background:var(--pop-glass-bg);-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate))}.pop-chat__top,.pop-composer{-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate));background:#ffffff14}.pop-col--side{-webkit-backdrop-filter:none;box-shadow:none;background:0 0;border-top:none!important;border-right:none!important}.tile{-webkit-backdrop-filter:blur(16px) saturate(var(--pop-glass-saturate));background:#ffffff1a}.tile:hover,.tile:focus-visible{background:#ffffff2e}.field input,.field select,.field textarea,.composer__input{-webkit-backdrop-filter:blur(12px);background:#ffffff1a;box-shadow:inset 0 1px #ffffff2e;border:none!important}.btn--ghost,.suggestion,.chat-jump,.composer__icon-btn,.chat-fallback__option,.msg__attachment,.msg__link,.knowledge-chip{-webkit-backdrop-filter:blur(12px);background:#ffffff1f}.msg{-webkit-backdrop-filter:blur(12px)saturate(160%)}.pop-bg:after{background:linear-gradient(#00000014,#00000038)}@media (max-width:980px){.pop-col--side{border-top:none!important}}.panel-img--placeholder{min-height:160px;color:var(--pop-muted);background:var(--pop-glass-bg,#ffffff14);border-radius:var(--pop-radius,12px);place-items:center;display:grid}.panel-images .panel-img--placeholder{width:100%}:host(onirtech-widget-pop-design){height:100%}:host(onirtech-widget-pop-design) [data-onirtech-root]{flex-direction:column;height:100%;min-height:0;display:flex}.pop-widget{height:auto;min-height:0;font-family:var(--pop-font,\"Open Sans\", \"Segoe UI\", Helvetica, Arial, sans-serif);color:var(--pop-text,#fff);flex:auto;padding:0}.pop-widget--closed{width:64px;height:64px;overflow:visible}.widget-launcher{background:linear-gradient(145deg, #ffffff3d, #ffffff0f), color-mix(in srgb, var(--pop-surface,#2c2a35) 45%, transparent);width:64px;height:64px;color:var(--pop-text,#fff);cursor:pointer;-webkit-backdrop-filter:blur(var(--pop-glass-blur,24px)) saturate(var(--pop-glass-saturate,180%));border:1px solid #ffffff38;border-radius:50%;place-items:center;padding:0;transition:transform .2s,box-shadow .2s;display:grid;position:relative;box-shadow:0 14px 34px #00000047,inset 0 1px #ffffff47}.widget-launcher:hover{transform:translateY(-1px);box-shadow:0 18px 40px #00000052,inset 0 1px #ffffff52}.widget-launcher:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:3px}.widget-launcher__dot{background:#22c55e;border-radius:50%;width:12px;height:12px;position:absolute;bottom:6px;right:6px;box-shadow:0 0 0 2px #0a0a0e8c}.pop-widget--open{width:100%;height:100%;min-height:0;max-height:100%;overflow:hidden}.widget-panel{isolation:isolate;border-radius:calc(var(--pop-radius,20px) * 1.1);background:linear-gradient(165deg,#1c1b24a8,#0a0a0fd1);border:1px solid #ffffff29;flex-direction:column;width:100%;height:100%;min-height:0;display:flex;position:relative;overflow:hidden;box-shadow:0 28px 80px #00000075,inset 0 1px #fff3}.widget-bg{z-index:0;background-position:50%;background-repeat:no-repeat;background-size:cover;position:absolute;inset:0;transform:scale(1.02)}.widget-bg:after{content:\"\";background:linear-gradient(#08080c1a 0%,#08080c3d 48%,#08080c70 100%);position:absolute;inset:0}.widget-head{z-index:2;-webkit-backdrop-filter:blur(20px)saturate(180%);background:linear-gradient(#ffffff29,#ffffff0f);border-bottom:1px solid #ffffff24;flex:none;align-items:center;gap:10px;padding:12px 14px;display:flex;position:relative;box-shadow:inset 0 1px #ffffff2e}.widget-head__avatar{box-shadow:0 0 0 1px #ffffff2e}.widget-head__id{flex-direction:column;flex:1;gap:1px;min-width:0;display:flex}.widget-head__name{letter-spacing:.01em;text-overflow:ellipsis;white-space:nowrap;font-size:.9375rem;font-weight:600;line-height:1.3;overflow:hidden}.widget-head__status{color:var(--pop-muted,#ffffffb8);text-overflow:ellipsis;white-space:nowrap;align-items:center;gap:5px;font-size:.74rem;line-height:1.3;display:inline-flex;overflow:hidden}.widget-head__dot{background:#22c55e;border-radius:50%;flex:none;width:6px;height:6px;box-shadow:0 0 8px #22c55eb3}.widget-head__status.is-typing .widget-head__dot{animation:1.1s ease-in-out infinite widget-pulse}.widget-head__status.is-finished .widget-head__dot{background:var(--pop-muted,#ffffffb8);box-shadow:none}.widget-action,.widget-close{width:34px;height:34px;color:var(--pop-text,#fff);cursor:pointer;-webkit-backdrop-filter:blur(10px);background:#ffffff1f;border:1px solid #ffffff24;border-radius:50%;flex:none;place-items:center;padding:0;transition:background-color .2s,opacity .2s;display:grid}.widget-action:hover:not(:disabled),.widget-close:hover{background:#ffffff38}.widget-action:disabled{opacity:.4;cursor:not-allowed}.widget-action:focus-visible,.widget-close:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:2px}.widget-body{z-index:1;flex-direction:column;flex:auto;min-height:0;display:flex;position:relative;overflow:hidden}.widget-chat{-webkit-backdrop-filter:none;height:100%;min-height:0;box-shadow:none;background:0 0;flex:auto}.widget-chat .pop-chat__messages{flex:auto;gap:12px;min-height:0;max-height:none;padding:16px 14px 8px}.widget-chat .msg-row{gap:8px}.widget-chat .msg-stack{gap:0;max-width:84%}.widget-chat .msg__meta{display:none}.widget-chat .msg{border-radius:var(--pop-bubble-radius,18px);-webkit-backdrop-filter:blur(14px)saturate(160%);padding:.56rem .8rem;font-size:.92rem;line-height:1.6}.widget-chat .msg--assistant{background:#ffffff24;border:1px solid #ffffff29;border-bottom-left-radius:6px;box-shadow:0 6px 18px #00000024,inset 0 1px #ffffff29}.widget-chat .msg--user{background:color-mix(in srgb, var(--pop-accent,#006599) 82%, transparent);color:var(--pop-accent-ink,#fff);border-bottom-right-radius:6px;box-shadow:0 6px 18px #0000002e,inset 0 1px #ffffff38}.widget-chat .msg--typing{background:#ffffff24;border-color:#ffffff29}.widget-chat .msg-row>.avatar{width:28px;height:28px}.widget-chat .chat-empty{gap:8px;margin:auto;padding:18px 10px}.widget-chat .chat-empty__icon{width:56px;height:56px;color:var(--pop-text,#fff);-webkit-backdrop-filter:blur(14px)saturate(160%);background:linear-gradient(150deg,#fff3,#ffffff0f);border:1px solid #ffffff2e;margin-bottom:4px;box-shadow:inset 0 1px #fff3}.widget-chat .chat-empty__title{font-family:var(--pop-font-heading,inherit);margin:0;font-size:1.04rem;font-weight:600;line-height:1.35}.widget-chat .chat-empty__text{max-width:30ch;color:var(--pop-muted,#ffffffb8);font-size:.9rem;line-height:1.65}.widget-chat .suggestions,.widget-chat .pop-chat__suggestions{text-align:center;width:100%}.widget-chat .suggestions__list{justify-content:center}.widget-chat .suggestions__label{text-align:center}.widget-chat .suggestion{-webkit-backdrop-filter:blur(12px)saturate(160%);background:#ffffff1f;border:1px solid #ffffff29;box-shadow:inset 0 1px #ffffff24}.widget-chat .suggestion:hover:not(:disabled){background:#fff3;border-color:#ffffff4d}.widget-chat .chat-fallback{-webkit-backdrop-filter:blur(16px)saturate(160%);background:#ffffff1a;margin:0 2px .4rem}.widget-chat .chat-jump{-webkit-backdrop-filter:blur(12px);background:#ffffff29;border:1px solid #ffffff2e}.widget-chat .pop-composer{-webkit-backdrop-filter:blur(20px)saturate(180%);background:linear-gradient(#0c0c121f,#0c0c126b);border-top:1px solid #ffffff1f;flex:none;gap:6px;padding:8px 12px 12px;box-shadow:inset 0 1px #ffffff1a}.widget-chat .composer__row{border-radius:calc(var(--pop-radius,20px) * .95);-webkit-backdrop-filter:blur(14px)saturate(160%);background:#ffffff1a;border:1px solid #ffffff29;align-items:flex-end;gap:6px;padding:5px;box-shadow:inset 0 1px #ffffff24}.widget-chat .composer__input{border-radius:calc(var(--pop-radius,20px) * .7);background:0 0;border:none;min-height:34px;max-height:132px;padding:7px 8px;font-size:.92rem}.widget-chat .composer__input:focus{background:0 0;border:none}.widget-chat .composer__icon-btn{width:34px;height:34px;color:var(--pop-muted,#ffffffb8);box-shadow:none;background:0 0;border:none;border-radius:50%}.widget-chat .composer__icon-btn:hover:not(:disabled){color:var(--pop-text,#fff);background:#ffffff1f}.widget-chat .composer__send{background:var(--pop-accent,#006599);width:34px;height:34px;color:var(--pop-accent-ink,#fff);border:none;border-radius:50%;flex:none;padding:0;box-shadow:0 4px 14px #00000038,inset 0 1px #ffffff3d}.widget-chat .composer__send:disabled{opacity:.45;filter:none}.widget-chat .composer__send-label,.widget-chat .composer__help{display:none}.widget-chat .composer__footer{justify-content:flex-end;min-height:0;padding:0 6px}.widget-chat .composer__footer:empty{display:none}.widget-chat .composer__pending{gap:4px;padding:0 2px}.widget-body .pop-identity{width:100%;max-width:none;height:100%;padding:22px 18px calc(20px + env(safe-area-inset-bottom));-webkit-backdrop-filter:blur(20px)saturate(180%);box-shadow:none;background:#0c0c1247;margin:0;overflow-y:auto}.widget-body .pop-identity .pop-card__title{font-size:1.4rem}.widget-body .pop-identity .field input{background:#ffffff1f;border:1px solid #ffffff29}.widget-body .pop-identity .field input:focus{border-color:var(--pop-accent,#006599);background:#ffffff2e}@keyframes widget-pulse{0%,to{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.82)}}@media (prefers-reduced-motion:reduce){.widget-head__status.is-typing .widget-head__dot{animation:none}.widget-launcher{transition:none}}.pop-widget{box-sizing:border-box}.pop-widget--open{flex-direction:column;height:100%;max-height:100%;padding:8px;display:flex;overflow:hidden}.widget-panel{border-radius:calc(var(--pop-radius,20px) * 1.2);transform-origin:100% 100%;flex:auto;height:auto;min-height:0;animation:.26s cubic-bezier(.2,.8,.2,1) both widget-panel-in;box-shadow:0 30px 90px #00000080,0 8px 24px #00000047,inset 0 1px #ffffff38}.widget-launcher{background:radial-gradient(circle at 30% 22%, #ffffff57, transparent 44%), linear-gradient(145deg, color-mix(in srgb, var(--pop-accent,#006599) 76%, #fff), color-mix(in srgb, var(--pop-accent,#006599) 58%, #101014));box-shadow:0 18px 40px color-mix(in srgb, var(--pop-accent,#006599) 38%, #00000052), 0 4px 12px #0003, inset 0 1px 0 #ffffff61;border-color:#ffffff52}.widget-launcher:before{content:\"\";border-radius:inherit;border:1px solid color-mix(in srgb, var(--pop-accent,#006599) 68%, transparent);pointer-events:none;animation:2.8s ease-out infinite widget-halo;position:absolute;inset:-7px}.widget-launcher .avatar{background:#ffffff29;border:1px solid #ffffff42}.widget-launcher:hover{box-shadow:0 22px 46px color-mix(in srgb, var(--pop-accent,#006599) 44%, #00000057), 0 6px 14px #00000038, inset 0 1px 0 #ffffff6b;transform:translateY(-2px)scale(1.035)}.widget-launcher:active{transform:translateY(0)scale(.98)}.widget-launcher__dot{border:2px solid #0c0c12e6;width:13px;height:13px;bottom:5px;right:5px;box-shadow:0 0 0 2px #22c55e38}.widget-head{background:linear-gradient(135deg, color-mix(in srgb, var(--pop-accent,#006599) 24%, #101018a3), #10101880), linear-gradient(180deg, #ffffff1f, #ffffff08);-webkit-backdrop-filter:blur(24px)saturate(180%);border-bottom-color:#ffffff29;gap:10px;padding:11px 13px}.widget-head__avatar-wrap{flex:none;place-items:center;display:grid;position:relative}.widget-head__online{background:#22c55e;border:2px solid #0e0e14eb;border-radius:50%;width:11px;height:11px;position:absolute;bottom:0;right:0;box-shadow:0 0 0 2px #22c55e33}.widget-head__online.is-offline{background:var(--pop-muted,#ffffff8c);box-shadow:none}.widget-head__name{font-size:.95rem}.widget-head__status{color:color-mix(in srgb, var(--pop-text,#fff) 68%, transparent);font-size:.73rem}.widget-head__status.is-typing{color:var(--pop-text,#fff)}.widget-head__status.is-finished{color:var(--pop-muted,#ffffffa8)}.widget-head__actions{flex:none;align-items:center;gap:6px;display:flex;position:relative}.widget-action,.widget-close{width:34px;height:34px;transition:background-color .18s,transform .18s,opacity .18s}.widget-action:hover:not(:disabled),.widget-close:hover{transform:translateY(-1px)}.widget-menu{z-index:20;-webkit-backdrop-filter:blur(28px)saturate(180%);background:#12121af0;border:1px solid #ffffff29;border-radius:14px;min-width:214px;padding:6px;animation:.16s ease-out both widget-menu-in;position:absolute;top:calc(100% + 6px);right:40px;box-shadow:0 20px 50px #00000080,inset 0 1px #ffffff29}.widget-menu__item{width:100%;color:var(--pop-text,#fff);font:inherit;text-align:left;cursor:pointer;background:0 0;border:0;border-radius:10px;align-items:center;gap:9px;padding:9px 10px;font-size:.82rem;line-height:1.3;transition:background-color .15s,opacity .15s;display:flex}.widget-menu__item:hover:not(:disabled){background:#ffffff1f}.widget-menu__item:disabled{opacity:.45;cursor:not-allowed}.widget-menu__item:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:-1px}.widget-menu__item svg{opacity:.8;flex:none}.widget-chat .chat-empty.widget-welcome{-webkit-backdrop-filter:blur(20px)saturate(170%);text-align:center;background:linear-gradient(160deg,#ffffff26,#ffffff0f);border:1px solid #ffffff26;border-radius:22px;gap:8px;width:min(100%,330px);max-width:330px;margin:auto;padding:20px 18px 18px;box-shadow:0 18px 50px #00000038,inset 0 1px #ffffff2e}.widget-welcome__avatar{background:linear-gradient(150deg,#ffffff3d,#ffffff0f);border:1px solid #fff3;border-radius:50%;place-items:center;width:66px;height:66px;margin-bottom:2px;display:grid;position:relative;box-shadow:inset 0 1px #ffffff38}.widget-welcome__online{background:#22c55e;border:2px solid #0e0e14eb;border-radius:50%;width:12px;height:12px;position:absolute;bottom:4px;right:4px;box-shadow:0 0 0 2px #22c55e2e}.widget-welcome .chat-empty__title{font-size:1.18rem;line-height:1.3}.widget-welcome .chat-empty__text{max-width:30ch;font-size:.9rem;line-height:1.6}.widget-welcome .suggestions{text-align:left;width:100%;margin-top:6px}.widget-welcome .suggestions__label{display:none}.widget-welcome .suggestions__list{flex-direction:column;align-items:stretch;gap:6px}.widget-welcome .suggestion{text-align:left;border-radius:12px;justify-content:space-between;gap:8px;width:100%;padding:.55rem .75rem;font-size:.82rem;display:flex}.widget-welcome .suggestion>span{flex:1}.widget-welcome .suggestion>svg{opacity:.52;order:2}.widget-chat{flex-direction:column;flex:auto;height:auto;min-height:0;display:flex;overflow:hidden}.widget-chat .msg-row{animation:.22s ease-out both widget-message-in}.widget-chat .pop-chat__messages{flex:1 1 0;min-height:0;max-height:none;scroll-padding-top:8px;overflow-y:auto}.widget-chat .pop-composer{flex:none;padding:8px 12px 10px}.widget-chat .composer__row{border-radius:18px;padding:5px}.widget-chat .composer__input{min-height:36px}.widget-chat .composer__icon-btn,.widget-chat .composer__send{width:36px;height:36px}.widget-chat .composer__send{background:linear-gradient(145deg, color-mix(in srgb, var(--pop-accent,#006599) 84%, #fff), var(--pop-accent,#006599));box-shadow:0 6px 16px color-mix(in srgb, var(--pop-accent,#006599) 34%, #0000003d), inset 0 1px 0 #ffffff47}.widget-chat .composer__row:focus-within{border-color:color-mix(in srgb, var(--pop-accent,#006599) 46%, #fff3);box-shadow:0 0 0 2px color-mix(in srgb, var(--pop-accent,#006599) 14%, transparent), inset 0 1px 0 #ffffff24}@keyframes widget-panel-in{0%{opacity:0;transform:translateY(12px)scale(.97)}to{opacity:1;transform:translateY(0)scale(1)}}@keyframes widget-menu-in{0%{opacity:0;transform:translateY(-4px)scale(.98)}to{opacity:1;transform:translateY(0)scale(1)}}@keyframes widget-message-in{0%{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@keyframes widget-halo{0%{opacity:.7;transform:scale(.92)}70%,to{opacity:0;transform:scale(1.2)}}@media (max-width:520px){.pop-widget--open{padding:0}.widget-panel{box-shadow:none;border:0;border-radius:0}.widget-head{padding-top:calc(11px + env(safe-area-inset-top))}.widget-chat .pop-composer{padding-bottom:calc(10px + env(safe-area-inset-bottom))}}@media (prefers-reduced-motion:reduce){.widget-panel,.widget-menu,.widget-chat .msg-row,.widget-launcher:before{animation:none}.widget-launcher,.widget-action,.widget-close,.widget-menu__item{transition:none}.widget-launcher:hover{transform:none}}", n = /* @__PURE__ */ e(((e) => {
+var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e = null), t.exports), t = ":host{color:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizelegibility;font-family:Open Sans,Segoe UI,Helvetica,Arial,sans-serif;font-size:17px;font-weight:300;line-height:1.6;display:block}.pop *,.pop :before,.pop :after{box-sizing:border-box}.pop img{max-width:100%}.pop{--pop-accent:#006599;--pop-accent-ink:#fff;--pop-surface:#2c2a358c;--pop-surface-2:#35354180;--pop-surface-3:#23212973;--pop-text:#fff;--pop-muted:#ffffffb8;--pop-border:transparent;--pop-overlay:#08070c59;--pop-input-bg:#ffffff1f;--pop-input-bg-focus:#ffffff2e;--pop-page-overlay:linear-gradient(180deg, #0000002e, #00000061);--pop-shadow:0 8px 32px #0000002e;--pop-radius:20px;--pop-bubble-radius:18px;--pop-glass-blur:24px;--pop-glass-saturate:180%;--pop-glass-highlight:#ffffff38;--pop-glass-bg:#ffffff1f;--pop-glass-bg-strong:#ffffff2e;--pop-gap:16px;--pop-pad:24px;--pop-tile-size:165px;--pop-chat-min:260px;--pop-chat-max:50vh;--pop-line-height:1.72;--pop-font:\"Open Sans\", \"Segoe UI\", Helvetica, Arial, sans-serif;--pop-font-heading:var(--pop-font);--pop-font-mono:\"Cascadia Code\", Consolas, \"Courier New\", monospace;--pop-max-width:1060px;--pop-image-opacity:1;--pop-header-align:right;--pop-sidebar-width:280px;--pop-content-max:820px;--pop-space-1:4px;--pop-space-2:8px;--pop-space-3:12px;--pop-space-4:16px;--pop-space-5:24px;--pop-transition:.2s ease;min-height:100vh;color:var(--pop-text);font-family:var(--pop-font);line-height:var(--pop-line-height);flex-direction:column;padding:clamp(28px,5vw,54px) clamp(12px,3vw,22px) 28px;display:flex;position:relative;overflow-x:hidden}.pop-bg{z-index:0;opacity:var(--pop-image-opacity);background-position:50%;background-repeat:no-repeat;background-size:cover;position:absolute;inset:0}.pop-bg:after{content:\"\";background:var(--pop-page-overlay);position:absolute;inset:0}.pop-layout{z-index:1;align-items:stretch;gap:calc(var(--pop-gap) * 1.2);flex-wrap:nowrap;flex:1;width:100%;max-width:100%;min-height:0;margin:0 auto;display:flex;position:relative}.pop-col{min-width:0}.pop-col--side{flex-direction:column;flex:0 0 280px;justify-content:flex-start;min-height:0;display:flex;overflow:auto}.pop-col--main{gap:calc(var(--pop-gap) * 1.2);flex-direction:column;flex:1 1 0;min-height:0;display:flex}.pop--chat-dominant{height:100vh;height:100dvh;min-height:100vh;min-height:100dvh;max-height:100vh;max-height:100dvh;overflow:hidden}.pop--chat-dominant .pop-layout,.pop-layout{flex:auto;align-items:stretch;height:100%;min-height:0}.pop-col--main{flex:1 1 0;min-width:0;min-height:0;overflow:hidden}.pop-col--side{flex:0 0 var(--pop-sidebar-width);min-height:0;overflow:auto}.pop-main .pop-chat,.pop--chat-dominant .pop-chat{flex-direction:column;flex:auto;height:100%;min-height:0;max-height:100%;display:flex;overflow:hidden}.pop-main .pop-chat__messages,.pop--chat-dominant .pop-chat__messages{flex:auto;min-height:0;max-height:none;overflow-y:auto}.pop-mobile-nav{display:none}@media (max-width:980px){.pop--chat-dominant,.pop--entry{height:100vh;height:100dvh;max-height:100vh;max-height:100dvh}.pop-layout{flex-direction:column;height:100%}.pop-col--side.pop-sidebar{display:none}.pop-col--main{flex:1 1 0;order:1;width:100%;height:auto;min-height:0}.pop-mobile-nav{z-index:20;margin-bottom:calc(var(--pop-gap) * .5);display:block;position:relative}.pop-mobile-nav__toggle{border-radius:var(--pop-radius);background:var(--pop-glass-bg);color:var(--pop-text);font:inherit;cursor:pointer;-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate));box-shadow:0 8px 32px #0000001f, inset 0 1px 0 var(--pop-glass-highlight);border:none;align-items:center;gap:8px;padding:10px 14px;display:inline-flex}.pop-mobile-nav__menu{z-index:30;border-radius:var(--pop-radius);-webkit-backdrop-filter:none;box-shadow:none;background:0 0;max-height:60vh;padding:10px;position:absolute;top:calc(100% + 8px);left:0;right:0;overflow:auto}.pop-mobile-nav__menu .tiles{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.pop-mobile-nav__menu .tile{text-align:center;height:min(var(--pop-tile-size), 140px);flex-direction:column;justify-content:center}.pop-mobile-nav__menu .tile__icon-wrap{margin-bottom:.5rem}}.pop-header{margin:0 0 var(--pop-gap);text-align:left}.pop-logo{margin:0 0 .75rem}.pop-header h1{margin:0}.pop-underline{margin:.6rem 0 .75rem}.pop-subtitle{max-width:60ch;margin:0}.pop-sidebar .tiles{justify-content:stretch;gap:var(--pop-gap);grid-template-columns:1fr}.pop-sidebar .tile{text-align:left;flex-direction:row;justify-content:flex-start;align-items:center;gap:12px;width:100%;height:auto;min-height:96px;padding:12px 14px}.pop-sidebar .tile__icon-wrap{flex:none;margin-bottom:0}.pop-sidebar .tile__hint{display:block}.pop-main .pop-identity{max-width:min(100%,480px);margin-left:0;margin-right:auto}.pop-main .pop-chat{width:100%;max-width:100%;margin:0 auto}.pop--chat-dominant,.pop--entry{height:100vh;height:100dvh;min-height:100vh;min-height:100dvh;max-height:100vh;max-height:100dvh;padding-top:0;padding-bottom:0;overflow:hidden}.pop--chat-dominant .pop-header,.pop--entry .pop-header{display:none}.pop--chat-dominant .pop-layout,.pop--entry .pop-layout{padding-top:var(--pop-gap);padding-bottom:calc(var(--pop-gap) * .5)}.pop--entry .pop-col--main{overflow:auto}.pop--entry .pop-main .pop-identity{margin:0 auto}.pop-main .pop-chat__messages,.pop-main .pop-composer,.pop-main .pop-chat__top{width:100%}.pop-main .pop-chat__messages>*,.pop-main .pop-composer .composer__row,.pop-main .pop-composer .composer__pending,.pop-main .pop-composer .composer__footer,.pop-main .pop-composer .composer__error,.pop-main .pop-chat__top{max-width:min(100%, var(--pop-content-max));width:100%;margin-left:auto;margin-right:auto}.pop-main .msg-stack{max-width:min(88%,720px)}.pop-layout{gap:var(--pop-gap)}.pop-col--side{border-right:1px solid var(--pop-border);padding-right:var(--pop-gap)}@media (max-width:980px){.pop-sidebar .tiles{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.pop-sidebar .tile{text-align:center;height:min(var(--pop-tile-size), 140px);flex-direction:column;justify-content:center}.pop-sidebar .tile__icon-wrap{margin-bottom:.5rem}.pop-col--side{border-right:0;border-top:1px solid var(--pop-border);padding-right:0;padding-top:var(--pop-gap)}.pop--chat-dominant .pop-header{display:none}}.pop-header{text-align:var(--pop-header-align);margin:8px 10px 0}.pop-logo{width:auto;max-height:64px;margin:0 0 1rem auto;display:block}.pop-kicker{color:var(--pop-muted);letter-spacing:.18em;text-transform:uppercase;align-items:center;gap:.45rem;margin:0 0 .55rem;font-size:.7rem;font-weight:500;line-height:1.4;display:inline-flex}.pop-kicker__dot{background:var(--pop-accent);width:7px;height:7px;box-shadow:0 0 0 4px color-mix(in srgb, var(--pop-accent) 22%, transparent);border-radius:50%}.pop-header h1{font-family:var(--pop-font-heading);letter-spacing:-.02em;margin:0;font-size:clamp(2.25rem,4.8vw,3.4rem);font-weight:300;line-height:1.03}.pop-underline{width:auto;max-width:100%;height:18px;margin:.85rem 0 .9rem auto;display:block}.pop-subtitle{letter-spacing:.01em;max-width:48ch;margin:0 0 0 auto;font-size:clamp(.96rem,1.4vw,1.04rem);line-height:1.8}.tiles{grid-template-columns:repeat(2, var(--pop-tile-size));gap:calc(var(--pop-gap) * 1.1);justify-content:end;display:grid}.tile-item{min-width:0}.tile{--tile-accent:var(--pop-accent);width:var(--pop-tile-size);height:var(--pop-tile-size);border:1px solid var(--pop-border);border-radius:var(--pop-radius);background:color-mix(in srgb, var(--pop-surface) 18%, transparent);color:var(--pop-text);font:inherit;text-align:center;cursor:pointer;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);flex-direction:column;justify-content:center;align-items:center;padding:14px;transition:background-color .28s,border-color .28s,transform .28s,box-shadow .28s;display:flex;position:relative}.tile:hover,.tile:focus-visible{border-color:var(--tile-accent);background:color-mix(in srgb, var(--pop-surface) 94%, transparent);transform:translateY(-3px);box-shadow:0 16px 34px #0000003d}.tile__icon-wrap{color:var(--tile-accent);place-items:center;margin-bottom:1.15rem;display:grid;position:relative}.tile__icon{display:block}.tile__badge{background:var(--tile-accent);color:#fff;border-radius:999px;min-width:20px;padding:1px 6px;font-size:.66rem;font-weight:600;line-height:1.6;position:absolute;top:-8px;right:-12px}.tile__label{letter-spacing:.04em;font-size:1rem;font-weight:400;line-height:1.35;display:block}.tile__hint{color:var(--pop-muted);letter-spacing:.03em;margin-top:.18rem;font-size:.7rem;line-height:1.35;display:block}.pop-card{background:var(--pop-surface);border:1px solid var(--pop-border);border-radius:var(--pop-radius);width:100%;box-shadow:var(--pop-shadow);position:relative}.pop-card__title{font-family:var(--pop-font-heading);letter-spacing:.01em;margin:0 0 .9rem;font-size:clamp(1.4rem,2.6vw,1.85rem);font-weight:400;line-height:1.25}.pop-identity{width:100%;max-width:392px;padding:var(--pop-pad);background:color-mix(in srgb, var(--pop-surface) 94%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);margin-left:auto}.pop-identity__intro{color:var(--pop-muted);margin:0 0 1.1rem;font-size:.88rem;line-height:1.7}.field{letter-spacing:.04em;flex-direction:column;gap:.35rem;margin-bottom:.85rem;font-size:.82rem;font-weight:500;display:flex}.field>span{color:var(--pop-muted)}.field input,.field select,.field textarea{border:1px solid color-mix(in srgb, var(--pop-border) 70%, transparent);border-radius:calc(var(--pop-radius) * .7);background:var(--pop-input-bg);width:100%;color:var(--pop-text);font:inherit;padding:.68rem .75rem;font-size:1rem;font-weight:300;transition:background-color .2s,border-color .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pop-accent);background:var(--pop-input-bg-focus);outline:none}.field textarea{resize:vertical;line-height:1.6}.field ::placeholder{color:color-mix(in srgb, var(--pop-muted) 80%, transparent);opacity:1}.check{align-items:flex-start;gap:.55rem;margin:.15rem 0 1rem;font-size:.78rem;line-height:1.55;display:flex}.check input{width:auto;accent-color:var(--pop-accent);flex:none;margin-top:.2rem}.check a{color:var(--pop-text)}.btn{border-radius:calc(var(--pop-radius) * .7);background:var(--pop-accent);color:var(--pop-accent-ink);font:inherit;letter-spacing:.02em;cursor:pointer;border:1px solid #0000;justify-content:center;align-items:center;gap:.45rem;padding:.62rem 1.35rem;font-size:.94rem;font-weight:500;line-height:1.3;transition:filter .2s,transform .2s,background-color .2s;display:inline-flex}.btn:hover:not(:disabled){filter:brightness(1.1)}.btn:active:not(:disabled){transform:translateY(1px)}.btn:disabled{opacity:.45;cursor:not-allowed}.btn--block{width:100%}.btn--ghost{border-color:var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 78%, transparent);color:var(--pop-text)}.btn--ghost:hover:not(:disabled){background:var(--pop-surface-2);filter:none}.btn--small{padding:.38rem .68rem;font-size:.78rem}.hint{color:var(--pop-muted);margin:.65rem 0 0;font-size:.74rem;line-height:1.55}.pop-chat{background:color-mix(in srgb, var(--pop-surface) 96%, transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);flex-direction:column;width:100%;display:flex;overflow:hidden}.pop-chat__top{padding:calc(var(--pop-pad) * .55) var(--pop-pad);border-bottom:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 62%, transparent);justify-content:space-between;align-items:center;gap:.75rem;display:flex}.pop-chat__identity{align-items:center;gap:.65rem;min-width:0;display:flex}.pop-chat__who{min-width:0}.pop-chat__name{letter-spacing:.02em;text-overflow:ellipsis;white-space:nowrap;margin:0;font-size:.92rem;font-weight:600;line-height:1.3;overflow:hidden}.pop-chat__presence{color:var(--pop-muted);margin:.08rem 0 0;font-size:.7rem;line-height:1.3}.pop-chat__presence.is-typing{color:var(--pop-accent)}.pop-chat__tools{flex-wrap:wrap;justify-content:flex-end;align-items:center;gap:.45rem;display:flex}.pop-status{color:var(--pop-muted);letter-spacing:.03em;font-size:.7rem}.pop-chat__messages{gap:calc(var(--pop-gap) * .85);min-height:var(--pop-chat-min);max-height:var(--pop-chat-max);padding:calc(var(--pop-pad) * .8) var(--pop-pad) calc(var(--pop-pad) * .55);overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:color-mix(in srgb, var(--pop-text) 26%, transparent) transparent;flex-direction:column;flex:auto;display:flex;position:relative;overflow-y:auto}.pop-chat__messages::-webkit-scrollbar{width:8px;height:8px}.pop-panel::-webkit-scrollbar{width:8px;height:8px}.md-pre::-webkit-scrollbar{width:8px;height:8px}.md-table::-webkit-scrollbar{width:8px;height:8px}.pop-chat__messages::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.pop-panel::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.md-pre::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.md-table::-webkit-scrollbar-thumb{background:color-mix(in srgb, var(--pop-text) 24%, transparent);border-radius:999px}.pop-empty{color:var(--pop-muted);margin:0;font-size:.86rem;line-height:1.6}.avatar{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-accent) 16%, var(--pop-surface-2));color:var(--pop-text);border-radius:50%;flex:none;place-items:center;display:grid;overflow:hidden}.avatar img{object-fit:cover;width:100%;height:100%;display:block}.avatar__initial{font-size:.78em;font-weight:600}.avatar--assistant{border-color:color-mix(in srgb, var(--pop-accent) 45%, var(--pop-border))}.msg-row{align-items:flex-end;gap:.55rem;max-width:100%;display:flex}.msg-row--user{flex-direction:row-reverse}.msg-stack{flex-direction:column;gap:.18rem;min-width:0;max-width:min(82%,620px);display:flex}.msg-row--user .msg-stack{align-items:flex-end}.msg__meta{color:var(--pop-muted);align-items:baseline;gap:.4rem;padding:0 .25rem;font-size:.66rem;line-height:1.3;display:flex}.msg__author{letter-spacing:.03em;font-weight:600}.msg__time{opacity:.72}.msg{border-radius:var(--pop-bubble-radius);overflow-wrap:anywhere;padding:.62rem .85rem;font-size:.97rem;line-height:1.65}.msg--assistant{border:1px solid var(--pop-border);background:var(--pop-surface-2);border-bottom-left-radius:4px}.msg--user{background:var(--pop-accent);color:var(--pop-accent-ink);border-bottom-right-radius:4px}.msg--typing{border:1px solid var(--pop-border);background:var(--pop-surface-2);gap:5px;width:-moz-fit-content;width:fit-content;padding:.72rem .9rem;display:flex}.msg--typing span{background:var(--pop-muted);border-radius:50%;width:6px;height:6px;animation:1.2s ease-in-out infinite pop-blink}.msg--typing span:nth-child(2){animation-delay:.18s}.msg--typing span:nth-child(3){animation-delay:.36s}.md{min-width:0}.md>:last-child{margin-bottom:0}.md p,.md ul,.md ol,.md pre,.md blockquote,.md .md-table{margin:0 0 .62rem}.md--plain{white-space:pre-wrap;margin:0}.md-heading{font-family:var(--pop-font-heading);margin:.15rem 0 .4rem;font-size:1.02rem;font-weight:600;line-height:1.35}.md-list{padding-left:1.15rem}.md-list li{margin:.12rem 0}.md-list li::marker{color:var(--pop-accent)}.md-code{background:color-mix(in srgb, var(--pop-text) 12%, transparent);font-family:var(--pop-font-mono);border-radius:4px;padding:.08rem .3rem;font-size:.84em}.md-pre{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, var(--pop-surface-3) 88%, #000);padding:.7rem .8rem;overflow-x:auto}.md-pre code{font-family:var(--pop-font-mono);white-space:pre;background:0 0;padding:0;font-size:.8rem;line-height:1.6}.md-quote{border-left:3px solid var(--pop-accent);color:var(--pop-muted);margin-left:0;padding:.05rem 0 .05rem .75rem}.md-hr{background:var(--pop-border);border:0;height:1px;margin:.7rem 0}.md-table{overflow-x:auto}.md-table table{border-collapse:collapse;width:100%;font-size:.84rem}.md-table th,.md-table td{border:1px solid var(--pop-border);text-align:left;vertical-align:top;padding:.32rem .45rem}.md-table th{background:color-mix(in srgb, var(--pop-text) 8%, transparent);font-weight:600}.md a{color:inherit;text-decoration:underline;-webkit-text-decoration-color:color-mix(in srgb, var(--pop-accent) 70%, transparent);text-decoration-color:color-mix(in srgb, var(--pop-accent) 70%, transparent);text-underline-offset:2px}.md a:hover{-webkit-text-decoration-color:var(--pop-accent);text-decoration-color:var(--pop-accent)}.msg__medias{flex-wrap:wrap;gap:.4rem;margin-top:.55rem;display:flex}.msg__media{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);cursor:pointer;background:0 0;max-width:16rem;padding:0;display:block;overflow:hidden}.msg__media img{width:100%;height:auto;display:block}.msg__link{border:1px solid color-mix(in srgb, currentColor 30%, transparent);background:color-mix(in srgb, currentColor 8%, transparent);color:inherit;font:inherit;text-align:left;cursor:pointer;border-radius:999px;align-items:center;gap:.3rem;padding:.32rem .55rem;font-size:.78rem;display:inline-flex}.msg__attachments{flex-wrap:wrap;gap:.35rem;margin:.55rem 0 0;padding:0;list-style:none;display:flex}.msg__attachment{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, currentColor 7%, transparent);max-width:100%;color:inherit;font:inherit;cursor:pointer;align-items:center;gap:.35rem;padding:.3rem .55rem;font-size:.75rem;display:inline-flex}.msg__attachment-name{text-overflow:ellipsis;white-space:nowrap;max-width:12rem;overflow:hidden}.msg__attachment-size{opacity:.7}.msg__knowledge{flex-wrap:wrap;gap:.35rem;margin:.55rem 0 0;padding:0;list-style:none;display:flex}.knowledge-chip{border:1px dashed color-mix(in srgb, var(--pop-accent) 55%, transparent);max-width:100%;color:var(--pop-muted);border-radius:999px;align-items:center;gap:.28rem;padding:.22rem .5rem;font-size:.7rem;display:inline-flex}.knowledge-chip span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.msg__state{color:var(--pop-muted);border:1px solid;border-radius:999px;align-items:center;gap:.28rem;margin-top:.5rem;padding:.14rem .45rem;font-size:.68rem;line-height:1.5;display:inline-flex}.msg__state--content{color:#4ade80}.msg__state--triste{color:#fbbf24}.chat-empty{text-align:center;flex-direction:column;align-items:center;gap:.45rem;max-width:34rem;margin:auto;padding:1rem .4rem;display:flex}.chat-empty__icon{background:color-mix(in srgb, var(--pop-accent) 18%, transparent);width:54px;height:54px;color:var(--pop-accent);border-radius:50%;place-items:center;margin-bottom:.2rem;display:grid}.chat-empty__text{margin:0;font-size:.98rem;line-height:1.7}.pop-chat__suggestions{padding-top:.1rem}.suggestions{text-align:left;flex-direction:column;gap:.38rem;margin-top:.75rem;display:flex}.suggestions__label{color:var(--pop-muted);letter-spacing:.14em;text-transform:uppercase;font-size:.64rem;font-weight:600}.suggestions__list{flex-wrap:wrap;gap:.38rem;display:flex}.suggestion{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 72%, transparent);color:var(--pop-text);font:inherit;text-align:left;cursor:pointer;border-radius:999px;align-items:center;gap:.28rem;padding:.36rem .62rem;font-size:.78rem;line-height:1.35;transition:border-color .2s,background-color .2s;display:inline-flex}.suggestion:hover:not(:disabled){border-color:var(--pop-accent);background:color-mix(in srgb, var(--pop-accent) 12%, var(--pop-surface-2))}.suggestion:disabled{opacity:.45;cursor:not-allowed}.chat-jump{border:1px solid var(--pop-border);background:var(--pop-surface-2);color:var(--pop-text);font:inherit;cursor:pointer;border-radius:999px;align-self:center;align-items:center;gap:.28rem;margin:0 auto .25rem;padding:.26rem .62rem;font-size:.7rem;display:inline-flex}.chat-fallback{margin:0 var(--pop-pad) .5rem;border:1px dashed color-mix(in srgb, var(--pop-accent) 55%, var(--pop-border));border-radius:calc(var(--pop-radius) * .8);background:color-mix(in srgb, var(--pop-accent) 8%, var(--pop-surface));padding:.75rem}.chat-fallback__intro{margin:0 0 .55rem;font-size:.82rem;line-height:1.55}.chat-fallback__options{flex-direction:column;gap:.3rem;display:flex}.chat-fallback__option{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);background:var(--pop-surface-2);color:var(--pop-text);font:inherit;text-align:left;cursor:pointer;align-items:center;gap:.4rem;padding:.45rem .6rem;font-size:.8rem;display:flex}.chat-fallback__option:hover:not(:disabled){border-color:var(--pop-accent)}.chat-fallback__collection{margin-top:.55rem}.pop-composer{padding:calc(var(--pop-pad) * .55) var(--pop-pad) calc(var(--pop-pad) * .5);border-top:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface) 97%, transparent);flex-direction:column;gap:.4rem;display:flex}.composer__row{align-items:flex-end;gap:.42rem;display:flex}.composer__file-input{clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;opacity:0;pointer-events:none;border:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.composer__icon-btn{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .7);background:color-mix(in srgb, var(--pop-surface-2) 72%, transparent);width:40px;height:40px;color:var(--pop-muted);cursor:pointer;flex:none;place-items:center;padding:0;transition:color .2s,border-color .2s;display:grid}.composer__icon-btn:hover:not(:disabled){border-color:var(--pop-accent);color:var(--pop-text)}.composer__icon-btn:disabled{opacity:.45;cursor:not-allowed}.composer__input{border:1px solid color-mix(in srgb, var(--pop-border) 70%, transparent);border-radius:calc(var(--pop-radius) * .7);background:var(--pop-input-bg);min-width:0;max-height:168px;color:var(--pop-text);font:inherit;resize:none;flex:1;padding:.62rem .75rem;font-size:.96rem;font-weight:300;line-height:1.5;transition:background-color .2s,border-color .2s;overflow-y:auto}.composer__input:focus{border-color:var(--pop-accent);background:var(--pop-input-bg-focus);outline:none}.composer__input::placeholder{color:color-mix(in srgb, var(--pop-muted) 80%, transparent);opacity:1}.composer__send{flex:none;padding:.62rem .9rem}.composer__send-label{white-space:nowrap}.composer__pending{flex-wrap:wrap;gap:.35rem;display:flex}.composer__chip{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface-2) 80%, transparent);max-width:100%;color:var(--pop-text);border-radius:999px;align-items:center;gap:.3rem;padding:.22rem .42rem;font-size:.72rem;display:inline-flex}.composer__chip-name{text-overflow:ellipsis;white-space:nowrap;max-width:13rem;overflow:hidden}.composer__chip-size{color:var(--pop-muted)}.composer__chip-remove{background:color-mix(in srgb, var(--pop-text) 10%, transparent);width:18px;height:18px;color:inherit;cursor:pointer;border:0;border-radius:50%;place-items:center;padding:0;display:grid}.composer__chip-remove:disabled{opacity:.45;cursor:not-allowed}.composer__footer{justify-content:space-between;align-items:center;gap:.6rem;min-height:1rem;display:flex}.composer__help{color:var(--pop-muted);letter-spacing:.02em;font-size:.64rem;line-height:1.4}.composer__count{color:var(--pop-muted);font-variant-numeric:tabular-nums;font-size:.68rem}.composer__count--over{color:#f87171}.composer__error{color:#fca5a5;align-items:center;gap:.3rem;margin:0;font-size:.72rem;line-height:1.45;display:flex}.pop-overlay{z-index:50;background:var(--pop-overlay);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);justify-content:center;align-items:center;padding:clamp(14px,4vw,42px);animation:.2s both pop-fade;display:flex;position:fixed;inset:0}.pop-panel{border:1px solid var(--pop-border);border-radius:var(--pop-radius);background:var(--pop-surface);width:100%;max-width:900px;max-height:calc(100vh - 60px);color:var(--pop-text);box-shadow:var(--pop-shadow);scrollbar-width:thin;scrollbar-color:color-mix(in srgb, var(--pop-text) 30%, transparent) transparent;padding:clamp(26px,4vw,48px);animation:.24s both pop-in;position:relative;overflow-y:auto}.pop-panel:focus{outline:none}.pop-panel__close{width:40px;height:40px;color:var(--pop-text);cursor:pointer;background:0 0;border:1px solid #0000;border-radius:50%;place-items:center;padding:0;transition:color .2s,background-color .2s;display:grid;position:absolute;top:10px;right:10px}.pop-panel__close:hover{background:color-mix(in srgb, var(--pop-text) 10%, transparent);color:var(--pop-accent)}.pop-panel__body{min-width:0}.pop-panel p{margin:0 0 .9rem;line-height:1.75}.panel-grid{gap:calc(var(--pop-gap) * 1.4);flex-wrap:wrap;display:flex}.panel-grid__col{flex:260px;min-width:0}.panel-grid__col--text{flex:2 320px}.panel-grid__col--narrow{flex:220px}.panel-images{flex-direction:column;gap:.75rem;display:flex}.panel-images--hero{margin-bottom:1rem}.panel-img{border-radius:calc(var(--pop-radius) * .6);width:100%;height:auto;display:block}.panel-note{color:var(--pop-muted);font-size:.8rem;line-height:1.6}.team-grid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.9rem;margin-top:.4rem;display:grid}.team-card{border:1px solid color-mix(in srgb, var(--pop-text) 14%, transparent);border-radius:calc(var(--pop-radius) * .8);background:color-mix(in srgb, var(--pop-glass-bg) 88%, transparent);overflow:hidden}.team-card__img{aspect-ratio:4/5;object-fit:cover;width:100%;display:block}.team-card__img--placeholder{color:var(--pop-muted);background:var(--pop-glass-bg);place-items:center;display:grid}.team-card__body{padding:.7rem .8rem .8rem}.team-card__body h3{margin:0 0 .25rem;font-size:.98rem;line-height:1.25}.team-card__body p{color:var(--pop-muted);margin:0;font-size:.78rem;line-height:1.45}.panel-empty{flex-direction:column;align-items:flex-start;gap:.5rem;display:flex}.panel-form{flex-direction:column;gap:.7rem;margin-top:1rem;display:flex}.panel-form .btn{align-self:flex-start}.gallery{grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:.6rem;display:grid}.gallery__item{min-width:0;margin:0}.gallery__thumb{border:1px solid var(--pop-border);border-radius:calc(var(--pop-radius) * .6);background:var(--pop-surface-2);cursor:pointer;width:100%;padding:0;transition:border-color .2s,transform .2s;display:block;overflow:hidden}.gallery__thumb:hover{border-color:var(--pop-accent);transform:translateY(-2px)}.gallery__thumb img{aspect-ratio:8/5.6;object-fit:cover;width:100%;display:block}.gallery__item figcaption{color:var(--pop-muted);padding-top:.35rem;font-size:.76rem;line-height:1.4}.gallery__links{flex-wrap:wrap;gap:.9rem;margin:1rem 0 0;padding:0;list-style:none;display:flex}.link-btn{color:var(--pop-text);font:inherit;text-underline-offset:2px;cursor:pointer;background:0 0;border:0;align-items:center;gap:.3rem;padding:0;font-size:.86rem;text-decoration:underline;display:inline-flex}.pop-footer{z-index:1;text-align:center;margin-top:30px;position:relative}.pop-footer__text{border:1px solid var(--pop-border);background:color-mix(in srgb, var(--pop-surface) 72%, transparent);color:var(--pop-text);letter-spacing:.03em;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-radius:999px;margin:0;padding:.5rem 1.1rem;font-size:.74rem;line-height:1.6;display:inline-block}.pop-footer__text a{color:var(--pop-text)}.pop a{color:var(--pop-text);transition:color .2s}.pop a:hover{color:var(--pop-accent)}.pop :is(button,input,select,textarea,a):focus-visible{outline:2px solid color-mix(in srgb, var(--pop-accent) 70%, #fff);outline-offset:2px}.is-spinning{animation:.9s linear infinite pop-spin}@keyframes pop-blink{0%,80%,to{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}@keyframes pop-fade{0%{opacity:0}to{opacity:1}}@keyframes pop-in{0%{opacity:0;transform:translateY(12px)scale(.99)}to{opacity:1;transform:none}}@keyframes pop-spin{to{transform:rotate(360deg)}}@media (max-width:920px){.pop-layout{flex-direction:column;align-items:stretch}.pop-col--main,.pop-col--side{flex:auto;width:100%;max-width:none}.pop-col--side{justify-content:flex-start}.pop--chat-dominant{height:auto;max-height:none;overflow:auto}.pop--chat-dominant .pop-chat__messages{max-height:55vh}.pop-header{text-align:left}.pop-header h1,.pop-subtitle,.pop-logo,.pop-underline{margin-left:0}.tiles{justify-content:start}.pop-identity{max-width:none;margin-left:0}}@media (max-width:620px){.pop{padding:24px 12px 22px}.pop-layout{gap:calc(var(--pop-gap) * 1.3)}.pop-header{margin:4px 4px 0}.pop-header h1{font-size:clamp(2rem,10vw,2.7rem)}.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tile{width:100%;height:min(var(--pop-tile-size), 150px)}.tile__icon-wrap{margin-bottom:.7rem}.tile__hint{display:none}.pop-chat__top{padding:calc(var(--pop-pad) * .5) calc(var(--pop-pad) * .7);align-items:flex-start}.pop-chat__tools .btn span{display:none}.pop-chat__messages{padding:calc(var(--pop-pad) * .65) calc(var(--pop-pad) * .7)}.msg-stack{max-width:90%}.pop-composer{padding:calc(var(--pop-pad) * .5) calc(var(--pop-pad) * .7)}.composer__send-label,.composer__help{display:none}.pop-panel{max-height:calc(100vh - 28px);padding:34px 20px 24px}.gallery{grid-template-columns:1fr}}@media (max-width:420px){.pop{padding:18px 10px}.pop-chat__top{gap:.4rem}.pop-chat__name{font-size:.84rem}.pop-chat__presence,.pop-status{font-size:.64rem}.avatar{display:none}.msg-stack{max-width:100%}.composer__icon-btn{width:36px;height:36px}.composer__input{font-size:.9rem}.pop-footer__text{font-size:.68rem}}@media (prefers-reduced-motion:reduce){.pop *,.pop-bg,.pop-overlay,.pop-panel{scroll-behavior:auto!important;transition:none!important;animation:none!important}}.pop,.pop *{border-color:#0000}.pop-card,.pop-chat,.pop-identity,.tile,.field input,.field select,.field textarea,.btn,.btn--ghost,.composer__icon-btn,.suggestion,.chat-jump,.chat-fallback,.chat-fallback__option,.msg,.msg__attachment,.msg__link,.knowledge-chip,.attachment-chip,.pop-panel,.pop-composer,.pop-chat__top,.pop-col--side{box-shadow:0 8px 32px #0000001f, inset 0 1px 0 var(--pop-glass-highlight);border:none!important}.pop-card,.pop-chat,.pop-identity,.pop-panel,.chat-fallback{background:var(--pop-glass-bg);-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate))}.pop-chat__top,.pop-composer{-webkit-backdrop-filter:blur(var(--pop-glass-blur)) saturate(var(--pop-glass-saturate));background:#ffffff14}.pop-col--side{-webkit-backdrop-filter:none;box-shadow:none;background:0 0;border-top:none!important;border-right:none!important}.tile{-webkit-backdrop-filter:blur(16px) saturate(var(--pop-glass-saturate));background:#ffffff1a}.tile:hover,.tile:focus-visible{background:#ffffff2e}.field input,.field select,.field textarea,.composer__input{-webkit-backdrop-filter:blur(12px);background:#ffffff1a;box-shadow:inset 0 1px #ffffff2e;border:none!important}.btn--ghost,.suggestion,.chat-jump,.composer__icon-btn,.chat-fallback__option,.msg__attachment,.msg__link,.knowledge-chip{-webkit-backdrop-filter:blur(12px);background:#ffffff1f}.msg{-webkit-backdrop-filter:blur(12px)saturate(160%)}.pop-bg:after{background:linear-gradient(#00000014,#00000038)}@media (max-width:980px){.pop-col--side{border-top:none!important}}.panel-img--placeholder{min-height:160px;color:var(--pop-muted);background:var(--pop-glass-bg,#ffffff14);border-radius:var(--pop-radius,12px);place-items:center;display:grid}.panel-images .panel-img--placeholder{width:100%}:host(onirtech-widget-pop-design){height:100%}:host(onirtech-widget-pop-design) [data-onirtech-root]{flex-direction:column;height:100%;min-height:0;display:flex}.pop-widget{height:auto;min-height:0;font-family:var(--pop-font,\"Open Sans\", \"Segoe UI\", Helvetica, Arial, sans-serif);color:var(--pop-text,#fff);flex:auto;padding:0}.pop-widget--closed{width:64px;height:64px;overflow:visible}.widget-launcher{background:linear-gradient(145deg, #ffffff3d, #ffffff0f), color-mix(in srgb, var(--pop-surface,#2c2a35) 45%, transparent);width:64px;height:64px;color:var(--pop-text,#fff);cursor:pointer;-webkit-backdrop-filter:blur(var(--pop-glass-blur,24px)) saturate(var(--pop-glass-saturate,180%));border:1px solid #ffffff38;border-radius:50%;place-items:center;padding:0;transition:transform .2s,box-shadow .2s;display:grid;position:relative;box-shadow:0 14px 34px #00000047,inset 0 1px #ffffff47}.widget-launcher:hover{transform:translateY(-1px);box-shadow:0 18px 40px #00000052,inset 0 1px #ffffff52}.widget-launcher:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:3px}.widget-launcher__dot{background:#22c55e;border-radius:50%;width:12px;height:12px;position:absolute;bottom:6px;right:6px;box-shadow:0 0 0 2px #0a0a0e8c}.pop-widget--open{width:100%;height:100%;min-height:0;max-height:100%;overflow:hidden}.widget-panel{isolation:isolate;border-radius:calc(var(--pop-radius,20px) * 1.1);background:linear-gradient(165deg,#1c1b24a8,#0a0a0fd1);border:1px solid #ffffff29;flex-direction:column;width:100%;height:100%;min-height:0;display:flex;position:relative;overflow:hidden;box-shadow:0 28px 80px #00000075,inset 0 1px #fff3}.widget-bg{z-index:0;background-position:50%;background-repeat:no-repeat;background-size:cover;position:absolute;inset:0;transform:scale(1.02)}.widget-bg:after{content:\"\";background:linear-gradient(#08080c1a 0%,#08080c3d 48%,#08080c70 100%);position:absolute;inset:0}.widget-head{z-index:2;-webkit-backdrop-filter:blur(20px)saturate(180%);background:linear-gradient(#ffffff29,#ffffff0f);border-bottom:1px solid #ffffff24;flex:none;align-items:center;gap:10px;padding:12px 14px;display:flex;position:relative;box-shadow:inset 0 1px #ffffff2e}.widget-head__avatar{box-shadow:0 0 0 1px #ffffff2e}.widget-head__id{flex-direction:column;flex:1;gap:1px;min-width:0;display:flex}.widget-head__name{letter-spacing:.01em;text-overflow:ellipsis;white-space:nowrap;font-size:.9375rem;font-weight:600;line-height:1.3;overflow:hidden}.widget-head__status{color:var(--pop-muted,#ffffffb8);text-overflow:ellipsis;white-space:nowrap;align-items:center;gap:5px;font-size:.74rem;line-height:1.3;display:inline-flex;overflow:hidden}.widget-head__dot{background:#22c55e;border-radius:50%;flex:none;width:6px;height:6px;box-shadow:0 0 8px #22c55eb3}.widget-head__status.is-typing .widget-head__dot{animation:1.1s ease-in-out infinite widget-pulse}.widget-head__status.is-finished .widget-head__dot{background:var(--pop-muted,#ffffffb8);box-shadow:none}.widget-action,.widget-close{width:34px;height:34px;color:var(--pop-text,#fff);cursor:pointer;-webkit-backdrop-filter:blur(10px);background:#ffffff1f;border:1px solid #ffffff24;border-radius:50%;flex:none;place-items:center;padding:0;transition:background-color .2s,opacity .2s;display:grid}.widget-action:hover:not(:disabled),.widget-close:hover{background:#ffffff38}.widget-action:disabled{opacity:.4;cursor:not-allowed}.widget-action:focus-visible,.widget-close:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:2px}.widget-body{z-index:1;flex-direction:column;flex:auto;min-height:0;display:flex;position:relative;overflow:hidden}.widget-chat{-webkit-backdrop-filter:none;height:100%;min-height:0;box-shadow:none;background:0 0;flex:auto}.widget-chat .pop-chat__messages{flex:auto;gap:12px;min-height:0;max-height:none;padding:16px 14px 8px}.widget-chat .msg-row{gap:8px}.widget-chat .msg-stack{gap:0;max-width:84%}.widget-chat .msg__meta{display:none}.widget-chat .msg{border-radius:var(--pop-bubble-radius,18px);-webkit-backdrop-filter:blur(14px)saturate(160%);padding:.56rem .8rem;font-size:.92rem;line-height:1.6}.widget-chat .msg--assistant{background:#ffffff24;border:1px solid #ffffff29;border-bottom-left-radius:6px;box-shadow:0 6px 18px #00000024,inset 0 1px #ffffff29}.widget-chat .msg--user{background:color-mix(in srgb, var(--pop-accent,#006599) 82%, transparent);color:var(--pop-accent-ink,#fff);border-bottom-right-radius:6px;box-shadow:0 6px 18px #0000002e,inset 0 1px #ffffff38}.widget-chat .msg--typing{background:#ffffff24;border-color:#ffffff29}.widget-chat .msg-row>.avatar{width:28px;height:28px}.widget-chat .chat-empty{gap:8px;margin:auto;padding:18px 10px}.widget-chat .chat-empty__icon{width:56px;height:56px;color:var(--pop-text,#fff);-webkit-backdrop-filter:blur(14px)saturate(160%);background:linear-gradient(150deg,#fff3,#ffffff0f);border:1px solid #ffffff2e;margin-bottom:4px;box-shadow:inset 0 1px #fff3}.widget-chat .chat-empty__title{font-family:var(--pop-font-heading,inherit);margin:0;font-size:1.04rem;font-weight:600;line-height:1.35}.widget-chat .chat-empty__text{max-width:30ch;color:var(--pop-muted,#ffffffb8);font-size:.9rem;line-height:1.65}.widget-chat .suggestions,.widget-chat .pop-chat__suggestions{text-align:center;width:100%}.widget-chat .suggestions__list{justify-content:center}.widget-chat .suggestions__label{text-align:center}.widget-chat .suggestion{-webkit-backdrop-filter:blur(12px)saturate(160%);background:#ffffff1f;border:1px solid #ffffff29;box-shadow:inset 0 1px #ffffff24}.widget-chat .suggestion:hover:not(:disabled){background:#fff3;border-color:#ffffff4d}.widget-chat .chat-fallback{-webkit-backdrop-filter:blur(16px)saturate(160%);background:#ffffff1a;margin:0 2px .4rem}.widget-chat .chat-jump{-webkit-backdrop-filter:blur(12px);background:#ffffff29;border:1px solid #ffffff2e}.widget-chat .pop-composer{-webkit-backdrop-filter:blur(20px)saturate(180%);background:linear-gradient(#0c0c121f,#0c0c126b);border-top:1px solid #ffffff1f;flex:none;gap:6px;padding:8px 12px 12px;box-shadow:inset 0 1px #ffffff1a}.widget-chat .composer__row{border-radius:calc(var(--pop-radius,20px) * .95);-webkit-backdrop-filter:blur(14px)saturate(160%);background:#ffffff1a;border:1px solid #ffffff29;align-items:flex-end;gap:6px;padding:5px;box-shadow:inset 0 1px #ffffff24}.widget-chat .composer__input{border-radius:calc(var(--pop-radius,20px) * .7);background:0 0;border:none;min-height:34px;max-height:132px;padding:7px 8px;font-size:.92rem}.widget-chat .composer__input:focus{background:0 0;border:none}.widget-chat .composer__icon-btn{width:34px;height:34px;color:var(--pop-muted,#ffffffb8);box-shadow:none;background:0 0;border:none;border-radius:50%}.widget-chat .composer__icon-btn:hover:not(:disabled){color:var(--pop-text,#fff);background:#ffffff1f}.widget-chat .composer__send{background:var(--pop-accent,#006599);width:34px;height:34px;color:var(--pop-accent-ink,#fff);border:none;border-radius:50%;flex:none;padding:0;box-shadow:0 4px 14px #00000038,inset 0 1px #ffffff3d}.widget-chat .composer__send:disabled{opacity:.45;filter:none}.widget-chat .composer__send-label,.widget-chat .composer__help{display:none}.widget-chat .composer__footer{justify-content:flex-end;min-height:0;padding:0 6px}.widget-chat .composer__footer:empty{display:none}.widget-chat .composer__pending{gap:4px;padding:0 2px}.widget-body .pop-identity{width:100%;max-width:none;height:100%;padding:22px 18px calc(20px + env(safe-area-inset-bottom));-webkit-backdrop-filter:blur(20px)saturate(180%);box-shadow:none;background:#0c0c1247;margin:0;overflow-y:auto}.widget-body .pop-identity .pop-card__title{font-size:1.4rem}.widget-body .pop-identity .field input{background:#ffffff1f;border:1px solid #ffffff29}.widget-body .pop-identity .field input:focus{border-color:var(--pop-accent,#006599);background:#ffffff2e}@keyframes widget-pulse{0%,to{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.82)}}@media (prefers-reduced-motion:reduce){.widget-head__status.is-typing .widget-head__dot{animation:none}.widget-launcher{transition:none}}.pop-widget{box-sizing:border-box}.pop-widget--open{flex-direction:column;height:100%;max-height:100%;padding:8px;display:flex;overflow:hidden}.widget-panel{border-radius:calc(var(--pop-radius,20px) * 1.2);transform-origin:100% 100%;flex:auto;height:auto;min-height:0;animation:.26s cubic-bezier(.2,.8,.2,1) both widget-panel-in;box-shadow:0 30px 90px #00000080,0 8px 24px #00000047,inset 0 1px #ffffff38}.widget-launcher{background:radial-gradient(circle at 30% 22%, #ffffff57, transparent 44%), linear-gradient(145deg, color-mix(in srgb, var(--pop-accent,#006599) 76%, #fff), color-mix(in srgb, var(--pop-accent,#006599) 58%, #101014));box-shadow:0 18px 40px color-mix(in srgb, var(--pop-accent,#006599) 38%, #00000052), 0 4px 12px #0003, inset 0 1px 0 #ffffff61;border-color:#ffffff52}.widget-launcher:before{content:\"\";border-radius:inherit;border:1px solid color-mix(in srgb, var(--pop-accent,#006599) 68%, transparent);pointer-events:none;animation:2.8s ease-out infinite widget-halo;position:absolute;inset:-7px}.widget-launcher .avatar{background:#ffffff29;border:1px solid #ffffff42}.widget-launcher:hover{box-shadow:0 22px 46px color-mix(in srgb, var(--pop-accent,#006599) 44%, #00000057), 0 6px 14px #00000038, inset 0 1px 0 #ffffff6b;transform:translateY(-2px)scale(1.035)}.widget-launcher:active{transform:translateY(0)scale(.98)}.widget-launcher__dot{border:2px solid #0c0c12e6;width:13px;height:13px;bottom:5px;right:5px;box-shadow:0 0 0 2px #22c55e38}.widget-head{background:linear-gradient(135deg, color-mix(in srgb, var(--pop-accent,#006599) 24%, #101018a3), #10101880), linear-gradient(180deg, #ffffff1f, #ffffff08);-webkit-backdrop-filter:blur(24px)saturate(180%);border-bottom-color:#ffffff29;gap:10px;padding:11px 13px}.widget-head__avatar-wrap{flex:none;place-items:center;display:grid;position:relative}.widget-head__online{background:#22c55e;border:2px solid #0e0e14eb;border-radius:50%;width:11px;height:11px;position:absolute;bottom:0;right:0;box-shadow:0 0 0 2px #22c55e33}.widget-head__online.is-offline{background:var(--pop-muted,#ffffff8c);box-shadow:none}.widget-head__name{font-size:.95rem}.widget-head__status{color:color-mix(in srgb, var(--pop-text,#fff) 68%, transparent);font-size:.73rem}.widget-head__status.is-typing{color:var(--pop-text,#fff)}.widget-head__status.is-finished{color:var(--pop-muted,#ffffffa8)}.widget-head__actions{flex:none;align-items:center;gap:6px;display:flex;position:relative}.widget-action,.widget-close{width:34px;height:34px;transition:background-color .18s,transform .18s,opacity .18s}.widget-action:hover:not(:disabled),.widget-close:hover{transform:translateY(-1px)}.widget-menu{z-index:20;-webkit-backdrop-filter:blur(28px)saturate(180%);background:#12121af0;border:1px solid #ffffff29;border-radius:14px;min-width:214px;padding:6px;animation:.16s ease-out both widget-menu-in;position:absolute;top:calc(100% + 6px);right:40px;box-shadow:0 20px 50px #00000080,inset 0 1px #ffffff29}.widget-menu__item{width:100%;color:var(--pop-text,#fff);font:inherit;text-align:left;cursor:pointer;background:0 0;border:0;border-radius:10px;align-items:center;gap:9px;padding:9px 10px;font-size:.82rem;line-height:1.3;transition:background-color .15s,opacity .15s;display:flex}.widget-menu__item:hover:not(:disabled){background:#ffffff1f}.widget-menu__item:disabled{opacity:.45;cursor:not-allowed}.widget-menu__item:focus-visible{outline:2px solid var(--pop-accent,#006599);outline-offset:-1px}.widget-menu__item svg{opacity:.8;flex:none}.widget-chat .chat-empty.widget-welcome{-webkit-backdrop-filter:blur(20px)saturate(170%);text-align:center;background:linear-gradient(160deg,#ffffff26,#ffffff0f);border:1px solid #ffffff26;border-radius:22px;gap:8px;width:min(100%,330px);max-width:330px;margin:auto;padding:20px 18px 18px;box-shadow:0 18px 50px #00000038,inset 0 1px #ffffff2e}.widget-welcome__avatar{background:linear-gradient(150deg,#ffffff3d,#ffffff0f);border:1px solid #fff3;border-radius:50%;place-items:center;width:66px;height:66px;margin-bottom:2px;display:grid;position:relative;box-shadow:inset 0 1px #ffffff38}.widget-welcome__online{background:#22c55e;border:2px solid #0e0e14eb;border-radius:50%;width:12px;height:12px;position:absolute;bottom:4px;right:4px;box-shadow:0 0 0 2px #22c55e2e}.widget-welcome .chat-empty__title{font-size:1.18rem;line-height:1.3}.widget-welcome .chat-empty__text{max-width:30ch;font-size:.9rem;line-height:1.6}.widget-welcome .suggestions{text-align:left;width:100%;margin-top:6px}.widget-welcome .suggestions__label{display:none}.widget-welcome .suggestions__list{flex-direction:column;align-items:stretch;gap:6px}.widget-welcome .suggestion{text-align:left;border-radius:12px;justify-content:space-between;gap:8px;width:100%;padding:.55rem .75rem;font-size:.82rem;display:flex}.widget-welcome .suggestion>span{flex:1}.widget-welcome .suggestion>svg{opacity:.52;order:2}.widget-chat{flex-direction:column;flex:auto;height:auto;min-height:0;display:flex;overflow:hidden}.widget-chat .msg-row{animation:.22s ease-out both widget-message-in}.widget-chat .pop-chat__messages{flex:1 1 0;min-height:0;max-height:none;scroll-padding-top:8px;overflow-y:auto}.widget-chat .pop-composer{flex:none;padding:8px 12px 10px}.widget-chat .composer__row{border-radius:18px;padding:5px}.widget-chat .composer__input{min-height:36px}.widget-chat .composer__icon-btn,.widget-chat .composer__send{width:36px;height:36px}.widget-chat .composer__send{background:linear-gradient(145deg, color-mix(in srgb, var(--pop-accent,#006599) 84%, #fff), var(--pop-accent,#006599));box-shadow:0 6px 16px color-mix(in srgb, var(--pop-accent,#006599) 34%, #0000003d), inset 0 1px 0 #ffffff47}.widget-chat .composer__row:focus-within{border-color:color-mix(in srgb, var(--pop-accent,#006599) 46%, #fff3);box-shadow:0 0 0 2px color-mix(in srgb, var(--pop-accent,#006599) 14%, transparent), inset 0 1px 0 #ffffff24}@keyframes widget-panel-in{0%{opacity:0;transform:translateY(12px)scale(.97)}to{opacity:1;transform:translateY(0)scale(1)}}@keyframes widget-menu-in{0%{opacity:0;transform:translateY(-4px)scale(.98)}to{opacity:1;transform:translateY(0)scale(1)}}@keyframes widget-message-in{0%{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@keyframes widget-halo{0%{opacity:.7;transform:scale(.92)}70%,to{opacity:0;transform:scale(1.2)}}@media (max-width:520px){.pop-widget--open{padding:0}.widget-panel{box-shadow:none;border:0;border-radius:0}.widget-head{padding-top:calc(11px + env(safe-area-inset-top))}.widget-chat .pop-composer{padding-bottom:calc(10px + env(safe-area-inset-bottom))}}@media (prefers-reduced-motion:reduce){.widget-panel,.widget-menu,.widget-chat .msg-row,.widget-launcher:before{animation:none}.widget-launcher,.widget-action,.widget-close,.widget-menu__item{transition:none}.widget-launcher:hover{transform:none}}", n = /* @__PURE__ */ e(((e) => {
 	var t = Symbol.for("react.transitional.element"), n = Symbol.for("react.portal"), r = Symbol.for("react.fragment"), i = Symbol.for("react.strict_mode"), a = Symbol.for("react.profiler"), o = Symbol.for("react.consumer"), s = Symbol.for("react.context"), c = Symbol.for("react.forward_ref"), l = Symbol.for("react.suspense"), u = Symbol.for("react.memo"), d = Symbol.for("react.lazy"), f = Symbol.for("react.activity"), p = Symbol.for("react.view_transition"), m = Symbol.iterator;
 	function h(e) {
 		return typeof e != "object" || !e ? null : (e = m && e[m] || e["@@iterator"], typeof e == "function" ? e : null);
@@ -2443,7 +2443,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				return e();
 			});
 		};
-	}, Fa = t.unstable_scheduleCallback, Ia = t.unstable_NormalPriority, La = {
+	}, Fa = t.unstable_scheduleCallback, Ia = t.unstable_NormalPriority, F = {
 		$$typeof: ue,
 		Consumer: null,
 		Provider: null,
@@ -2451,19 +2451,19 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		_currentValue2: null,
 		_threadCount: 0
 	};
-	function Ra() {
+	function La() {
 		return {
 			controller: new Pa(),
 			data: /* @__PURE__ */ new Map(),
 			refCount: 0
 		};
 	}
-	function za(e) {
+	function Ra(e) {
 		e.refCount--, e.refCount === 0 && Fa(Ia, function() {
 			e.controller.abort();
 		});
 	}
-	function Ba(e, t) {
+	function za(e, t) {
 		if (e.pendingLanes & 4194048) {
 			var n = e.transitionTypes;
 			for (n === null && (n = e.transitionTypes = []), e = 0; e < t.length; e++) {
@@ -2472,16 +2472,16 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			}
 		}
 	}
-	var Va = null;
-	function Ha(e) {
+	var Ba = null;
+	function Va(e) {
 		var t = e.transitionTypes;
 		return e.transitionTypes = null, t;
 	}
-	var Ua = null, Wa = 0, Ga = 0, Ka = null;
-	function qa(e, t) {
-		if (Ua === null) {
-			var n = Ua = [];
-			Wa = 0, Ga = Pf(), Ka = {
+	var Ha = null, Ua = 0, Wa = 0, Ga = null;
+	function Ka(e, t) {
+		if (Ha === null) {
+			var n = Ha = [];
+			Ua = 0, Wa = Pf(), Ga = {
 				status: "pending",
 				value: void 0,
 				then: function(e) {
@@ -2489,17 +2489,17 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				}
 			};
 		}
-		return Wa++, t.then(Ja, Ja), t;
+		return Ua++, t.then(qa, qa), t;
 	}
-	function Ja() {
-		if (--Wa === 0 && (Va = null, Ua !== null)) {
-			Ka !== null && (Ka.status = "fulfilled");
-			var e = Ua;
-			Ua = null, Ga = 0, Ka = null;
+	function qa() {
+		if (--Ua === 0 && (Ba = null, Ha !== null)) {
+			Ga !== null && (Ga.status = "fulfilled");
+			var e = Ha;
+			Ha = null, Wa = 0, Ga = null;
 			for (var t = 0; t < e.length; t++) (0, e[t])();
 		}
 	}
-	function Ya(e, t) {
+	function Ja(e, t) {
 		var n = [], r = {
 			status: "pending",
 			value: null,
@@ -2515,44 +2515,44 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			for (r.status = "rejected", r.reason = e, e = 0; e < n.length; e++) (0, n[e])(void 0);
 		}), r;
 	}
-	var Xa = E.S;
+	var Ya = E.S;
 	E.S = function(e, t) {
-		if (gd = Xe(), typeof t == "object" && t && typeof t.then == "function" && qa(e, t), Va !== null) for (var n = bf; n !== null;) Ba(n, Va), n = n.next;
+		if (gd = Xe(), typeof t == "object" && t && typeof t.then == "function" && Ka(e, t), Ba !== null) for (var n = bf; n !== null;) za(n, Ba), n = n.next;
 		if (n = e.types, n !== null) {
-			for (var r = bf; r !== null;) Ba(r, n), r = r.next;
-			if (Ga !== 0) {
-				r = Va, r === null && (r = Va = []);
+			for (var r = bf; r !== null;) za(r, n), r = r.next;
+			if (Wa !== 0) {
+				r = Ba, r === null && (r = Ba = []);
 				for (var i = 0; i < n.length; i++) {
 					var a = n[i];
 					r.indexOf(a) === -1 && r.push(a);
 				}
 			}
 		}
-		Xa !== null && Xa(e, t);
+		Ya !== null && Ya(e, t);
 	};
-	var Za = Oe(null);
-	function Qa() {
-		var e = Za.current;
+	var Xa = Oe(null);
+	function Za() {
+		var e = Xa.current;
 		return e === null ? G.pooledCache : e;
 	}
-	function $a(e, t) {
-		t === null ? O(Za, Za.current) : O(Za, t.pool);
+	function Qa(e, t) {
+		t === null ? O(Xa, Xa.current) : O(Xa, t.pool);
 	}
-	function eo() {
-		var e = Qa();
+	function $a() {
+		var e = Za();
 		return e === null ? null : {
-			parent: La._currentValue,
+			parent: F._currentValue,
 			pool: e
 		};
 	}
-	var to = Error(o(460)), no = Error(o(474)), ro = Error(o(542)), io = { then: function() {} };
-	function ao(e) {
+	var eo = Error(o(460)), to = Error(o(474)), no = Error(o(542)), ro = { then: function() {} };
+	function io(e) {
 		return e = e.status, e === "fulfilled" || e === "rejected";
 	}
-	function oo(e, t, n) {
+	function ao(e, t, n) {
 		switch (n = e[n], n === void 0 ? e.push(t) : n !== t && (t.then(Tn, Tn), t = n), t.status) {
 			case "fulfilled": return t.value;
-			case "rejected": throw e = t.reason, uo(e), e === void 0 && !("reason" in t) ? Error(o(600)) : e;
+			case "rejected": throw e = t.reason, lo(e), e === void 0 && !("reason" in t) ? Error(o(600)) : e;
 			default:
 				if (typeof t.status == "string") t.then(Tn, Tn);
 				else {
@@ -2571,40 +2571,40 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				}
 				switch (t.status) {
 					case "fulfilled": return t.value;
-					case "rejected": throw e = t.reason, uo(e), e;
+					case "rejected": throw e = t.reason, lo(e), e;
 				}
-				throw co = t, to;
+				throw so = t, eo;
 		}
 	}
-	function so(e) {
+	function oo(e) {
 		try {
 			var t = e._init;
 			return t(e._payload);
 		} catch (e) {
-			throw typeof e == "object" && e && typeof e.then == "function" ? (co = e, to) : e;
+			throw typeof e == "object" && e && typeof e.then == "function" ? (so = e, eo) : e;
 		}
 	}
-	var co = null;
-	function lo() {
-		if (co === null) throw Error(o(459));
-		var e = co;
-		return co = null, e;
+	var so = null;
+	function co() {
+		if (so === null) throw Error(o(459));
+		var e = so;
+		return so = null, e;
 	}
-	function uo(e) {
-		if (e === to || e === ro) throw Error(o(483));
+	function lo(e) {
+		if (e === eo || e === no) throw Error(o(483));
 	}
-	var fo = null, po = 0;
-	function mo(e) {
-		var t = po;
-		return po += 1, fo === null && (fo = []), oo(fo, e, t);
+	var uo = null, fo = 0;
+	function po(e) {
+		var t = fo;
+		return fo += 1, uo === null && (uo = []), ao(uo, e, t);
 	}
-	function ho(e, t) {
+	function mo(e, t) {
 		t = t.props.ref, e.ref = t === void 0 ? null : t;
 	}
-	function go(e, t) {
+	function ho(e, t) {
 		throw t.$$typeof === C ? Error(o(525)) : (e = Object.prototype.toString.call(t), Error(o(31, e === "[object Object]" ? "object with keys {" + Object.keys(t).join(", ") + "}" : e)));
 	}
-	function _o(e) {
+	function go(e) {
 		function t(t, n) {
 			if (e) {
 				var r = t.deletions;
@@ -2634,7 +2634,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 		function l(e, t, n, r) {
 			var a = n.type;
-			return a === oe ? (e = d(e, t, n.props.children, r, n.key), ho(e, n), e) : t !== null && (t.elementType === a || typeof a == "object" && a && a.$$typeof === me && so(a) === t.type) ? (t = i(t, n.props), ho(t, n), t.return = e, t) : (t = Ui(n.type, n.key, n.props, null, e.mode, r), ho(t, n), t.return = e, t);
+			return a === oe ? (e = d(e, t, n.props.children, r, n.key), mo(e, n), e) : t !== null && (t.elementType === a || typeof a == "object" && a && a.$$typeof === me && oo(a) === t.type) ? (t = i(t, n.props), mo(t, n), t.return = e, t) : (t = Ui(n.type, n.key, n.props, null, e.mode, r), mo(t, n), t.return = e, t);
 		}
 		function u(e, t, n, r) {
 			return t === null || t.tag !== 4 || t.stateNode.containerInfo !== n.containerInfo || t.stateNode.implementation !== n.implementation ? (t = qi(n, e.mode, r), t.return = e, t) : (t = i(t, n.children || []), t.return = e, t);
@@ -2646,14 +2646,14 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			if (typeof t == "string" && t !== "" || typeof t == "number" || typeof t == "bigint") return t = Gi("" + t, e.mode, n), t.return = e, t;
 			if (typeof t == "object" && t) {
 				switch (t.$$typeof) {
-					case w: return n = Ui(t.type, t.key, t.props, null, e.mode, n), ho(n, t), n.return = e, n;
+					case w: return n = Ui(t.type, t.key, t.props, null, e.mode, n), mo(n, t), n.return = e, n;
 					case ae: return t = qi(t, e.mode, n), t.return = e, t;
-					case me: return t = so(t), f(e, t, n);
+					case me: return t = oo(t), f(e, t, n);
 				}
 				if (we(t) || xe(t)) return t = Wi(t, e.mode, n, null), t.return = e, t;
-				if (typeof t.then == "function") return f(e, mo(t), n);
+				if (typeof t.then == "function") return f(e, po(t), n);
 				if (t.$$typeof === ue) return f(e, Ma(e, t), n);
-				go(e, t);
+				ho(e, t);
 			}
 			return null;
 		}
@@ -2664,12 +2664,12 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				switch (n.$$typeof) {
 					case w: return n.key === i ? l(e, t, n, r) : null;
 					case ae: return n.key === i ? u(e, t, n, r) : null;
-					case me: return n = so(n), p(e, t, n, r);
+					case me: return n = oo(n), p(e, t, n, r);
 				}
 				if (we(n) || xe(n)) return i === null ? d(e, t, n, r, null) : null;
-				if (typeof n.then == "function") return p(e, t, mo(n), r);
+				if (typeof n.then == "function") return p(e, t, po(n), r);
 				if (n.$$typeof === ue) return p(e, t, Ma(e, n), r);
-				go(e, n);
+				ho(e, n);
 			}
 			return null;
 		}
@@ -2679,12 +2679,12 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				switch (r.$$typeof) {
 					case w: return e = e.get(r.key === null ? n : r.key) || null, l(t, e, r, i);
 					case ae: return e = e.get(r.key === null ? n : r.key) || null, u(t, e, r, i);
-					case me: return r = so(r), m(e, t, n, r, i);
+					case me: return r = oo(r), m(e, t, n, r, i);
 				}
 				if (we(r) || xe(r)) return e = e.get(n) || null, d(t, e, r, i, null);
-				if (typeof r.then == "function") return m(e, t, n, mo(r), i);
+				if (typeof r.then == "function") return m(e, t, n, po(r), i);
 				if (r.$$typeof === ue) return m(e, t, n, Ma(t, r), i);
-				go(t, r);
+				ho(t, r);
 			}
 			return null;
 		}
@@ -2738,11 +2738,11 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 								if (r.key === l) {
 									if (l = a.type, l === oe) {
 										if (r.tag === 7) {
-											n(e, r.sibling), c = i(r, a.props.children), ho(c, a), c.return = e, e = c;
+											n(e, r.sibling), c = i(r, a.props.children), mo(c, a), c.return = e, e = c;
 											break a;
 										}
-									} else if (r.elementType === l || typeof l == "object" && l && l.$$typeof === me && so(l) === r.type) {
-										n(e, r.sibling), c = i(r, a.props), ho(c, a), c.return = e, e = c;
+									} else if (r.elementType === l || typeof l == "object" && l && l.$$typeof === me && oo(l) === r.type) {
+										n(e, r.sibling), c = i(r, a.props), mo(c, a), c.return = e, e = c;
 										break a;
 									}
 									n(e, r);
@@ -2750,7 +2750,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 								}
 								t(e, r), r = r.sibling;
 							}
-							a.type === oe ? (c = Wi(a.props.children, e.mode, c, a.key), ho(c, a), c.return = e, e = c) : (c = Ui(a.type, a.key, a.props, null, e.mode, c), ho(c, a), c.return = e, e = c);
+							a.type === oe ? (c = Wi(a.props.children, e.mode, c, a.key), mo(c, a), c.return = e, e = c) : (c = Ui(a.type, a.key, a.props, null, e.mode, c), mo(c, a), c.return = e, e = c);
 						}
 						return s(e);
 					case ae:
@@ -2769,33 +2769,33 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 							c = qi(a, e.mode, c), c.return = e, e = c;
 						}
 						return s(e);
-					case me: return a = so(a), _(e, r, a, c);
+					case me: return a = oo(a), _(e, r, a, c);
 				}
 				if (we(a)) return h(e, r, a, c);
 				if (xe(a)) {
 					if (l = xe(a), typeof l != "function") throw Error(o(150));
 					return a = l.call(a), g(e, r, a, c);
 				}
-				if (typeof a.then == "function") return _(e, r, mo(a), c);
+				if (typeof a.then == "function") return _(e, r, po(a), c);
 				if (a.$$typeof === ue) return _(e, r, Ma(e, a), c);
-				go(e, a);
+				ho(e, a);
 			}
 			return typeof a == "string" && a !== "" || typeof a == "number" || typeof a == "bigint" ? (a = "" + a, r !== null && r.tag === 6 ? (n(e, r.sibling), c = i(r, a), c.return = e, e = c) : (n(e, r), c = Gi(a, e.mode, c), c.return = e, e = c), s(e)) : n(e, r);
 		}
 		return function(e, t, n, r) {
 			try {
-				po = 0;
+				fo = 0;
 				var i = _(e, t, n, r);
-				return fo = null, i;
+				return uo = null, i;
 			} catch (t) {
-				if (t === to || t === ro) throw t;
+				if (t === eo || t === no) throw t;
 				var a = zi(29, t, null, e.mode);
 				return a.lanes = r, a.return = e, a;
 			}
 		};
 	}
-	var vo = _o(!0), yo = _o(!1), bo = !1;
-	function xo(e) {
+	var _o = go(!0), vo = go(!1), yo = !1;
+	function bo(e) {
 		e.updateQueue = {
 			baseState: e.memoizedState,
 			firstBaseUpdate: null,
@@ -2808,7 +2808,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			callbacks: null
 		};
 	}
-	function So(e, t) {
+	function xo(e, t) {
 		e = e.updateQueue, t.updateQueue === e && (t.updateQueue = {
 			baseState: e.baseState,
 			firstBaseUpdate: e.firstBaseUpdate,
@@ -2817,7 +2817,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			callbacks: null
 		});
 	}
-	function Co(e) {
+	function So(e) {
 		return {
 			lane: e,
 			tag: 0,
@@ -2826,7 +2826,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			next: null
 		};
 	}
-	function wo(e, t, n) {
+	function Co(e, t, n) {
 		var r = e.updateQueue;
 		if (r === null) return null;
 		if (r = r.shared, W & 2) {
@@ -2835,13 +2835,13 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 		return Mi(e, r, t, n), Ii(e);
 	}
-	function To(e, t, n) {
+	function wo(e, t, n) {
 		if (t = t.updateQueue, t !== null && (t = t.shared, n & 4194048)) {
 			var r = t.lanes;
 			r &= e.pendingLanes, n |= r, t.lanes = n, Tt(e, n);
 		}
 	}
-	function Eo(e, t) {
+	function To(e, t) {
 		var n = e.updateQueue, r = e.alternate;
 		if (r !== null && (r = r.updateQueue, n === r)) {
 			var i = null, a = null;
@@ -2867,17 +2867,17 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			}, e.updateQueue = n;
 		} else e = n.lastBaseUpdate, e === null ? n.firstBaseUpdate = t : e.next = t, n.lastBaseUpdate = t;
 	}
-	var Do = !1;
-	function Oo() {
-		if (Do) {
-			var e = Ka;
+	var Eo = !1;
+	function Do() {
+		if (Eo) {
+			var e = Ga;
 			if (e !== null) throw e;
 		}
 	}
-	function ko(e, t, n, r) {
-		Do = !1;
+	function Oo(e, t, n, r) {
+		Eo = !1;
 		var i = e.updateQueue;
-		bo = !1;
+		yo = !1;
 		var a = i.firstBaseUpdate, o = i.lastBaseUpdate, s = i.shared.pending;
 		if (s !== null) {
 			i.shared.pending = null;
@@ -2892,7 +2892,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			do {
 				var f = s.lane & -536870913, p = f !== s.lane;
 				if (p ? (q & f) === f : (r & f) === f) {
-					f !== 0 && f === Ga && (Do = !0), u !== null && (u = u.next = {
+					f !== 0 && f === Wa && (Eo = !0), u !== null && (u = u.next = {
 						lane: 0,
 						tag: s.tag,
 						payload: s.payload,
@@ -2916,7 +2916,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 								if (m = h.payload, f = typeof m == "function" ? m.call(g, d, f) : m, f == null) break a;
 								d = S({}, d, f);
 								break a;
-							case 2: bo = !0;
+							case 2: yo = !0;
 						}
 					}
 					f = s.callback, f !== null && (e.flags |= 64, p && (e.flags |= 8192), p = i.callbacks, p === null ? i.callbacks = [f] : p.push(f));
@@ -2935,49 +2935,49 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			u === null && (c = d), i.baseState = c, i.firstBaseUpdate = l, i.lastBaseUpdate = u, a === null && (i.shared.lanes = 0), sd |= o, e.lanes = o, e.memoizedState = d;
 		}
 	}
-	function Ao(e, t) {
+	function ko(e, t) {
 		if (typeof e != "function") throw Error(o(191, e));
 		e.call(t);
 	}
-	function jo(e, t) {
+	function Ao(e, t) {
 		var n = e.callbacks;
-		if (n !== null) for (e.callbacks = null, e = 0; e < n.length; e++) Ao(n[e], t);
+		if (n !== null) for (e.callbacks = null, e = 0; e < n.length; e++) ko(n[e], t);
 	}
-	var Mo = Oe(null), No = Oe(0);
-	function Po(e, t) {
-		e = od, O(No, e), O(Mo, t), od = e | t.baseLanes;
+	var jo = Oe(null), Mo = Oe(0);
+	function No(e, t) {
+		e = od, O(Mo, e), O(jo, t), od = e | t.baseLanes;
+	}
+	function Po() {
+		O(Mo, od), O(jo, jo.current);
 	}
 	function Fo() {
-		O(No, od), O(Mo, Mo.current);
+		od = Mo.current, ke(jo), ke(Mo);
 	}
-	function Io() {
-		od = No.current, ke(Mo), ke(No);
-	}
-	var Lo = Oe(null), Ro = null;
-	function zo(e) {
+	var Io = Oe(null), Lo = null;
+	function Ro(e) {
 		var t = e.alternate;
-		O(Wo, Wo.current & 1), O(Lo, e), Ro === null && (t === null || Mo.current !== null || t.memoizedState !== null) && (Ro = e);
+		O(Uo, Uo.current & 1), O(Io, e), Lo === null && (t === null || jo.current !== null || t.memoizedState !== null) && (Lo = e);
+	}
+	function zo(e) {
+		O(Uo, Uo.current), O(Io, e), Lo === null && (Lo = e);
 	}
 	function Bo(e) {
-		O(Wo, Wo.current), O(Lo, e), Ro === null && (Ro = e);
+		e.tag === 22 ? (O(Uo, Uo.current), O(Io, e), Lo === null && (Lo = e)) : Vo();
 	}
-	function Vo(e) {
-		e.tag === 22 ? (O(Wo, Wo.current), O(Lo, e), Ro === null && (Ro = e)) : Ho();
+	function Vo() {
+		O(Uo, Uo.current), O(Io, Io.current);
 	}
-	function Ho() {
-		O(Wo, Wo.current), O(Lo, Lo.current);
+	function Ho(e) {
+		ke(Io), Lo === e && (Lo = null), ke(Uo);
 	}
-	function Uo(e) {
-		ke(Lo), Ro === e && (Ro = null), ke(Wo);
+	var Uo = Oe(0);
+	function Wo(e, t) {
+		O(Io, Io.current), O(Uo, t);
 	}
-	var Wo = Oe(0);
-	function Go(e, t) {
-		O(Lo, Lo.current), O(Wo, t);
+	function Go(e) {
+		ke(Uo), ke(Io), Lo === e && (Lo = null);
 	}
 	function Ko(e) {
-		ke(Wo), ke(Lo), Ro === e && (Ro = null);
-	}
-	function qo(e) {
 		for (var t = e; t !== null;) {
 			if (t.tag === 13) {
 				var n = t.memoizedState;
@@ -2997,59 +2997,59 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 		return null;
 	}
-	var Jo = 0, F = null, I = null, L = null, Yo = !1, Xo = !1, Zo = !1, Qo = 0, $o = 0, es = null, ts = 0;
-	function R() {
+	var qo = 0, I = null, L = null, R = null, Jo = !1, Yo = !1, Xo = !1, Zo = 0, Qo = 0, $o = null, es = 0;
+	function z() {
 		throw Error(o(321));
 	}
-	function ns(e, t) {
+	function ts(e, t) {
 		if (t === null) return !1;
 		for (var n = 0; n < t.length && n < e.length; n++) if (!Jr(e[n], t[n])) return !1;
 		return !0;
 	}
-	function rs(e, t, n, r, i, a) {
-		return Jo = a, F = t, t.memoizedState = null, t.updateQueue = null, t.lanes = 0, E.H = e === null || e.memoizedState === null ? yc : bc, Zo = !1, a = n(r, i), Zo = !1, Xo && (a = as(t, n, r, i)), is(e), a;
+	function ns(e, t, n, r, i, a) {
+		return qo = a, I = t, t.memoizedState = null, t.updateQueue = null, t.lanes = 0, E.H = e === null || e.memoizedState === null ? vc : yc, Xo = !1, a = n(r, i), Xo = !1, Yo && (a = is(t, n, r, i)), rs(e), a;
 	}
-	function is(e) {
-		E.H = vc;
-		var t = I !== null && I.next !== null;
-		if (Jo = 0, L = I = F = null, Yo = !1, $o = 0, es = null, t) throw Error(o(300));
-		e === null || B || (e = e.dependencies, e !== null && ka(e) && (B = !0));
+	function rs(e) {
+		E.H = _c;
+		var t = L !== null && L.next !== null;
+		if (qo = 0, R = L = I = null, Jo = !1, Qo = 0, $o = null, t) throw Error(o(300));
+		e === null || Ic || (e = e.dependencies, e !== null && ka(e) && (Ic = !0));
 	}
-	function as(e, t, n, r) {
-		F = e;
+	function is(e, t, n, r) {
+		I = e;
 		var i = 0;
 		do {
-			if (Xo && (es = null), $o = 0, Xo = !1, 25 <= i) throw Error(o(301));
-			if (i += 1, L = I = null, e.updateQueue != null) {
+			if (Yo && ($o = null), Qo = 0, Yo = !1, 25 <= i) throw Error(o(301));
+			if (i += 1, R = L = null, e.updateQueue != null) {
 				var a = e.updateQueue;
 				a.lastEffect = null, a.events = null, a.stores = null, a.memoCache != null && (a.memoCache.index = 0);
 			}
-			E.H = xc, a = t(n, r);
-		} while (Xo);
+			E.H = bc, a = t(n, r);
+		} while (Yo);
 		return a;
 	}
-	function os() {
+	function as() {
 		var e = E.H, t = e.useState()[0];
-		return t = typeof t.then == "function" ? fs(t) : t, e = e.useState()[0], (I === null ? null : I.memoizedState) !== e && (F.flags |= 1024), t;
+		return t = typeof t.then == "function" ? ds(t) : t, e = e.useState()[0], (L === null ? null : L.memoizedState) !== e && (I.flags |= 1024), t;
 	}
-	function ss() {
-		var e = Qo !== 0;
-		return Qo = 0, e;
+	function os() {
+		var e = Zo !== 0;
+		return Zo = 0, e;
 	}
-	function cs(e, t, n) {
+	function ss(e, t, n) {
 		t.updateQueue = e.updateQueue, t.flags &= -2053, e.lanes &= ~n;
 	}
-	function ls(e) {
-		if (Yo) {
+	function cs(e) {
+		if (Jo) {
 			for (e = e.memoizedState; e !== null;) {
 				var t = e.queue;
 				t !== null && (t.pending = null), e = e.next;
 			}
-			Yo = !1;
+			Jo = !1;
 		}
-		Jo = 0, L = I = F = null, Xo = !1, $o = Qo = 0, es = null;
+		qo = 0, R = L = I = null, Yo = !1, Qo = Zo = 0, $o = null;
 	}
-	function us() {
+	function ls() {
 		var e = {
 			memoizedState: null,
 			baseState: null,
@@ -3057,28 +3057,28 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			queue: null,
 			next: null
 		};
-		return L === null ? F.memoizedState = L = e : L = L.next = e, L;
+		return R === null ? I.memoizedState = R = e : R = R.next = e, R;
 	}
-	function z() {
-		if (I === null) {
-			var e = F.alternate;
+	function B() {
+		if (L === null) {
+			var e = I.alternate;
 			e = e === null ? null : e.memoizedState;
-		} else e = I.next;
-		var t = L === null ? F.memoizedState : L.next;
-		if (t !== null) L = t, I = e;
+		} else e = L.next;
+		var t = R === null ? I.memoizedState : R.next;
+		if (t !== null) R = t, L = e;
 		else {
-			if (e === null) throw F.alternate === null ? Error(o(467)) : Error(o(310));
-			I = e, e = {
-				memoizedState: I.memoizedState,
-				baseState: I.baseState,
-				baseQueue: I.baseQueue,
-				queue: I.queue,
+			if (e === null) throw I.alternate === null ? Error(o(467)) : Error(o(310));
+			L = e, e = {
+				memoizedState: L.memoizedState,
+				baseState: L.baseState,
+				baseQueue: L.baseQueue,
+				queue: L.queue,
 				next: null
-			}, L === null ? F.memoizedState = L = e : L = L.next = e;
+			}, R === null ? I.memoizedState = R = e : R = R.next = e;
 		}
-		return L;
+		return R;
 	}
-	function ds() {
+	function us() {
 		return {
 			lastEffect: null,
 			events: null,
@@ -3086,22 +3086,22 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			memoCache: null
 		};
 	}
-	function fs(e) {
-		var t = $o;
-		return $o += 1, es === null && (es = []), e = oo(es, e, t), t = F, (L === null ? t.memoizedState : L.next) === null && (t = t.alternate, E.H = t === null || t.memoizedState === null ? yc : bc), e;
+	function ds(e) {
+		var t = Qo;
+		return Qo += 1, $o === null && ($o = []), e = ao($o, e, t), t = I, (R === null ? t.memoizedState : R.next) === null && (t = t.alternate, E.H = t === null || t.memoizedState === null ? vc : yc), e;
 	}
-	function ps(e) {
+	function fs(e) {
 		if (typeof e == "object" && e) {
-			if (typeof e.then == "function") return fs(e);
+			if (typeof e.then == "function") return ds(e);
 			if (e.$$typeof === ye) return;
 			if (e.$$typeof === ue) return ja(e);
 		}
 		throw Error(o(438, String(e)));
 	}
-	function ms(e) {
-		var t = null, n = F.updateQueue;
+	function ps(e) {
+		var t = null, n = I.updateQueue;
 		if (n !== null && (t = n.memoCache), t == null) {
-			var r = F.alternate;
+			var r = I.alternate;
 			r !== null && (r = r.updateQueue, r !== null && (r = r.memoCache, r != null && (t = {
 				data: r.data.map(function(e) {
 					return e.slice();
@@ -3112,16 +3112,16 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		if (t ??= {
 			data: [],
 			index: 0
-		}, n === null && (n = ds(), F.updateQueue = n), n.memoCache = t, n = t.data[t.index], n === void 0) for (n = t.data[t.index] = Array(e), r = 0; r < e; r++) n[r] = _e;
+		}, n === null && (n = us(), I.updateQueue = n), n.memoCache = t, n = t.data[t.index], n === void 0) for (n = t.data[t.index] = Array(e), r = 0; r < e; r++) n[r] = _e;
 		return t.index++, n;
 	}
-	function hs(e, t) {
+	function ms(e, t) {
 		return typeof t == "function" ? t(e) : t;
 	}
-	function gs(e) {
-		return _s(z(), I, e);
+	function hs(e) {
+		return gs(B(), L, e);
 	}
-	function _s(e, t, n) {
+	function gs(e, t, n) {
 		var r = e.queue;
 		if (r === null) throw Error(o(311));
 		r.lastRenderedReducer = n;
@@ -3139,7 +3139,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			var c = s = null, l = null, u = t, d = !1;
 			do {
 				var f = u.lane & -536870913;
-				if (f === u.lane ? (Jo & f) === f : (q & f) === f) {
+				if (f === u.lane ? (qo & f) === f : (q & f) === f) {
 					var p = u.revertLane;
 					if (p === 0) l !== null && (l = l.next = {
 						lane: 0,
@@ -3149,9 +3149,9 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						hasEagerState: u.hasEagerState,
 						eagerState: u.eagerState,
 						next: null
-					}), f === Ga && (d = !0);
-					else if ((Jo & p) === p) {
-						u = u.next, p === Ga && (d = !0);
+					}), f === Wa && (d = !0);
+					else if ((qo & p) === p) {
+						u = u.next, p === Wa && (d = !0);
 						continue;
 					} else f = {
 						lane: 0,
@@ -3161,8 +3161,8 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						hasEagerState: u.hasEagerState,
 						eagerState: u.eagerState,
 						next: null
-					}, l === null ? (c = l = f, s = a) : l = l.next = f, F.lanes |= p, sd |= p;
-					f = u.action, Zo && n(a, f), a = u.hasEagerState ? u.eagerState : n(a, f);
+					}, l === null ? (c = l = f, s = a) : l = l.next = f, I.lanes |= p, sd |= p;
+					f = u.action, Xo && n(a, f), a = u.hasEagerState ? u.eagerState : n(a, f);
 				} else p = {
 					lane: f,
 					revertLane: u.revertLane,
@@ -3171,16 +3171,16 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					hasEagerState: u.hasEagerState,
 					eagerState: u.eagerState,
 					next: null
-				}, l === null ? (c = l = p, s = a) : l = l.next = p, F.lanes |= f, sd |= f;
+				}, l === null ? (c = l = p, s = a) : l = l.next = p, I.lanes |= f, sd |= f;
 				u = u.next;
 			} while (u !== null && u !== t);
-			if (l === null ? s = a : l.next = c, !Jr(a, e.memoizedState) && (B = !0, d && (n = Ka, n !== null))) throw n;
+			if (l === null ? s = a : l.next = c, !Jr(a, e.memoizedState) && (Ic = !0, d && (n = Ga, n !== null))) throw n;
 			e.memoizedState = a, e.baseState = s, e.baseQueue = l, r.lastRenderedState = a;
 		}
 		return i === null && (r.lanes = 0), [e.memoizedState, r.dispatch];
 	}
-	function vs(e) {
-		var t = z(), n = t.queue;
+	function _s(e) {
+		var t = B(), n = t.queue;
 		if (n === null) throw Error(o(311));
 		n.lastRenderedReducer = e;
 		var r = n.dispatch, i = n.pending, a = t.memoizedState;
@@ -3190,38 +3190,38 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			do
 				a = e(a, s.action), s = s.next;
 			while (s !== i);
-			Jr(a, t.memoizedState) || (B = !0), t.memoizedState = a, t.baseQueue === null && (t.baseState = a), n.lastRenderedState = a;
+			Jr(a, t.memoizedState) || (Ic = !0), t.memoizedState = a, t.baseQueue === null && (t.baseState = a), n.lastRenderedState = a;
 		}
 		return [a, r];
 	}
-	function ys(e, t, n) {
-		var r = F, i = z(), a = P;
+	function vs(e, t, n) {
+		var r = I, i = B(), a = P;
 		if (a) {
 			if (n === void 0) throw Error(o(407));
 			n = n();
 		} else n = t();
-		var s = !Jr((I || i).memoizedState, n);
-		if (s && (i.memoizedState = n, B = !0), i = i.queue, Ws(Ss.bind(null, r, i, e), [e]), e = i.getSnapshot !== t || s || L !== null && !!(L.memoizedState.tag & 1), zs(e ? 9 : 8, { destroy: void 0 }, xs.bind(null, r, i, n, t), null), e) {
+		var s = !Jr((L || i).memoizedState, n);
+		if (s && (i.memoizedState = n, Ic = !0), i = i.queue, Us(xs.bind(null, r, i, e), [e]), e = i.getSnapshot !== t || s || R !== null && !!(R.memoizedState.tag & 1), Rs(e ? 9 : 8, { destroy: void 0 }, bs.bind(null, r, i, n, t), null), e) {
 			if (r.flags |= 2048, G === null) throw Error(o(349));
-			a || Jo & 127 || bs(r, t, n);
+			a || qo & 127 || ys(r, t, n);
 		}
 		return n;
 	}
-	function bs(e, t, n) {
+	function ys(e, t, n) {
 		e.flags |= 16384, e = {
 			getSnapshot: t,
 			value: n
-		}, t = F.updateQueue, t === null ? (t = ds(), F.updateQueue = t, t.stores = [e]) : (n = t.stores, n === null ? t.stores = [e] : n.push(e));
+		}, t = I.updateQueue, t === null ? (t = us(), I.updateQueue = t, t.stores = [e]) : (n = t.stores, n === null ? t.stores = [e] : n.push(e));
 	}
-	function xs(e, t, n, r) {
-		t.value = n, t.getSnapshot = r, Cs(t) && ws(e);
+	function bs(e, t, n, r) {
+		t.value = n, t.getSnapshot = r, Ss(t) && Cs(e);
 	}
-	function Ss(e, t, n) {
+	function xs(e, t, n) {
 		return n(function() {
-			Cs(t) && ws(e);
+			Ss(t) && Cs(e);
 		});
 	}
-	function Cs(e) {
+	function Ss(e) {
 		var t = e.getSnapshot;
 		e = e.value;
 		try {
@@ -3231,15 +3231,15 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			return !0;
 		}
 	}
-	function ws(e) {
+	function Cs(e) {
 		var t = Pi(e, 2);
 		t !== null && Pd(t, e, 2);
 	}
-	function Ts(e) {
-		var t = us();
+	function ws(e) {
+		var t = ls();
 		if (typeof e == "function") {
 			var n = e;
-			if (e = n(), Zo) {
+			if (e = n(), Xo) {
 				st(!0);
 				try {
 					n();
@@ -3252,15 +3252,15 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			pending: null,
 			lanes: 0,
 			dispatch: null,
-			lastRenderedReducer: hs,
+			lastRenderedReducer: ms,
 			lastRenderedState: e
 		}, t;
 	}
-	function Es(e, t, n, r) {
-		return e.baseState = n, _s(e, I, typeof r == "function" ? r : hs);
+	function Ts(e, t, n, r) {
+		return e.baseState = n, gs(e, L, typeof r == "function" ? r : ms);
 	}
-	function Ds(e, t, n, r, i) {
-		if (hc(e)) throw Error(o(485));
+	function Es(e, t, n, r, i) {
+		if (mc(e)) throw Error(o(485));
 		if (e = t.action, e !== null) {
 			var a = {
 				payload: i,
@@ -3275,61 +3275,61 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					a.listeners.push(e);
 				}
 			};
-			E.T === null ? a.isTransition = !1 : n(!0), r(a), n = t.pending, n === null ? (a.next = t.pending = a, Os(t, a)) : (a.next = n.next, t.pending = n.next = a);
+			E.T === null ? a.isTransition = !1 : n(!0), r(a), n = t.pending, n === null ? (a.next = t.pending = a, Ds(t, a)) : (a.next = n.next, t.pending = n.next = a);
 		}
 	}
-	function Os(e, t) {
+	function Ds(e, t) {
 		var n = t.action, r = t.payload, i = e.state;
 		if (t.isTransition) {
 			var a = E.T, o = {};
 			o.types = a === null ? null : a.types, E.T = o;
 			try {
 				var s = n(i, r), c = E.S;
-				c !== null && c(o, s), ks(e, t, s);
+				c !== null && c(o, s), Os(e, t, s);
 			} catch (n) {
-				js(e, t, n);
+				As(e, t, n);
 			} finally {
 				a !== null && o.types !== null && (a.types = o.types), E.T = a;
 			}
 		} else try {
-			a = n(i, r), ks(e, t, a);
+			a = n(i, r), Os(e, t, a);
 		} catch (n) {
-			js(e, t, n);
+			As(e, t, n);
 		}
 	}
-	function ks(e, t, n) {
+	function Os(e, t, n) {
 		typeof n == "object" && n && typeof n.then == "function" ? n.then(function(n) {
-			As(e, t, n);
+			ks(e, t, n);
 		}, function(n) {
-			return js(e, t, n);
-		}) : As(e, t, n);
+			return As(e, t, n);
+		}) : ks(e, t, n);
+	}
+	function ks(e, t, n) {
+		t.status = "fulfilled", t.value = n, js(t), e.state = n, t = e.pending, t !== null && (n = t.next, n === t ? e.pending = null : (n = n.next, t.next = n, Ds(e, n)));
 	}
 	function As(e, t, n) {
-		t.status = "fulfilled", t.value = n, Ms(t), e.state = n, t = e.pending, t !== null && (n = t.next, n === t ? e.pending = null : (n = n.next, t.next = n, Os(e, n)));
-	}
-	function js(e, t, n) {
 		var r = e.pending;
 		if (e.pending = null, r !== null) {
 			r = r.next;
 			do
-				t.status = "rejected", t.reason = n, Ms(t), t = t.next;
+				t.status = "rejected", t.reason = n, js(t), t = t.next;
 			while (t !== r);
 		}
 		e.action = null;
 	}
-	function Ms(e) {
+	function js(e) {
 		e = e.listeners;
 		for (var t = 0; t < e.length; t++) (0, e[t])();
 	}
-	function Ns(e, t) {
+	function Ms(e, t) {
 		return t;
 	}
-	function Ps(e, t) {
+	function Ns(e, t) {
 		if (P) {
 			var n = G.formState;
 			if (n !== null) {
 				a: {
-					var r = F;
+					var r = I;
 					if (P) {
 						if (N) {
 							b: {
@@ -3351,48 +3351,48 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				r && (t = n[0]);
 			}
 		}
-		return n = us(), n.memoizedState = n.baseState = t, r = {
+		return n = ls(), n.memoizedState = n.baseState = t, r = {
 			pending: null,
 			lanes: 0,
 			dispatch: null,
-			lastRenderedReducer: Ns,
+			lastRenderedReducer: Ms,
 			lastRenderedState: t
-		}, n.queue = r, n = fc.bind(null, F, r), r.dispatch = n, r = Ts(!1), a = mc.bind(null, F, !1, r.queue), r = us(), i = {
+		}, n.queue = r, n = dc.bind(null, I, r), r.dispatch = n, r = ws(!1), a = pc.bind(null, I, !1, r.queue), r = ls(), i = {
 			state: t,
 			dispatch: null,
 			action: e,
 			pending: null
-		}, r.queue = i, n = Ds.bind(null, F, i, a, n), i.dispatch = n, r.memoizedState = e, [
+		}, r.queue = i, n = Es.bind(null, I, i, a, n), i.dispatch = n, r.memoizedState = e, [
 			t,
 			n,
 			!1
 		];
 	}
-	function Fs(e) {
-		return Is(z(), I, e);
+	function Ps(e) {
+		return Fs(B(), L, e);
 	}
-	function Is(e, t, n) {
-		if (t = _s(e, t, Ns)[0], e = gs(hs)[0], typeof t == "object" && t && typeof t.then == "function") try {
-			var r = fs(t);
+	function Fs(e, t, n) {
+		if (t = gs(e, t, Ms)[0], e = hs(ms)[0], typeof t == "object" && t && typeof t.then == "function") try {
+			var r = ds(t);
 		} catch (e) {
-			throw e === to ? ro : e;
+			throw e === eo ? no : e;
 		}
 		else r = t;
-		t = z();
+		t = B();
 		var i = t.queue, a = i.dispatch;
-		return n !== t.memoizedState && (F.flags |= 2048, zs(9, { destroy: void 0 }, Ls.bind(null, i, n), null)), [
+		return n !== t.memoizedState && (I.flags |= 2048, Rs(9, { destroy: void 0 }, Is.bind(null, i, n), null)), [
 			r,
 			a,
 			e
 		];
 	}
-	function Ls(e, t) {
+	function Is(e, t) {
 		e.action = t;
 	}
-	function Rs(e) {
-		var t = z(), n = I;
-		if (n !== null) return Is(t, n, e);
-		z(), t = t.memoizedState, n = z();
+	function Ls(e) {
+		var t = B(), n = L;
+		if (n !== null) return Fs(t, n, e);
+		B(), t = t.memoizedState, n = B();
 		var r = n.queue.dispatch;
 		return n.memoizedState = e, [
 			t,
@@ -3400,46 +3400,46 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			!1
 		];
 	}
-	function zs(e, t, n, r) {
+	function Rs(e, t, n, r) {
 		return e = {
 			tag: e,
 			create: n,
 			deps: r,
 			inst: t,
 			next: null
-		}, t = F.updateQueue, t === null && (t = ds(), F.updateQueue = t), n = t.lastEffect, n === null ? t.lastEffect = e.next = e : (r = n.next, n.next = e, e.next = r, t.lastEffect = e), e;
+		}, t = I.updateQueue, t === null && (t = us(), I.updateQueue = t), n = t.lastEffect, n === null ? t.lastEffect = e.next = e : (r = n.next, n.next = e, e.next = r, t.lastEffect = e), e;
 	}
-	function Bs() {
-		return z().memoizedState;
+	function zs() {
+		return B().memoizedState;
+	}
+	function Bs(e, t, n, r) {
+		var i = ls();
+		I.flags |= e, i.memoizedState = Rs(1 | t, { destroy: void 0 }, n, r === void 0 ? null : r);
 	}
 	function Vs(e, t, n, r) {
-		var i = us();
-		F.flags |= e, i.memoizedState = zs(1 | t, { destroy: void 0 }, n, r === void 0 ? null : r);
-	}
-	function Hs(e, t, n, r) {
-		var i = z();
+		var i = B();
 		r = r === void 0 ? null : r;
 		var a = i.memoizedState.inst;
-		I !== null && r !== null && ns(r, I.memoizedState.deps) ? i.memoizedState = zs(t, a, n, r) : (F.flags |= e, i.memoizedState = zs(1 | t, a, n, r));
+		L !== null && r !== null && ts(r, L.memoizedState.deps) ? i.memoizedState = Rs(t, a, n, r) : (I.flags |= e, i.memoizedState = Rs(1 | t, a, n, r));
+	}
+	function Hs(e, t) {
+		Bs(8390656, 8, e, t);
 	}
 	function Us(e, t) {
-		Vs(8390656, 8, e, t);
+		Vs(2048, 8, e, t);
 	}
-	function Ws(e, t) {
-		Hs(2048, 8, e, t);
-	}
-	function Gs(e) {
-		F.flags |= 4;
-		var t = F.updateQueue;
-		if (t === null) t = ds(), F.updateQueue = t, t.events = [e];
+	function Ws(e) {
+		I.flags |= 4;
+		var t = I.updateQueue;
+		if (t === null) t = us(), I.updateQueue = t, t.events = [e];
 		else {
 			var n = t.events;
 			n === null ? t.events = [e] : n.push(e);
 		}
 	}
-	function Ks(e) {
-		var t = z().memoizedState;
-		return Gs({
+	function Gs(e) {
+		var t = B().memoizedState;
+		return Ws({
 			ref: t,
 			nextImpl: e
 		}), function() {
@@ -3447,13 +3447,13 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			return t.impl.apply(void 0, arguments);
 		};
 	}
+	function Ks(e, t) {
+		return Vs(4, 2, e, t);
+	}
 	function qs(e, t) {
-		return Hs(4, 2, e, t);
+		return Vs(4, 4, e, t);
 	}
 	function Js(e, t) {
-		return Hs(4, 4, e, t);
-	}
-	function Ys(e, t) {
 		if (typeof t == "function") {
 			e = e();
 			var n = t(e);
@@ -3465,22 +3465,22 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			t.current = null;
 		};
 	}
-	function Xs(e, t, n) {
-		n = n == null ? null : n.concat([e]), Hs(4, 4, Ys.bind(null, t, e), n);
+	function Ys(e, t, n) {
+		n = n == null ? null : n.concat([e]), Vs(4, 4, Js.bind(null, t, e), n);
 	}
-	function Zs() {}
+	function Xs() {}
+	function Zs(e, t) {
+		var n = B();
+		t = t === void 0 ? null : t;
+		var r = n.memoizedState;
+		return t !== null && ts(t, r[1]) ? r[0] : (n.memoizedState = [e, t], e);
+	}
 	function Qs(e, t) {
-		var n = z();
+		var n = B();
 		t = t === void 0 ? null : t;
 		var r = n.memoizedState;
-		return t !== null && ns(t, r[1]) ? r[0] : (n.memoizedState = [e, t], e);
-	}
-	function $s(e, t) {
-		var n = z();
-		t = t === void 0 ? null : t;
-		var r = n.memoizedState;
-		if (t !== null && ns(t, r[1])) return r[0];
-		if (r = e(), Zo) {
+		if (t !== null && ts(t, r[1])) return r[0];
+		if (r = e(), Xo) {
 			st(!0);
 			try {
 				e();
@@ -3490,22 +3490,22 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 		return n.memoizedState = [r, t], r;
 	}
-	function ec(e, t, n) {
-		return n === void 0 || Jo & 1073741824 && !(q & 261930) ? e.memoizedState = t : (e.memoizedState = n, e = Md(), F.lanes |= e, sd |= e, n);
+	function $s(e, t, n) {
+		return n === void 0 || qo & 1073741824 && !(q & 261930) ? e.memoizedState = t : (e.memoizedState = n, e = Md(), I.lanes |= e, sd |= e, n);
 	}
-	function tc(e, t, n, r) {
-		return Jr(n, t) ? n : Mo.current === null ? !(Jo & 106) || Jo & 1073741824 && !(q & 261930) ? (B = !0, e.memoizedState = n) : (e = Md(), F.lanes |= e, sd |= e, t) : (e = ec(e, n, r), Jr(e, t) || (B = !0), e);
+	function ec(e, t, n, r) {
+		return Jr(n, t) ? n : jo.current === null ? !(qo & 106) || qo & 1073741824 && !(q & 261930) ? (Ic = !0, e.memoizedState = n) : (e = Md(), I.lanes |= e, sd |= e, t) : (e = $s(e, n, r), Jr(e, t) || (Ic = !0), e);
 	}
-	function nc(e, t, n, r, i) {
+	function tc(e, t, n, r, i) {
 		var a = D.p;
 		D.p = a !== 0 && 8 > a ? a : 8;
 		var o = E.T, s = {};
-		s.types = o === null ? null : o.types, E.T = s, mc(e, !1, t, n);
+		s.types = o === null ? null : o.types, E.T = s, pc(e, !1, t, n);
 		try {
 			var c = i(), l = E.S;
-			l !== null && l(s, c), typeof c == "object" && c && typeof c.then == "function" ? pc(e, t, Ya(c, r), jd(e)) : pc(e, t, r, jd(e));
+			l !== null && l(s, c), typeof c == "object" && c && typeof c.then == "function" ? fc(e, t, Ja(c, r), jd(e)) : fc(e, t, r, jd(e));
 		} catch (n) {
-			pc(e, t, {
+			fc(e, t, {
 				then: function() {},
 				status: "rejected",
 				reason: n
@@ -3514,15 +3514,15 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			D.p = a, o !== null && s.types !== null && (o.types = s.types), E.T = o;
 		}
 	}
-	function rc() {}
-	function ic(e, t, n, r) {
+	function nc() {}
+	function rc(e, t, n, r) {
 		if (e.tag !== 5) throw Error(o(476));
-		var i = ac(e).queue;
-		nc(e, i, t, Te, n === null ? rc : function() {
-			return oc(e), n(r);
+		var i = ic(e).queue;
+		tc(e, i, t, Te, n === null ? nc : function() {
+			return ac(e), n(r);
 		});
 	}
-	function ac(e) {
+	function ic(e) {
 		var t = e.memoizedState;
 		if (t !== null) return t;
 		t = {
@@ -3533,7 +3533,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				pending: null,
 				lanes: 0,
 				dispatch: null,
-				lastRenderedReducer: hs,
+				lastRenderedReducer: ms,
 				lastRenderedState: Te
 			},
 			next: null
@@ -3547,40 +3547,40 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				pending: null,
 				lanes: 0,
 				dispatch: null,
-				lastRenderedReducer: hs,
+				lastRenderedReducer: ms,
 				lastRenderedState: n
 			},
 			next: null
 		}, e.memoizedState = t, e = e.alternate, e !== null && (e.memoizedState = t), t;
 	}
-	function oc(e) {
-		var t = ac(e);
-		t.next === null && (t = e.alternate.memoizedState), pc(e, t.next.queue, {}, jd());
+	function ac(e) {
+		var t = ic(e);
+		t.next === null && (t = e.alternate.memoizedState), fc(e, t.next.queue, {}, jd());
 	}
-	function sc() {
+	function oc() {
 		return ja(sh);
 	}
+	function sc() {
+		return B().memoizedState;
+	}
 	function cc() {
-		return z().memoizedState;
+		return B().memoizedState;
 	}
-	function lc() {
-		return z().memoizedState;
-	}
-	function uc(e) {
+	function lc(e) {
 		for (var t = e.return; t !== null;) {
 			switch (t.tag) {
 				case 24:
 				case 3:
 					var n = jd();
-					e = Co(n);
-					var r = wo(t, e, n);
-					r !== null && (Pd(r, t, n), To(r, t, n)), t = { cache: Ra() }, e.payload = t;
+					e = So(n);
+					var r = Co(t, e, n);
+					r !== null && (Pd(r, t, n), wo(r, t, n)), t = { cache: La() }, e.payload = t;
 					return;
 			}
 			t = t.return;
 		}
 	}
-	function dc(e, t, n) {
+	function uc(e, t, n) {
 		var r = jd();
 		n = {
 			lane: r,
@@ -3590,12 +3590,12 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			hasEagerState: !1,
 			eagerState: null,
 			next: null
-		}, hc(e) ? gc(t, n) : (n = Ni(e, t, n, r), n !== null && (Pd(n, e, r), _c(n, t, r)));
+		}, mc(e) ? hc(t, n) : (n = Ni(e, t, n, r), n !== null && (Pd(n, e, r), gc(n, t, r)));
 	}
-	function fc(e, t, n) {
-		pc(e, t, n, jd());
+	function dc(e, t, n) {
+		fc(e, t, n, jd());
 	}
-	function pc(e, t, n, r) {
+	function fc(e, t, n, r) {
 		var i = {
 			lane: r,
 			revertLane: 0,
@@ -3605,18 +3605,18 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			eagerState: null,
 			next: null
 		};
-		if (hc(e)) gc(t, i);
+		if (mc(e)) hc(t, i);
 		else {
 			var a = e.alternate;
 			if (e.lanes === 0 && (a === null || a.lanes === 0) && (a = t.lastRenderedReducer, a !== null)) try {
 				var o = t.lastRenderedState, s = a(o, n);
 				if (i.hasEagerState = !0, i.eagerState = s, Jr(s, o)) return Mi(e, t, i, 0), G === null && ji(), !1;
 			} catch {}
-			if (n = Ni(e, t, i, r), n !== null) return Pd(n, e, r), _c(n, t, r), !0;
+			if (n = Ni(e, t, i, r), n !== null) return Pd(n, e, r), gc(n, t, r), !0;
 		}
 		return !1;
 	}
-	function mc(e, t, n, r) {
+	function pc(e, t, n, r) {
 		if (r = {
 			lane: 2,
 			revertLane: Pf(),
@@ -3625,72 +3625,72 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			hasEagerState: !1,
 			eagerState: null,
 			next: null
-		}, hc(e)) {
+		}, mc(e)) {
 			if (t) throw Error(o(479));
 		} else t = Ni(e, n, r, 2), t !== null && Pd(t, e, 2);
 	}
-	function hc(e) {
+	function mc(e) {
 		var t = e.alternate;
-		return e === F || t !== null && t === F;
+		return e === I || t !== null && t === I;
 	}
-	function gc(e, t) {
-		Xo = Yo = !0;
+	function hc(e, t) {
+		Yo = Jo = !0;
 		var n = e.pending;
 		n === null ? t.next = t : (t.next = n.next, n.next = t), e.pending = t;
 	}
-	function _c(e, t, n) {
+	function gc(e, t, n) {
 		if (n & 4194048) {
 			var r = t.lanes;
 			r &= e.pendingLanes, n |= r, t.lanes = n, Tt(e, n);
 		}
 	}
-	var vc = {
+	var _c = {
 		readContext: ja,
-		use: ps,
-		useCallback: R,
-		useContext: R,
-		useEffect: R,
-		useImperativeHandle: R,
-		useLayoutEffect: R,
-		useInsertionEffect: R,
-		useMemo: R,
-		useReducer: R,
-		useRef: R,
-		useState: R,
-		useDebugValue: R,
-		useDeferredValue: R,
-		useTransition: R,
-		useSyncExternalStore: R,
-		useId: R,
-		useHostTransitionStatus: R,
-		useFormState: R,
-		useActionState: R,
-		useOptimistic: R,
-		useMemoCache: R,
-		useCacheRefresh: R,
-		useEffectEvent: R
-	}, yc = {
+		use: fs,
+		useCallback: z,
+		useContext: z,
+		useEffect: z,
+		useImperativeHandle: z,
+		useLayoutEffect: z,
+		useInsertionEffect: z,
+		useMemo: z,
+		useReducer: z,
+		useRef: z,
+		useState: z,
+		useDebugValue: z,
+		useDeferredValue: z,
+		useTransition: z,
+		useSyncExternalStore: z,
+		useId: z,
+		useHostTransitionStatus: z,
+		useFormState: z,
+		useActionState: z,
+		useOptimistic: z,
+		useMemoCache: z,
+		useCacheRefresh: z,
+		useEffectEvent: z
+	}, vc = {
 		readContext: ja,
-		use: ps,
+		use: fs,
 		useCallback: function(e, t) {
-			return us().memoizedState = [e, t === void 0 ? null : t], e;
+			return ls().memoizedState = [e, t === void 0 ? null : t], e;
 		},
 		useContext: ja,
-		useEffect: Us,
+		useEffect: Hs,
 		useImperativeHandle: function(e, t, n) {
-			n = n == null ? null : n.concat([e]), Vs(4194308, 4, Ys.bind(null, t, e), n);
+			n = n == null ? null : n.concat([e]), Bs(4194308, 4, Js.bind(null, t, e), n);
 		},
 		useLayoutEffect: function(e, t) {
-			return Vs(4194308, 4, e, t);
+			return Bs(4194308, 4, e, t);
 		},
 		useInsertionEffect: function(e, t) {
-			Vs(4, 2, e, t);
+			Bs(4, 2, e, t);
 		},
 		useMemo: function(e, t) {
-			var n = us();
+			var n = ls();
 			t = t === void 0 ? null : t;
 			var r = e();
-			if (Zo) {
+			if (Xo) {
 				st(!0);
 				try {
 					e();
@@ -3701,10 +3701,10 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			return n.memoizedState = [r, t], r;
 		},
 		useReducer: function(e, t, n) {
-			var r = us();
+			var r = ls();
 			if (n !== void 0) {
 				var i = n(t);
-				if (Zo) {
+				if (Xo) {
 					st(!0);
 					try {
 						n(t);
@@ -3719,54 +3719,54 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				dispatch: null,
 				lastRenderedReducer: e,
 				lastRenderedState: i
-			}, r.queue = e, e = e.dispatch = dc.bind(null, F, e), [r.memoizedState, e];
+			}, r.queue = e, e = e.dispatch = uc.bind(null, I, e), [r.memoizedState, e];
 		},
 		useRef: function(e) {
-			var t = us();
+			var t = ls();
 			return e = { current: e }, t.memoizedState = e;
 		},
 		useState: function(e) {
-			e = Ts(e);
-			var t = e.queue, n = fc.bind(null, F, t);
+			e = ws(e);
+			var t = e.queue, n = dc.bind(null, I, t);
 			return t.dispatch = n, [e.memoizedState, n];
 		},
-		useDebugValue: Zs,
+		useDebugValue: Xs,
 		useDeferredValue: function(e, t) {
-			return ec(us(), e, t);
+			return $s(ls(), e, t);
 		},
 		useTransition: function() {
-			var e = Ts(!1);
-			return e = nc.bind(null, F, e.queue, !0, !1), us().memoizedState = e, [!1, e];
+			var e = ws(!1);
+			return e = tc.bind(null, I, e.queue, !0, !1), ls().memoizedState = e, [!1, e];
 		},
 		useSyncExternalStore: function(e, t, n) {
-			var r = F, i = us();
+			var r = I, i = ls();
 			if (P) {
 				if (n === void 0) throw Error(o(407));
 				n = n();
 			} else {
 				if (n = t(), G === null) throw Error(o(349));
-				q & 127 || bs(r, t, n);
+				q & 127 || ys(r, t, n);
 			}
 			i.memoizedState = n;
 			var a = {
 				value: n,
 				getSnapshot: t
 			};
-			return i.queue = a, Us(Ss.bind(null, r, a, e), [e]), r.flags |= 2048, zs(9, { destroy: void 0 }, xs.bind(null, r, a, n, t), null), n;
+			return i.queue = a, Hs(xs.bind(null, r, a, e), [e]), r.flags |= 2048, Rs(9, { destroy: void 0 }, bs.bind(null, r, a, n, t), null), n;
 		},
 		useId: function() {
-			var e = us(), t = G.identifierPrefix;
+			var e = ls(), t = G.identifierPrefix;
 			if (P) {
 				var n = ia, r = ra;
-				n = (r & ~(1 << 32 - ct(r) - 1)).toString(32) + n, t = "_" + t + "R_" + n, n = Qo++, 0 < n && (t += "H" + n.toString(32)), t += "_";
-			} else n = ts++, t = "_" + t + "r_" + n.toString(32) + "_";
+				n = (r & ~(1 << 32 - ct(r) - 1)).toString(32) + n, t = "_" + t + "R_" + n, n = Zo++, 0 < n && (t += "H" + n.toString(32)), t += "_";
+			} else n = es++, t = "_" + t + "r_" + n.toString(32) + "_";
 			return e.memoizedState = t;
 		},
-		useHostTransitionStatus: sc,
-		useFormState: Ps,
-		useActionState: Ps,
+		useHostTransitionStatus: oc,
+		useFormState: Ns,
+		useActionState: Ns,
 		useOptimistic: function(e) {
-			var t = us();
+			var t = ls();
 			t.memoizedState = t.baseState = e;
 			var n = {
 				pending: null,
@@ -3775,132 +3775,132 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				lastRenderedReducer: null,
 				lastRenderedState: null
 			};
-			return t.queue = n, t = mc.bind(null, F, !0, n), n.dispatch = t, [e, t];
+			return t.queue = n, t = pc.bind(null, I, !0, n), n.dispatch = t, [e, t];
 		},
-		useMemoCache: ms,
+		useMemoCache: ps,
 		useCacheRefresh: function() {
-			return us().memoizedState = uc.bind(null, F);
+			return ls().memoizedState = lc.bind(null, I);
 		},
 		useEffectEvent: function(e) {
-			var t = us(), n = { impl: e };
+			var t = ls(), n = { impl: e };
 			return t.memoizedState = n, function() {
 				if (W & 2) throw Error(o(440));
 				return n.impl.apply(void 0, arguments);
 			};
 		}
+	}, yc = {
+		readContext: ja,
+		use: fs,
+		useCallback: Zs,
+		useContext: ja,
+		useEffect: Us,
+		useImperativeHandle: Ys,
+		useInsertionEffect: Ks,
+		useLayoutEffect: qs,
+		useMemo: Qs,
+		useReducer: hs,
+		useRef: zs,
+		useState: function() {
+			return hs(ms);
+		},
+		useDebugValue: Xs,
+		useDeferredValue: function(e, t) {
+			return ec(B(), L.memoizedState, e, t);
+		},
+		useTransition: function() {
+			var e = hs(ms)[0], t = B().memoizedState;
+			return [typeof e == "boolean" ? e : ds(e), t];
+		},
+		useSyncExternalStore: vs,
+		useId: sc,
+		useHostTransitionStatus: oc,
+		useFormState: Ps,
+		useActionState: Ps,
+		useOptimistic: function(e, t) {
+			return Ts(B(), L, e, t);
+		},
+		useMemoCache: ps,
+		useCacheRefresh: cc,
+		useEffectEvent: Gs
 	}, bc = {
 		readContext: ja,
-		use: ps,
-		useCallback: Qs,
+		use: fs,
+		useCallback: Zs,
 		useContext: ja,
-		useEffect: Ws,
-		useImperativeHandle: Xs,
-		useInsertionEffect: qs,
-		useLayoutEffect: Js,
-		useMemo: $s,
-		useReducer: gs,
-		useRef: Bs,
+		useEffect: Us,
+		useImperativeHandle: Ys,
+		useInsertionEffect: Ks,
+		useLayoutEffect: qs,
+		useMemo: Qs,
+		useReducer: _s,
+		useRef: zs,
 		useState: function() {
-			return gs(hs);
+			return _s(ms);
 		},
-		useDebugValue: Zs,
+		useDebugValue: Xs,
 		useDeferredValue: function(e, t) {
-			return tc(z(), I.memoizedState, e, t);
+			var n = B();
+			return L === null ? $s(n, e, t) : ec(n, L.memoizedState, e, t);
 		},
 		useTransition: function() {
-			var e = gs(hs)[0], t = z().memoizedState;
-			return [typeof e == "boolean" ? e : fs(e), t];
+			var e = _s(ms)[0], t = B().memoizedState;
+			return [typeof e == "boolean" ? e : ds(e), t];
 		},
-		useSyncExternalStore: ys,
-		useId: cc,
-		useHostTransitionStatus: sc,
-		useFormState: Fs,
-		useActionState: Fs,
+		useSyncExternalStore: vs,
+		useId: sc,
+		useHostTransitionStatus: oc,
+		useFormState: Ls,
+		useActionState: Ls,
 		useOptimistic: function(e, t) {
-			return Es(z(), I, e, t);
+			var n = B();
+			return L === null ? (n.baseState = e, [e, n.queue.dispatch]) : Ts(n, L, e, t);
 		},
-		useMemoCache: ms,
-		useCacheRefresh: lc,
-		useEffectEvent: Ks
-	}, xc = {
-		readContext: ja,
-		use: ps,
-		useCallback: Qs,
-		useContext: ja,
-		useEffect: Ws,
-		useImperativeHandle: Xs,
-		useInsertionEffect: qs,
-		useLayoutEffect: Js,
-		useMemo: $s,
-		useReducer: vs,
-		useRef: Bs,
-		useState: function() {
-			return vs(hs);
-		},
-		useDebugValue: Zs,
-		useDeferredValue: function(e, t) {
-			var n = z();
-			return I === null ? ec(n, e, t) : tc(n, I.memoizedState, e, t);
-		},
-		useTransition: function() {
-			var e = vs(hs)[0], t = z().memoizedState;
-			return [typeof e == "boolean" ? e : fs(e), t];
-		},
-		useSyncExternalStore: ys,
-		useId: cc,
-		useHostTransitionStatus: sc,
-		useFormState: Rs,
-		useActionState: Rs,
-		useOptimistic: function(e, t) {
-			var n = z();
-			return I === null ? (n.baseState = e, [e, n.queue.dispatch]) : Es(n, I, e, t);
-		},
-		useMemoCache: ms,
-		useCacheRefresh: lc,
-		useEffectEvent: Ks
+		useMemoCache: ps,
+		useCacheRefresh: cc,
+		useEffectEvent: Gs
 	};
-	function Sc(e, t, n, r) {
+	function xc(e, t, n, r) {
 		t = e.memoizedState, n = n(r, t), n = n == null ? t : S({}, t, n), e.memoizedState = n, e.lanes === 0 && (e.updateQueue.baseState = n);
 	}
-	var Cc = {
+	var Sc = {
 		enqueueSetState: function(e, t, n) {
 			e = e._reactInternals;
-			var r = jd(), i = Co(r);
-			i.payload = t, n != null && (i.callback = n), t = wo(e, i, r), t !== null && (Pd(t, e, r), To(t, e, r));
+			var r = jd(), i = So(r);
+			i.payload = t, n != null && (i.callback = n), t = Co(e, i, r), t !== null && (Pd(t, e, r), wo(t, e, r));
 		},
 		enqueueReplaceState: function(e, t, n) {
 			e = e._reactInternals;
-			var r = jd(), i = Co(r);
-			i.tag = 1, i.payload = t, n != null && (i.callback = n), t = wo(e, i, r), t !== null && (Pd(t, e, r), To(t, e, r));
+			var r = jd(), i = So(r);
+			i.tag = 1, i.payload = t, n != null && (i.callback = n), t = Co(e, i, r), t !== null && (Pd(t, e, r), wo(t, e, r));
 		},
 		enqueueForceUpdate: function(e, t) {
 			e = e._reactInternals;
-			var n = jd(), r = Co(n);
-			r.tag = 2, t != null && (r.callback = t), t = wo(e, r, n), t !== null && (Pd(t, e, n), To(t, e, n));
+			var n = jd(), r = So(n);
+			r.tag = 2, t != null && (r.callback = t), t = Co(e, r, n), t !== null && (Pd(t, e, n), wo(t, e, n));
 		}
 	};
-	function wc(e, t, n, r, i, a, o) {
+	function Cc(e, t, n, r, i, a, o) {
 		return e = e.stateNode, typeof e.shouldComponentUpdate == "function" ? e.shouldComponentUpdate(r, a, o) : t.prototype && t.prototype.isPureReactComponent ? !Yr(n, r) || !Yr(i, a) : !0;
 	}
-	function Tc(e, t, n, r) {
-		e = t.state, typeof t.componentWillReceiveProps == "function" && t.componentWillReceiveProps(n, r), typeof t.UNSAFE_componentWillReceiveProps == "function" && t.UNSAFE_componentWillReceiveProps(n, r), t.state !== e && Cc.enqueueReplaceState(t, t.state, null);
+	function wc(e, t, n, r) {
+		e = t.state, typeof t.componentWillReceiveProps == "function" && t.componentWillReceiveProps(n, r), typeof t.UNSAFE_componentWillReceiveProps == "function" && t.UNSAFE_componentWillReceiveProps(n, r), t.state !== e && Sc.enqueueReplaceState(t, t.state, null);
 	}
-	function Ec(e, t) {
+	function Tc(e, t) {
 		var n = t;
 		if ("ref" in t) for (var r in n = {}, t) r !== "ref" && (n[r] = t[r]);
 		if (e = e.defaultProps) for (var i in n === t && (n = S({}, n)), e) n[i] === void 0 && (n[i] = e[i]);
 		return n;
 	}
-	function Dc(e) {
+	function Ec(e) {
 		Di(e);
 	}
-	function Oc(e) {
+	function Dc(e) {
 		console.error(e);
 	}
-	function kc(e) {
+	function Oc(e) {
 		Di(e);
 	}
-	function Ac(e, t) {
+	function kc(e, t) {
 		try {
 			var n = e.onUncaughtError;
 			n(t.value, { componentStack: t.stack });
@@ -3910,7 +3910,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			});
 		}
 	}
-	function jc(e, t, n) {
+	function Ac(e, t, n) {
 		try {
 			var r = e.onCaughtError;
 			r(n.value, {
@@ -3923,39 +3923,39 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			});
 		}
 	}
-	function Mc(e, t, n) {
-		return n = Co(n), n.tag = 3, n.payload = { element: null }, n.callback = function() {
-			Ac(e, t);
+	function jc(e, t, n) {
+		return n = So(n), n.tag = 3, n.payload = { element: null }, n.callback = function() {
+			kc(e, t);
 		}, n;
 	}
-	function Nc(e) {
-		return e = Co(e), e.tag = 3, e;
+	function Mc(e) {
+		return e = So(e), e.tag = 3, e;
 	}
-	function Pc(e, t, n, r) {
+	function Nc(e, t, n, r) {
 		var i = n.type.getDerivedStateFromError;
 		if (typeof i == "function") {
 			var a = r.value;
 			e.payload = function() {
 				return i(a);
 			}, e.callback = function() {
-				jc(t, n, r);
+				Ac(t, n, r);
 			};
 		}
 		var o = n.stateNode;
 		o !== null && typeof o.componentDidCatch == "function" && (e.callback = function() {
-			jc(t, n, r), typeof i != "function" && (yd === null ? yd = /* @__PURE__ */ new Set([this]) : yd.add(this));
+			Ac(t, n, r), typeof i != "function" && (yd === null ? yd = /* @__PURE__ */ new Set([this]) : yd.add(this));
 			var e = r.stack;
 			this.componentDidCatch(r.value, { componentStack: e === null ? "" : e });
 		});
 	}
-	function Fc(e, t, n, r, i) {
+	function Pc(e, t, n, r, i) {
 		if (n.flags |= 32768, typeof r == "object" && r && typeof r.then == "function") {
-			if (t = n.alternate, t !== null && Oa(t, n, i, !0), n = Lo.current, n !== null) {
+			if (t = n.alternate, t !== null && Oa(t, n, i, !0), n = Io.current, n !== null) {
 				switch (n.tag) {
 					case 31:
 					case 13:
-					case 19: return Ro === null ? Kd() : n.alternate === null && Y === 0 && (Y = 3), n.flags &= -257, n.flags |= 65536, n.lanes = i, r === io ? n.flags |= 16384 : (t = n.updateQueue, t === null ? n.updateQueue = /* @__PURE__ */ new Set([r]) : t.add(r), mf(e, r, i)), !1;
-					case 22: return n.flags |= 65536, r === io ? n.flags |= 16384 : (t = n.updateQueue, t === null ? (t = {
+					case 19: return Lo === null ? Kd() : n.alternate === null && Y === 0 && (Y = 3), n.flags &= -257, n.flags |= 65536, n.lanes = i, r === ro ? n.flags |= 16384 : (t = n.updateQueue, t === null ? n.updateQueue = /* @__PURE__ */ new Set([r]) : t.add(r), mf(e, r, i)), !1;
+					case 22: return n.flags |= 65536, r === ro ? n.flags |= 16384 : (t = n.updateQueue, t === null ? (t = {
 						transitions: null,
 						markerInstances: null,
 						retryQueue: /* @__PURE__ */ new Set([r])
@@ -3965,15 +3965,15 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			}
 			return mf(e, r, i), Kd(), !1;
 		}
-		if (P) return t = Lo.current, t === null ? (r !== pa && (t = Error(o(423), { cause: r }), ba(Yi(t, n))), e = e.current.alternate, e.flags |= 65536, i &= -i, e.lanes |= i, r = Yi(r, n), i = Mc(e.stateNode, r, i), Eo(e, i), Y !== 4 && (Y = 2)) : (!(t.flags & 65536) && (t.flags |= 256), t.flags |= 65536, t.lanes = i, r !== pa && (e = Error(o(422), { cause: r }), ba(Yi(e, n)))), !1;
+		if (P) return t = Io.current, t === null ? (r !== pa && (t = Error(o(423), { cause: r }), ba(Yi(t, n))), e = e.current.alternate, e.flags |= 65536, i &= -i, e.lanes |= i, r = Yi(r, n), i = jc(e.stateNode, r, i), To(e, i), Y !== 4 && (Y = 2)) : (!(t.flags & 65536) && (t.flags |= 256), t.flags |= 65536, t.lanes = i, r !== pa && (e = Error(o(422), { cause: r }), ba(Yi(e, n)))), !1;
 		var a = Error(o(520), { cause: r });
 		if (a = Yi(a, n), fd === null ? fd = [a] : fd.push(a), Y !== 4 && (Y = 2), t === null) return !0;
 		r = Yi(r, n), n = t;
 		do {
 			switch (n.tag) {
-				case 3: return n.flags |= 65536, e = i & -i, n.lanes |= e, e = Mc(n.stateNode, r, e), Eo(n, e), !1;
+				case 3: return n.flags |= 65536, e = i & -i, n.lanes |= e, e = jc(n.stateNode, r, e), To(n, e), !1;
 				case 1:
-					if (t = n.type, a = n.stateNode, !(n.flags & 128) && (typeof t.getDerivedStateFromError == "function" || a !== null && typeof a.componentDidCatch == "function" && (yd === null || !yd.has(a)))) return n.flags |= 65536, i &= -i, n.lanes |= i, i = Nc(i), Pc(i, e, n, r), Eo(n, i), !1;
+					if (t = n.type, a = n.stateNode, !(n.flags & 128) && (typeof t.getDerivedStateFromError == "function" || a !== null && typeof a.componentDidCatch == "function" && (yd === null || !yd.has(a)))) return n.flags |= 65536, i &= -i, n.lanes |= i, i = Mc(i), Nc(i, e, n, r), To(n, i), !1;
 					break;
 				case 22: if (n.memoizedState !== null) return n.flags |= 65536, !1;
 			}
@@ -3981,9 +3981,9 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		} while (n !== null);
 		return !1;
 	}
-	var Ic = Error(o(461)), B = !1;
+	var Fc = Error(o(461)), Ic = !1;
 	function Lc(e, t, n, r) {
-		t.child = e === null ? yo(t, null, n, r) : vo(t, e.child, n, r);
+		t.child = e === null ? vo(t, null, n, r) : _o(t, e.child, n, r);
 	}
 	function Rc(e, t, n, r, i) {
 		n = n.render;
@@ -3992,7 +3992,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			var o = {};
 			for (var s in r) s !== "ref" && (o[s] = r[s]);
 		} else o = r;
-		return Aa(t), r = rs(e, t, n, o, a, i), s = ss(), e !== null && !B ? (cs(e, t, i), fl(e, t, i)) : (P && s && sa(t), t.flags |= 1, Lc(e, t, r, i), t.child);
+		return Aa(t), r = ns(e, t, n, o, a, i), s = os(), e !== null && !Ic ? (ss(e, t, i), fl(e, t, i)) : (P && s && sa(t), t.flags |= 1, Lc(e, t, r, i), t.child);
 	}
 	function zc(e, t, n, r, i) {
 		if (e === null) {
@@ -4009,7 +4009,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		if (e !== null) {
 			var a = e.memoizedProps;
 			if (Yr(a, r) && e.ref === t.ref) {
-				if (B = !1, t.pendingProps = r = a, pl(e, i)) e.flags & 131072 && (B = !0);
+				if (Ic = !1, t.pendingProps = r = a, pl(e, i)) e.flags & 131072 && (Ic = !0);
 				else return t.lanes = e.lanes, fl(e, t, i);
 			}
 		}
@@ -4033,9 +4033,9 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			if (n & 536870912) t.memoizedState = {
 				baseLanes: 0,
 				cachePool: null
-			}, e !== null && $a(t, a === null ? null : a.cachePool), a === null ? Fo() : Po(t, a), Vo(t);
+			}, e !== null && Qa(t, a === null ? null : a.cachePool), a === null ? Po() : No(t, a), Bo(t);
 			else return r = t.lanes = 536870912, Uc(e, t, a === null ? n : a.baseLanes | n, n, r);
-		} else a === null ? (e !== null && $a(t, null), Fo(), Ho()) : ($a(t, a.cachePool), Po(t, a), Ho(), t.memoizedState = null);
+		} else a === null ? (e !== null && Qa(t, null), Po(), Vo()) : (Qa(t, a.cachePool), No(t, a), Vo(), t.memoizedState = null);
 		return Lc(e, t, i, n), t.child;
 	}
 	function Hc(e, t) {
@@ -4047,14 +4047,14 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}), t.sibling;
 	}
 	function Uc(e, t, n, r, i) {
-		var a = Qa();
+		var a = Za();
 		return a = a === null ? null : {
-			parent: La._currentValue,
+			parent: F._currentValue,
 			pool: a
 		}, t.memoizedState = {
 			baseLanes: n,
 			cachePool: a
-		}, e !== null && $a(t, null), Fo(), Vo(t), e !== null && Oa(e, t, r, !0), t.childLanes = i, null;
+		}, e !== null && Qa(t, null), Po(), Bo(t), e !== null && Oa(e, t, r, !0), t.childLanes = i, null;
 	}
 	function Wc(e, t) {
 		return t = rl({
@@ -4063,7 +4063,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}, e.mode), t.ref = e.ref, e.child = t, t.return = e, t;
 	}
 	function Gc(e, t, n) {
-		return vo(t, e.child, null, n), e = Wc(t, t.pendingProps), e.flags |= 2, Uo(t), t.memoizedState = null, e;
+		return _o(t, e.child, null, n), e = Wc(t, t.pendingProps), e.flags |= 2, Ho(t), t.memoizedState = null, e;
 	}
 	function Kc(e, t, n) {
 		var r = t.pendingProps, i = !!(t.flags & 128);
@@ -4073,7 +4073,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					baseLanes: 0,
 					cachePool: null
 				}, Hc(null, e);
-				if (Bo(t), (e = N) ? (e = am(e, fa), e = e !== null && e.data === "&" ? e : null, e !== null && (t.memoizedState = {
+				if (zo(t), (e = N) ? (e = am(e, fa), e = e !== null && e.data === "&" ? e : null, e !== null && (t.memoizedState = {
 					dehydrated: e,
 					treeContext: na === null ? null : {
 						id: ra,
@@ -4089,13 +4089,13 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		var a = e.memoizedState;
 		if (a !== null) {
 			var s = a.dehydrated;
-			if (Bo(t), i) {
+			if (zo(t), i) {
 				if (t.flags & 256) t.flags &= -257, t = Gc(e, t, n);
 				else if (t.memoizedState !== null) t.child = e.child, t.flags |= 128, t = null;
 				else throw Error(o(558));
-			} else if (B || Oa(e, t, n, !1), i = (n & e.childLanes) !== 0, B || i) {
-				if (Mo.current === null) {
-					if (r = G, r !== null && (s = Et(r, n), s !== 0 && s !== a.retryLane)) throw a.retryLane = s, Pi(e, s), Pd(r, e, s), Ic;
+			} else if (Ic || Oa(e, t, n, !1), i = (n & e.childLanes) !== 0, Ic || i) {
+				if (jo.current === null) {
+					if (r = G, r !== null && (s = Et(r, n), s !== 0 && s !== a.retryLane)) throw a.retryLane = s, Pi(e, s), Pd(r, e, s), Fc;
 					Kd();
 				}
 				t = Gc(e, t, n);
@@ -4116,31 +4116,31 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 	}
 	function Jc(e, t, n, r, i) {
-		return Aa(t), n = rs(e, t, n, r, void 0, i), r = ss(), e !== null && !B ? (cs(e, t, i), fl(e, t, i)) : (P && r && sa(t), t.flags |= 1, Lc(e, t, n, i), t.child);
+		return Aa(t), n = ns(e, t, n, r, void 0, i), r = os(), e !== null && !Ic ? (ss(e, t, i), fl(e, t, i)) : (P && r && sa(t), t.flags |= 1, Lc(e, t, n, i), t.child);
 	}
 	function Yc(e, t, n, r, i, a) {
-		return Aa(t), t.updateQueue = null, n = as(t, r, n, i), is(e), r = ss(), e !== null && !B ? (cs(e, t, a), fl(e, t, a)) : (P && r && sa(t), t.flags |= 1, Lc(e, t, n, a), t.child);
+		return Aa(t), t.updateQueue = null, n = is(t, r, n, i), rs(e), r = os(), e !== null && !Ic ? (ss(e, t, a), fl(e, t, a)) : (P && r && sa(t), t.flags |= 1, Lc(e, t, n, a), t.child);
 	}
 	function Xc(e, t, n, r, i) {
 		if (Aa(t), t.stateNode === null) {
 			var a = Li, o = n.contextType;
-			typeof o == "object" && o && (a = ja(o)), a = new n(r, a), t.memoizedState = a.state !== null && a.state !== void 0 ? a.state : null, a.updater = Cc, t.stateNode = a, a._reactInternals = t, a = t.stateNode, a.props = r, a.state = t.memoizedState, a.refs = {}, xo(t), o = n.contextType, a.context = typeof o == "object" && o ? ja(o) : Li, a.state = t.memoizedState, o = n.getDerivedStateFromProps, typeof o == "function" && (Sc(t, n, o, r), a.state = t.memoizedState), typeof n.getDerivedStateFromProps == "function" || typeof a.getSnapshotBeforeUpdate == "function" || typeof a.UNSAFE_componentWillMount != "function" && typeof a.componentWillMount != "function" || (o = a.state, typeof a.componentWillMount == "function" && a.componentWillMount(), typeof a.UNSAFE_componentWillMount == "function" && a.UNSAFE_componentWillMount(), o !== a.state && Cc.enqueueReplaceState(a, a.state, null), ko(t, r, a, i), Oo(), a.state = t.memoizedState), typeof a.componentDidMount == "function" && (t.flags |= 4194308), r = !0;
+			typeof o == "object" && o && (a = ja(o)), a = new n(r, a), t.memoizedState = a.state !== null && a.state !== void 0 ? a.state : null, a.updater = Sc, t.stateNode = a, a._reactInternals = t, a = t.stateNode, a.props = r, a.state = t.memoizedState, a.refs = {}, bo(t), o = n.contextType, a.context = typeof o == "object" && o ? ja(o) : Li, a.state = t.memoizedState, o = n.getDerivedStateFromProps, typeof o == "function" && (xc(t, n, o, r), a.state = t.memoizedState), typeof n.getDerivedStateFromProps == "function" || typeof a.getSnapshotBeforeUpdate == "function" || typeof a.UNSAFE_componentWillMount != "function" && typeof a.componentWillMount != "function" || (o = a.state, typeof a.componentWillMount == "function" && a.componentWillMount(), typeof a.UNSAFE_componentWillMount == "function" && a.UNSAFE_componentWillMount(), o !== a.state && Sc.enqueueReplaceState(a, a.state, null), Oo(t, r, a, i), Do(), a.state = t.memoizedState), typeof a.componentDidMount == "function" && (t.flags |= 4194308), r = !0;
 		} else if (e === null) {
 			a = t.stateNode;
-			var s = t.memoizedProps, c = Ec(n, s);
+			var s = t.memoizedProps, c = Tc(n, s);
 			a.props = c;
 			var l = a.context, u = n.contextType;
 			o = Li, typeof u == "object" && u && (o = ja(u));
 			var d = n.getDerivedStateFromProps;
-			u = typeof d == "function" || typeof a.getSnapshotBeforeUpdate == "function", s = t.pendingProps !== s, u || typeof a.UNSAFE_componentWillReceiveProps != "function" && typeof a.componentWillReceiveProps != "function" || (s || l !== o) && Tc(t, a, r, o), bo = !1;
+			u = typeof d == "function" || typeof a.getSnapshotBeforeUpdate == "function", s = t.pendingProps !== s, u || typeof a.UNSAFE_componentWillReceiveProps != "function" && typeof a.componentWillReceiveProps != "function" || (s || l !== o) && wc(t, a, r, o), yo = !1;
 			var f = t.memoizedState;
-			a.state = f, ko(t, r, a, i), Oo(), l = t.memoizedState, s || f !== l || bo ? (typeof d == "function" && (Sc(t, n, d, r), l = t.memoizedState), (c = bo || wc(t, n, c, r, f, l, o)) ? (u || typeof a.UNSAFE_componentWillMount != "function" && typeof a.componentWillMount != "function" || (typeof a.componentWillMount == "function" && a.componentWillMount(), typeof a.UNSAFE_componentWillMount == "function" && a.UNSAFE_componentWillMount()), typeof a.componentDidMount == "function" && (t.flags |= 4194308)) : (typeof a.componentDidMount == "function" && (t.flags |= 4194308), t.memoizedProps = r, t.memoizedState = l), a.props = r, a.state = l, a.context = o, r = c) : (typeof a.componentDidMount == "function" && (t.flags |= 4194308), r = !1);
+			a.state = f, Oo(t, r, a, i), Do(), l = t.memoizedState, s || f !== l || yo ? (typeof d == "function" && (xc(t, n, d, r), l = t.memoizedState), (c = yo || Cc(t, n, c, r, f, l, o)) ? (u || typeof a.UNSAFE_componentWillMount != "function" && typeof a.componentWillMount != "function" || (typeof a.componentWillMount == "function" && a.componentWillMount(), typeof a.UNSAFE_componentWillMount == "function" && a.UNSAFE_componentWillMount()), typeof a.componentDidMount == "function" && (t.flags |= 4194308)) : (typeof a.componentDidMount == "function" && (t.flags |= 4194308), t.memoizedProps = r, t.memoizedState = l), a.props = r, a.state = l, a.context = o, r = c) : (typeof a.componentDidMount == "function" && (t.flags |= 4194308), r = !1);
 		} else {
-			a = t.stateNode, So(e, t), o = t.memoizedProps, u = Ec(n, o), a.props = u, d = t.pendingProps, f = a.context, l = n.contextType, c = Li, typeof l == "object" && l && (c = ja(l)), s = n.getDerivedStateFromProps, (l = typeof s == "function" || typeof a.getSnapshotBeforeUpdate == "function") || typeof a.UNSAFE_componentWillReceiveProps != "function" && typeof a.componentWillReceiveProps != "function" || (o !== d || f !== c) && Tc(t, a, r, c), bo = !1, f = t.memoizedState, a.state = f, ko(t, r, a, i), Oo();
+			a = t.stateNode, xo(e, t), o = t.memoizedProps, u = Tc(n, o), a.props = u, d = t.pendingProps, f = a.context, l = n.contextType, c = Li, typeof l == "object" && l && (c = ja(l)), s = n.getDerivedStateFromProps, (l = typeof s == "function" || typeof a.getSnapshotBeforeUpdate == "function") || typeof a.UNSAFE_componentWillReceiveProps != "function" && typeof a.componentWillReceiveProps != "function" || (o !== d || f !== c) && wc(t, a, r, c), yo = !1, f = t.memoizedState, a.state = f, Oo(t, r, a, i), Do();
 			var p = t.memoizedState;
-			o !== d || f !== p || bo || e !== null && e.dependencies !== null && ka(e.dependencies) ? (typeof s == "function" && (Sc(t, n, s, r), p = t.memoizedState), (u = bo || wc(t, n, u, r, f, p, c) || e !== null && e.dependencies !== null && ka(e.dependencies)) ? (l || typeof a.UNSAFE_componentWillUpdate != "function" && typeof a.componentWillUpdate != "function" || (typeof a.componentWillUpdate == "function" && a.componentWillUpdate(r, p, c), typeof a.UNSAFE_componentWillUpdate == "function" && a.UNSAFE_componentWillUpdate(r, p, c)), typeof a.componentDidUpdate == "function" && (t.flags |= 4), typeof a.getSnapshotBeforeUpdate == "function" && (t.flags |= 1024)) : (typeof a.componentDidUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 4), typeof a.getSnapshotBeforeUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 1024), t.memoizedProps = r, t.memoizedState = p), a.props = r, a.state = p, a.context = c, r = u) : (typeof a.componentDidUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 4), typeof a.getSnapshotBeforeUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 1024), r = !1);
+			o !== d || f !== p || yo || e !== null && e.dependencies !== null && ka(e.dependencies) ? (typeof s == "function" && (xc(t, n, s, r), p = t.memoizedState), (u = yo || Cc(t, n, u, r, f, p, c) || e !== null && e.dependencies !== null && ka(e.dependencies)) ? (l || typeof a.UNSAFE_componentWillUpdate != "function" && typeof a.componentWillUpdate != "function" || (typeof a.componentWillUpdate == "function" && a.componentWillUpdate(r, p, c), typeof a.UNSAFE_componentWillUpdate == "function" && a.UNSAFE_componentWillUpdate(r, p, c)), typeof a.componentDidUpdate == "function" && (t.flags |= 4), typeof a.getSnapshotBeforeUpdate == "function" && (t.flags |= 1024)) : (typeof a.componentDidUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 4), typeof a.getSnapshotBeforeUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 1024), t.memoizedProps = r, t.memoizedState = p), a.props = r, a.state = p, a.context = c, r = u) : (typeof a.componentDidUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 4), typeof a.getSnapshotBeforeUpdate != "function" || o === e.memoizedProps && f === e.memoizedState || (t.flags |= 1024), r = !1);
 		}
-		return a = r, qc(e, t), r = !!(t.flags & 128), a || r ? (a = t.stateNode, n = r && typeof n.getDerivedStateFromError != "function" ? null : a.render(), t.flags |= 1, e !== null && r ? (t.child = vo(t, e.child, null, i), t.child = vo(t, null, n, i)) : Lc(e, t, n, i), t.memoizedState = a.state, e = t.child) : e = fl(e, t, i), e;
+		return a = r, qc(e, t), r = !!(t.flags & 128), a || r ? (a = t.stateNode, n = r && typeof n.getDerivedStateFromError != "function" ? null : a.render(), t.flags |= 1, e !== null && r ? (t.child = _o(t, e.child, null, i), t.child = _o(t, null, n, i)) : Lc(e, t, n, i), t.memoizedState = a.state, e = t.child) : e = fl(e, t, i), e;
 	}
 	function Zc(e, t, n, r) {
 		return va(), t.flags |= 256, Lc(e, t, n, r), t.child;
@@ -4154,7 +4154,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function $c(e) {
 		return {
 			baseLanes: e,
-			cachePool: eo()
+			cachePool: $a()
 		};
 	}
 	function el(e, t, n) {
@@ -4162,9 +4162,9 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	function tl(e, t, n) {
 		var r = t.pendingProps, i = !1, a = !!(t.flags & 128), o;
-		if ((o = a) || (o = e !== null && e.memoizedState === null ? !1 : !!(Wo.current & 2)), o && (i = !0, t.flags &= -129), o = !!(t.flags & 32), t.flags &= -33, e === null) {
+		if ((o = a) || (o = e !== null && e.memoizedState === null ? !1 : !!(Uo.current & 2)), o && (i = !0, t.flags &= -129), o = !!(t.flags & 32), t.flags &= -33, e === null) {
 			if (P) {
-				if (i ? zo(t) : Ho(), (e = N) ? (e = am(e, fa), e = e !== null && e.data !== "&" ? e : null, e !== null && (t.memoizedState = {
+				if (i ? Ro(t) : Vo(), (e = N) ? (e = am(e, fa), e = e !== null && e.data !== "&" ? e : null, e !== null && (t.memoizedState = {
 					dehydrated: e,
 					treeContext: na === null ? null : {
 						id: ra,
@@ -4175,26 +4175,26 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				}, n = Ki(e), n.return = t, t.child = n, ua = t, N = null)) : e = null, e === null) throw ma(t);
 				return t.lanes = sm(e) ? 32 : 536870912, null;
 			}
-			return a = r.children, r = r.fallback, i ? (Ho(), i = t.mode, a = rl({
+			return a = r.children, r = r.fallback, i ? (Vo(), i = t.mode, a = rl({
 				mode: "hidden",
 				children: a
-			}, i), r = Wi(r, i, n, null), a.return = t, r.return = t, a.sibling = r, t.child = a, r = t.child, r.memoizedState = $c(n), r.childLanes = el(e, o, n), t.memoizedState = Qc, Hc(null, r)) : (zo(t), nl(t, a));
+			}, i), r = Wi(r, i, n, null), a.return = t, r.return = t, a.sibling = r, t.child = a, r = t.child, r.memoizedState = $c(n), r.childLanes = el(e, o, n), t.memoizedState = Qc, Hc(null, r)) : (Ro(t), nl(t, a));
 		}
 		var s = e.memoizedState;
 		if (s !== null) {
 			var c = s.dehydrated;
 			if (c !== null) return al(e, t, a, o, r, c, s, n);
 		}
-		return i ? (Ho(), i = r.fallback, a = t.mode, s = e.child, c = s.sibling, r = Vi(s, {
+		return i ? (Vo(), i = r.fallback, a = t.mode, s = e.child, c = s.sibling, r = Vi(s, {
 			mode: "hidden",
 			children: r.children
-		}), r.subtreeFlags = s.subtreeFlags & 1206910976, c === null ? (i = Wi(i, a, n, null), i.flags |= 2) : i = Vi(c, i), i.return = t, r.return = t, r.sibling = i, t.child = r, Hc(null, r), r = t.child, i = e.child.memoizedState, i === null ? i = $c(n) : (a = i.cachePool, a === null ? a = eo() : (s = La._currentValue, a = a.parent === s ? a : {
+		}), r.subtreeFlags = s.subtreeFlags & 1206910976, c === null ? (i = Wi(i, a, n, null), i.flags |= 2) : i = Vi(c, i), i.return = t, r.return = t, r.sibling = i, t.child = r, Hc(null, r), r = t.child, i = e.child.memoizedState, i === null ? i = $c(n) : (a = i.cachePool, a === null ? a = $a() : (s = F._currentValue, a = a.parent === s ? a : {
 			parent: s,
 			pool: s
 		}), i = {
 			baseLanes: i.baseLanes | n,
 			cachePool: a
-		}), r.memoizedState = i, r.childLanes = el(e, o, n), t.memoizedState = Qc, Hc(e.child, r)) : (zo(t), n = e.child, e = n.sibling, n = Vi(n, {
+		}), r.memoizedState = i, r.childLanes = el(e, o, n), t.memoizedState = Qc, Hc(e.child, r)) : (Ro(t), n = e.child, e = n.sibling, n = Vi(n, {
 			mode: "visible",
 			children: r.children
 		}), n.return = t, n.sibling = null, e !== null && (o = t.deletions, o === null ? (t.deletions = [e], t.flags |= 16) : o.push(e)), t.child = n, t.memoizedState = null, n);
@@ -4209,14 +4209,14 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		return e = zi(22, e, null, t), e.lanes = 0, e;
 	}
 	function il(e, t, n) {
-		return vo(t, e.child, null, n), e = nl(t, t.pendingProps.children), e.flags |= 2, t.memoizedState = null, e;
+		return _o(t, e.child, null, n), e = nl(t, t.pendingProps.children), e.flags |= 2, t.memoizedState = null, e;
 	}
 	function al(e, t, n, r, i, a, s, c) {
-		if (n) return t.flags & 256 ? (zo(t), t.flags &= -257, il(e, t, c)) : t.memoizedState === null ? (Ho(), a = i.fallback, s = t.mode, i = rl({
+		if (n) return t.flags & 256 ? (Ro(t), t.flags &= -257, il(e, t, c)) : t.memoizedState === null ? (Vo(), a = i.fallback, s = t.mode, i = rl({
 			mode: "visible",
 			children: i.children
-		}, s), a = Wi(a, s, c, null), a.flags |= 2, i.return = t, a.return = t, i.sibling = a, t.child = i, vo(t, e.child, null, c), i = t.child, i.memoizedState = $c(c), i.childLanes = el(e, r, c), t.memoizedState = Qc, Hc(null, i)) : (Ho(), t.child = e.child, t.flags |= 128, null);
-		if (zo(t), sm(a)) {
+		}, s), a = Wi(a, s, c, null), a.flags |= 2, i.return = t, a.return = t, i.sibling = a, t.child = i, _o(t, e.child, null, c), i = t.child, i.memoizedState = $c(c), i.childLanes = el(e, r, c), t.memoizedState = Qc, Hc(null, i)) : (Vo(), t.child = e.child, t.flags |= 128, null);
+		if (Ro(t), sm(a)) {
 			if (r = a.nextSibling && a.nextSibling.dataset, r) var l = r.dgst;
 			return r = l, r !== "" && (i = Error(o(419)), i.stack = "", i.digest = r, ba({
 				value: i,
@@ -4224,9 +4224,9 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				stack: null
 			})), il(e, t, c);
 		}
-		if (B || Oa(e, t, c, !1), r = (c & e.childLanes) !== 0, B || r) {
-			if (Mo.current !== null) return il(e, t, c);
-			if (r = G, r !== null && (i = Et(r, c), i !== 0 && i !== s.retryLane)) throw s.retryLane = i, Pi(e, i), Pd(r, e, i), Ic;
+		if (Ic || Oa(e, t, c, !1), r = (c & e.childLanes) !== 0, Ic || r) {
+			if (jo.current !== null) return il(e, t, c);
+			if (r = G, r !== null && (i = Et(r, c), i !== 0 && i !== s.retryLane)) throw s.retryLane = i, Pi(e, i), Pd(r, e, i), Fc;
 			return om(a) || Kd(), il(e, t, c);
 		}
 		return om(a) ? (t.flags |= 192, t.child = e.child, null) : (e = s.treeContext, N = lm(a.nextSibling), ua = t, P = !0, da = null, fa = !1, e !== null && la(t, e), t = nl(t, i.children), t.flags |= 134221824, t);
@@ -4239,7 +4239,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function sl(e) {
 		for (var t = null; e !== null;) {
 			var n = e.alternate;
-			n !== null && qo(n) === null && (t = e), e = e.sibling;
+			n !== null && Ko(n) === null && (t = e), e = e.sibling;
 		}
 		return t;
 	}
@@ -4265,10 +4265,10 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function ul(e, t, n) {
 		var r = t.pendingProps, i = r.revealOrder, a = r.tail;
 		r = r.children;
-		var o = Wo.current;
-		if (t.flags & 128) return Go(t, o), null;
+		var o = Uo.current;
+		if (t.flags & 128) return Wo(t, o), null;
 		var s = !!(o & 2);
-		if (s ? (o = o & 1 | 2, t.flags |= 128) : o &= 1, Go(t, o), i === "backwards" && e !== null ? (ll(e), Lc(e, t, r, n), ll(e)) : Lc(e, t, r, n), r = P ? $i : 0, !s && e !== null && e.flags & 128) a: for (e = t.child; e !== null;) {
+		if (s ? (o = o & 1 | 2, t.flags |= 128) : o &= 1, Wo(t, o), i === "backwards" && e !== null ? (ll(e), Lc(e, t, r, n), ll(e)) : Lc(e, t, r, n), r = P ? $i : 0, !s && e !== null && e.flags & 128) a: for (e = t.child; e !== null;) {
 			if (e.tag === 13) e.memoizedState !== null && ol(e, n, t);
 			else if (e.tag === 19) ol(e, n, t);
 			else if (e.child !== null) {
@@ -4288,7 +4288,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				break;
 			case "unstable_legacy-backwards":
 				for (n = null, i = t.child, t.child = null; i !== null;) {
-					if (e = i.alternate, e !== null && qo(e) === null) {
+					if (e = i.alternate, e !== null && Ko(e) === null) {
 						t.child = i;
 						break;
 					}
@@ -4329,7 +4329,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function ml(e, t, n) {
 		switch (t.tag) {
 			case 3:
-				Pe(t, t.stateNode.containerInfo), wa(t, La, e.memoizedState.cache), va();
+				Pe(t, t.stateNode.containerInfo), wa(t, F, e.memoizedState.cache), va();
 				break;
 			case 27:
 			case 5:
@@ -4342,17 +4342,17 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				wa(t, t.type, t.memoizedProps.value);
 				break;
 			case 31:
-				if (t.memoizedState !== null) return t.flags |= 128, Bo(t), null;
+				if (t.memoizedState !== null) return t.flags |= 128, zo(t), null;
 				break;
 			case 13:
 				var r = t.memoizedState;
 				if (r !== null) {
-					if (r.dehydrated !== null) return zo(t), t.flags |= 128, null;
+					if (r.dehydrated !== null) return Ro(t), t.flags |= 128, null;
 					r = Oa(e, t, n, !1);
 					var i = t.child.childLanes;
-					return r || (n & i) !== 0 ? tl(e, t, n) : (zo(t), e = fl(e, t, n), e === null ? null : e.sibling);
+					return r || (n & i) !== 0 ? tl(e, t, n) : (Ro(t), e = fl(e, t, n), e === null ? null : e.sibling);
 				}
-				zo(t);
+				Ro(t);
 				break;
 			case 19:
 				if (t.flags & 128) return ul(e, t, n);
@@ -4360,26 +4360,26 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					if (r) return ul(e, t, n);
 					t.flags |= 128;
 				}
-				if (i = t.memoizedState, i !== null && (i.rendering = null, i.tail = null, i.lastEffect = null), Go(t, Wo.current), r) break;
+				if (i = t.memoizedState, i !== null && (i.rendering = null, i.tail = null, i.lastEffect = null), Wo(t, Uo.current), r) break;
 				return null;
 			case 22: return t.lanes = 0, Vc(e, t, n, t.pendingProps);
-			case 24: wa(t, La, e.memoizedState.cache);
+			case 24: wa(t, F, e.memoizedState.cache);
 		}
 		return fl(e, t, n);
 	}
 	function hl(e, t, n) {
 		if (e !== null) {
-			if (e.memoizedProps !== t.pendingProps) B = !0;
+			if (e.memoizedProps !== t.pendingProps) Ic = !0;
 			else {
-				if (!pl(e, n) && !(t.flags & 128)) return B = !1, ml(e, t, n);
-				B = !!(e.flags & 131072);
+				if (!pl(e, n) && !(t.flags & 128)) return Ic = !1, ml(e, t, n);
+				Ic = !!(e.flags & 131072);
 			}
-		} else B = !1, P && t.flags & 1048576 && oa(t, $i, t.index);
+		} else Ic = !1, P && t.flags & 1048576 && oa(t, $i, t.index);
 		switch (t.lanes = 0, t.tag) {
 			case 16:
 				a: {
 					var r = t.pendingProps;
-					if (e = so(t.elementType), t.type = e, typeof e == "function") Bi(e) ? (r = Ec(e, r), t.tag = 1, t = Xc(null, t, e, r, n)) : (t.tag = 0, t = Jc(null, t, e, r, n));
+					if (e = oo(t.elementType), t.type = e, typeof e == "function") Bi(e) ? (r = Tc(e, r), t.tag = 1, t = Xc(null, t, e, r, n)) : (t.tag = 0, t = Jc(null, t, e, r, n));
 					else {
 						if (e != null) {
 							var i = e.$$typeof;
@@ -4401,15 +4401,15 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				}
 				return t;
 			case 0: return Jc(e, t, t.type, t.pendingProps, n);
-			case 1: return r = t.type, i = Ec(r, t.pendingProps), Xc(e, t, r, i, n);
+			case 1: return r = t.type, i = Tc(r, t.pendingProps), Xc(e, t, r, i, n);
 			case 3:
 				a: {
 					if (Pe(t, t.stateNode.containerInfo), e === null) throw Error(o(387));
 					r = t.pendingProps;
 					var a = t.memoizedState;
-					i = a.element, So(e, t), ko(t, r, null, n);
+					i = a.element, xo(e, t), Oo(t, r, null, n);
 					var s = t.memoizedState;
-					if (r = s.cache, wa(t, La, r), r !== a.cache && Da(t, [La], n, !0), Oo(), r = s.element, a.isDehydrated) {
+					if (r = s.cache, wa(t, F, r), r !== a.cache && Da(t, [F], n, !0), Do(), r = s.element, a.isDehydrated) {
 						if (a = {
 							element: r,
 							isDehydrated: !1,
@@ -4428,7 +4428,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 								break;
 							default: e = e.nodeName === "HTML" ? e.ownerDocument.body : e;
 						}
-						for (N = lm(e.firstChild), ua = t, P = !0, da = null, fa = !0, n = yo(t, null, r, n), t.child = n; n;) n.flags = n.flags & -3 | 134221824, n = n.sibling;
+						for (N = lm(e.firstChild), ua = t, P = !0, da = null, fa = !0, n = vo(t, null, r, n), t.child = n; n;) n.flags = n.flags & -3 | 134221824, n = n.sibling;
 					} else {
 						if (va(), r === i) {
 							t = fl(e, t, n);
@@ -4441,10 +4441,10 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				return t;
 			case 26: return qc(e, t), e === null ? (n = Nm(t.type, null, t.pendingProps, null)) ? t.memoizedState = n : P || (t.stateNode = fp(t.type, t.pendingProps, Me.current, t)) : t.memoizedState = Nm(t.type, e.memoizedProps, t.pendingProps, e.memoizedState), null;
 			case 27: return Ie(t), e === null && P && (r = t.stateNode = hm(t.type, t.pendingProps, Me.current), ua = t, fa = !0, i = N, Sp(t.type) ? (um = i, N = lm(r.firstChild)) : N = i), Lc(e, t, t.pendingProps.children, n), qc(e, t), e === null && (t.flags |= 4194304), t.child;
-			case 5: return e === null && P && ((i = r = N) && (r = rm(r, t.type, t.pendingProps, fa), r === null ? i = !1 : (t.stateNode = r, ua = t, N = lm(r.firstChild), fa = !1, i = !0)), i || ma(t)), Ie(t), i = t.type, a = t.pendingProps, s = e === null ? null : e.memoizedProps, r = a.children, pp(i, a) ? r = null : s !== null && pp(i, s) && (t.flags |= 32), t.memoizedState !== null && (i = rs(e, t, os, null, null, n), sh._currentValue = i), qc(e, t), Lc(e, t, r, n), t.child;
+			case 5: return e === null && P && ((i = r = N) && (r = rm(r, t.type, t.pendingProps, fa), r === null ? i = !1 : (t.stateNode = r, ua = t, N = lm(r.firstChild), fa = !1, i = !0)), i || ma(t)), Ie(t), i = t.type, a = t.pendingProps, s = e === null ? null : e.memoizedProps, r = a.children, pp(i, a) ? r = null : s !== null && pp(i, s) && (t.flags |= 32), t.memoizedState !== null && (i = ns(e, t, as, null, null, n), sh._currentValue = i), qc(e, t), Lc(e, t, r, n), t.child;
 			case 6: return e === null && P && ((e = n = N) && (n = im(n, t.pendingProps, fa), n === null ? e = !1 : (t.stateNode = n, ua = t, N = null, e = !0)), e || ma(t)), null;
 			case 13: return tl(e, t, n);
-			case 4: return Pe(t, t.stateNode.containerInfo), r = t.pendingProps, e === null ? t.child = vo(t, null, r, n) : Lc(e, t, r, n), t.child;
+			case 4: return Pe(t, t.stateNode.containerInfo), r = t.pendingProps, e === null ? t.child = _o(t, null, r, n) : Lc(e, t, r, n), t.child;
 			case 11: return Rc(e, t, t.type, t.pendingProps, n);
 			case 7: return r = t.pendingProps, qc(e, t), Lc(e, t, r, n), t.child;
 			case 8: return Lc(e, t, t.pendingProps.children, n), t.child;
@@ -4456,13 +4456,13 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			case 19: return ul(e, t, n);
 			case 31: return Kc(e, t, n);
 			case 22: return Vc(e, t, n, t.pendingProps);
-			case 24: return Aa(t), r = ja(La), e === null ? (i = Qa(), i === null && (i = G, a = Ra(), i.pooledCache = a, a.refCount++, a !== null && (i.pooledCacheLanes |= n), i = a), t.memoizedState = {
+			case 24: return Aa(t), r = ja(F), e === null ? (i = Za(), i === null && (i = G, a = La(), i.pooledCache = a, a.refCount++, a !== null && (i.pooledCacheLanes |= n), i = a), t.memoizedState = {
 				parent: r,
 				cache: i
-			}, xo(t), wa(t, La, i)) : ((e.lanes & n) !== 0 && (So(e, t), ko(t, null, null, n), Oo()), i = e.memoizedState, a = t.memoizedState, i.parent === r ? (r = a.cache, wa(t, La, r), r !== i.cache && Da(t, [La], n, !0)) : (i = {
+			}, bo(t), wa(t, F, i)) : ((e.lanes & n) !== 0 && (xo(e, t), Oo(t, null, null, n), Do()), i = e.memoizedState, a = t.memoizedState, i.parent === r ? (r = a.cache, wa(t, F, r), r !== i.cache && Da(t, [F], n, !0)) : (i = {
 				parent: r,
 				cache: r
-			}, t.memoizedState = i, t.lanes === 0 && (t.memoizedState = t.updateQueue.baseState = i), wa(t, La, r))), Lc(e, t, t.pendingProps.children, n), t.child;
+			}, t.memoizedState = i, t.lanes === 0 && (t.memoizedState = t.updateQueue.baseState = i), wa(t, F, r))), Lc(e, t, t.pendingProps.children, n), t.child;
 			case 30: return t.stateNode === null && (t.stateNode = {
 				autoName: null,
 				paired: null,
@@ -4482,7 +4482,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			if (e.flags |= 16777216, (i & 335544128) === i) {
 				if (e.stateNode.complete) e.flags |= 8192;
 				else if (Ud()) e.flags |= 8192;
-				else throw co = io, no;
+				else throw so = ro, to;
 			}
 		} else e.flags &= -16777217;
 	}
@@ -4490,7 +4490,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		if (t.type !== "stylesheet" || t.state.loading & 4) e.flags &= -16777217;
 		else if (e.flags |= 16777216, !Ym(t)) {
 			if (Ud()) e.flags |= 8192;
-			else throw co = io, no;
+			else throw so = ro, to;
 		}
 	}
 	function yl(e, t) {
@@ -4527,7 +4527,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			case 9:
 			case 14: return V(t), null;
 			case 1: return V(t), null;
-			case 3: return n = t.stateNode, r = null, e !== null && (r = e.memoizedState.cache), t.memoizedState.cache !== r && (t.flags |= 2048), Ta(La), Fe(), n.pendingContext && (n.context = n.pendingContext, n.pendingContext = null), (e === null || e.child === null) && (_a(t) ? gl(t) : e === null || e.memoizedState.isDehydrated && !(t.flags & 256) || (t.flags |= 1024, ya())), V(t), null;
+			case 3: return n = t.stateNode, r = null, e !== null && (r = e.memoizedState.cache), t.memoizedState.cache !== r && (t.flags |= 2048), Ta(F), Fe(), n.pendingContext && (n.context = n.pendingContext, n.pendingContext = null), (e === null || e.child === null) && (_a(t) ? gl(t) : e === null || e.memoizedState.isDehydrated && !(t.flags & 256) || (t.flags |= 1024, ya())), V(t), null;
 			case 26:
 				var i = t.type, a = t.memoizedState;
 				return e === null ? (gl(t), a === null ? (V(t), _l(t, i, null, r, n)) : (V(t), vl(t, a))) : a ? a === e.memoizedState ? (V(t), t.flags &= -16777217) : (gl(t), V(t), vl(t, a)) : (e = e.memoizedProps, e !== r && gl(t), V(t), _l(t, i, e, r, n)), null;
@@ -4628,7 +4628,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						} else va(), !(t.flags & 128) && (t.memoizedState = null), t.flags |= 4;
 						V(t), e = !1;
 					} else n = ya(), e !== null && e.memoizedState !== null && (e.memoizedState.hydrationErrors = n), e = !0;
-					if (!e) return t.flags & 256 ? (Uo(t), t) : (Uo(t), null);
+					if (!e) return t.flags & 256 ? (Ho(t), t) : (Ho(t), null);
 					if (t.flags & 128) throw Error(o(558));
 				}
 				return V(t), null;
@@ -4642,20 +4642,20 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						} else va(), !(t.flags & 128) && (t.memoizedState = null), t.flags |= 4;
 						V(t), i = !1;
 					} else i = ya(), e !== null && e.memoizedState !== null && (e.memoizedState.hydrationErrors = i), i = !0;
-					if (!i) return t.flags & 256 ? (Uo(t), t) : (Uo(t), null);
+					if (!i) return t.flags & 256 ? (Ho(t), t) : (Ho(t), null);
 				}
-				return Uo(t), t.flags & 128 ? (t.lanes = n, t) : (n = r !== null, e = e !== null && e.memoizedState !== null, n && (r = t.child, i = null, r.alternate !== null && r.alternate.memoizedState !== null && r.alternate.memoizedState.cachePool !== null && (i = r.alternate.memoizedState.cachePool.pool), a = null, r.memoizedState !== null && r.memoizedState.cachePool !== null && (a = r.memoizedState.cachePool.pool), a !== i && (r.flags |= 2048)), n !== e && n && (t.child.flags |= 8192), yl(t, t.updateQueue), V(t), null);
+				return Ho(t), t.flags & 128 ? (t.lanes = n, t) : (n = r !== null, e = e !== null && e.memoizedState !== null, n && (r = t.child, i = null, r.alternate !== null && r.alternate.memoizedState !== null && r.alternate.memoizedState.cachePool !== null && (i = r.alternate.memoizedState.cachePool.pool), a = null, r.memoizedState !== null && r.memoizedState.cachePool !== null && (a = r.memoizedState.cachePool.pool), a !== i && (r.flags |= 2048)), n !== e && n && (t.child.flags |= 8192), yl(t, t.updateQueue), V(t), null);
 			case 4: return Fe(), e === null && Wf(t.stateNode.containerInfo), t.flags |= 67108864, V(t), null;
 			case 10: return Ta(t.type), V(t), null;
 			case 19:
-				if (Ko(t), r = t.memoizedState, r === null) return V(t), null;
+				if (Go(t), r = t.memoizedState, r === null) return V(t), null;
 				if (i = !!(t.flags & 128), a = r.rendering, a === null) {
 					if (i) bl(r, !1);
 					else {
 						if (Y !== 0 || e !== null && e.flags & 128) for (e = t.child; e !== null;) {
-							if (a = qo(e), a !== null) {
+							if (a = Ko(e), a !== null) {
 								for (t.flags |= 128, bl(r, !1), e = a.updateQueue, t.updateQueue = e, yl(t, e), t.subtreeFlags = 0, e = n, n = t.child; n !== null;) Hi(n, e), n = n.sibling;
-								return Go(t, Wo.current & 1 | 2), P && aa(t, r.treeForkCount), t.child;
+								return Wo(t, Uo.current & 1 | 2), P && aa(t, r.treeForkCount), t.child;
 							}
 							e = e.sibling;
 						}
@@ -4663,7 +4663,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					}
 				} else {
 					if (!i) {
-						if (e = qo(a), e !== null) {
+						if (e = Ko(a), e !== null) {
 							if (t.flags |= 128, i = !0, e = e.updateQueue, t.updateQueue = e, yl(t, e), bl(r, !0), r.tail === null && r.tailMode !== "collapsed" && r.tailMode !== "visible" && !a.alternate && !P) return V(t), null;
 						} else 2 * Xe() - r.renderingStartTime > _d && n !== 536870912 && (t.flags |= 128, i = !0, bl(r, !1), t.lanes = 4194304);
 					}
@@ -4681,12 +4681,12 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						}
 						n = !0;
 					}
-					return r.rendering = e, r.tail = e.sibling, r.renderingStartTime = Xe(), e.sibling = null, a = Wo.current, a = i ? a & 1 | 2 : a & 1, r.tailMode === "visible" || r.tailMode === "collapsed" || !n || P ? Go(t, a) : (n = a, O(Lo, t), O(Wo, n), Ro === null && (Ro = t)), P && aa(t, r.treeForkCount), e;
+					return r.rendering = e, r.tail = e.sibling, r.renderingStartTime = Xe(), e.sibling = null, a = Uo.current, a = i ? a & 1 | 2 : a & 1, r.tailMode === "visible" || r.tailMode === "collapsed" || !n || P ? Wo(t, a) : (n = a, O(Io, t), O(Uo, n), Lo === null && (Lo = t)), P && aa(t, r.treeForkCount), e;
 				}
 				return V(t), null;
 			case 22:
-			case 23: return Uo(t), Io(), r = t.memoizedState !== null, e === null ? r && (t.flags |= 8192) : e.memoizedState !== null !== r && (t.flags |= 8192), r ? n & 536870912 && !(t.flags & 128) && (V(t), t.subtreeFlags & 6 && (t.flags |= 8192)) : V(t), n = t.updateQueue, n !== null && yl(t, n.retryQueue), n = null, e !== null && e.memoizedState !== null && e.memoizedState.cachePool !== null && (n = e.memoizedState.cachePool.pool), r = null, t.memoizedState !== null && t.memoizedState.cachePool !== null && (r = t.memoizedState.cachePool.pool), r !== n && (t.flags |= 2048), e !== null && ke(Za), null;
-			case 24: return n = null, e !== null && (n = e.memoizedState.cache), t.memoizedState.cache !== n && (t.flags |= 2048), Ta(La), V(t), null;
+			case 23: return Ho(t), Fo(), r = t.memoizedState !== null, e === null ? r && (t.flags |= 8192) : e.memoizedState !== null !== r && (t.flags |= 8192), r ? n & 536870912 && !(t.flags & 128) && (V(t), t.subtreeFlags & 6 && (t.flags |= 8192)) : V(t), n = t.updateQueue, n !== null && yl(t, n.retryQueue), n = null, e !== null && e.memoizedState !== null && e.memoizedState.cachePool !== null && (n = e.memoizedState.cachePool.pool), r = null, t.memoizedState !== null && t.memoizedState.cachePool !== null && (r = t.memoizedState.cachePool.pool), r !== n && (t.flags |= 2048), e !== null && ke(Xa), null;
+			case 24: return n = null, e !== null && (n = e.memoizedState.cache), t.memoizedState.cache !== n && (t.flags |= 2048), Ta(F), V(t), null;
 			case 25: return null;
 			case 30: return t.flags |= 33554432, V(t), null;
 		}
@@ -4695,28 +4695,28 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function Sl(e, t) {
 		switch (ca(t), t.tag) {
 			case 1: return e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, t) : null;
-			case 3: return Ta(La), Fe(), e = t.flags, e & 65536 && !(e & 128) ? (t.flags = e & -65537 | 128, t) : null;
+			case 3: return Ta(F), Fe(), e = t.flags, e & 65536 && !(e & 128) ? (t.flags = e & -65537 | 128, t) : null;
 			case 26:
 			case 27:
 			case 5: return Le(t), null;
 			case 31:
 				if (t.memoizedState !== null) {
-					if (Uo(t), t.alternate === null) throw Error(o(340));
+					if (Ho(t), t.alternate === null) throw Error(o(340));
 					va();
 				}
 				return e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, t) : null;
 			case 13:
-				if (Uo(t), e = t.memoizedState, e !== null && e.dehydrated !== null) {
+				if (Ho(t), e = t.memoizedState, e !== null && e.dehydrated !== null) {
 					if (t.alternate === null) throw Error(o(340));
 					va();
 				}
 				return e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, t) : null;
-			case 19: return Ko(t), e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, e = t.memoizedState, e !== null && (e.rendering = null, e.tail = null), t.flags |= 4, t) : null;
+			case 19: return Go(t), e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, e = t.memoizedState, e !== null && (e.rendering = null, e.tail = null), t.flags |= 4, t) : null;
 			case 4: return Fe(), null;
 			case 10: return Ta(t.type), null;
 			case 22:
-			case 23: return Uo(t), Io(), e !== null && ke(Za), e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, t) : null;
-			case 24: return Ta(La), null;
+			case 23: return Ho(t), Fo(), e !== null && ke(Xa), e = t.flags, e & 65536 ? (t.flags = e & -65537 | 128, t) : null;
+			case 24: return Ta(F), null;
 			case 25: return null;
 			default: return null;
 		}
@@ -4724,7 +4724,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function Cl(e, t) {
 		switch (ca(t), t.tag) {
 			case 3:
-				Ta(La), Fe();
+				Ta(F), Fe();
 				break;
 			case 26:
 			case 27:
@@ -4735,22 +4735,22 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				Fe();
 				break;
 			case 31:
-				t.memoizedState !== null && Uo(t);
+				t.memoizedState !== null && Ho(t);
 				break;
 			case 13:
-				Uo(t);
+				Ho(t);
 				break;
 			case 19:
-				Ko(t);
+				Go(t);
 				break;
 			case 10:
 				Ta(t.type);
 				break;
 			case 22:
 			case 23:
-				Uo(t), Io(), e !== null && ke(Za);
+				Ho(t), Fo(), e !== null && ke(Xa);
 				break;
-			case 24: Ta(La);
+			case 24: Ta(F);
 		}
 	}
 	function wl(e, t) {
@@ -4803,14 +4803,14 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		if (t !== null) {
 			var n = e.stateNode;
 			try {
-				jo(t, n);
+				Ao(t, n);
 			} catch (t) {
 				Z(e, e.return, t);
 			}
 		}
 	}
 	function Dl(e, t, n) {
-		n.props = Ec(e.type, e.memoizedProps), n.state = e.memoizedState;
+		n.props = Tc(e.type, e.memoizedProps), n.state = e.memoizedState;
 		try {
 			n.componentWillUnmount();
 		} catch (n) {
@@ -5157,7 +5157,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						n = void 0, i = r.memoizedProps, r = r.memoizedState;
 						var a = t.stateNode;
 						try {
-							var s = Ec(t.type, i);
+							var s = Tc(t.type, i);
 							n = a.getSnapshotBeforeUpdate(s, r), a.__reactInternalSnapshotBeforeUpdate = n;
 						} catch (e) {
 							Z(t, t.return, e);
@@ -5211,7 +5211,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						Z(n, n.return, e);
 					}
 					else {
-						var i = Ec(n.type, t.memoizedProps);
+						var i = Tc(n.type, t.memoizedProps);
 						t = t.memoizedState;
 						try {
 							e.componentDidUpdate(i, t, e.__reactInternalSnapshotBeforeUpdate);
@@ -5232,7 +5232,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						case 1: t = n.child.stateNode;
 					}
 					try {
-						jo(e, t);
+						Ao(e, t);
 					} catch (e) {
 						Z(n, n.return, e);
 					}
@@ -5745,7 +5745,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						var c = r.stateNode;
 						try {
 							var l = i.shared.hiddenCallbacks;
-							if (l !== null) for (i.shared.hiddenCallbacks = null, i = 0; i < l.length; i++) Ao(l[i], c);
+							if (l !== null) for (i.shared.hiddenCallbacks = null, i = 0; i < l.length; i++) ko(l[i], c);
 						} catch (e) {
 							Z(r, r.return, e);
 						}
@@ -5785,10 +5785,10 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	function Bu(e, t) {
 		var n = null;
-		e !== null && e.memoizedState !== null && e.memoizedState.cachePool !== null && (n = e.memoizedState.cachePool.pool), e = null, t.memoizedState !== null && t.memoizedState.cachePool !== null && (e = t.memoizedState.cachePool.pool), e !== n && (e != null && e.refCount++, n != null && za(n));
+		e !== null && e.memoizedState !== null && e.memoizedState.cachePool !== null && (n = e.memoizedState.cachePool.pool), e = null, t.memoizedState !== null && t.memoizedState.cachePool !== null && (e = t.memoizedState.cachePool.pool), e !== n && (e != null && e.refCount++, n != null && Ra(n));
 	}
 	function Vu(e, t) {
-		e = null, t.alternate !== null && (e = t.alternate.memoizedState.cache), t = t.memoizedState.cache, t !== e && (t.refCount++, e != null && za(e));
+		e = null, t.alternate !== null && (e = t.alternate.memoizedState.cache), t = t.memoizedState.cache, t !== e && (t.refCount++, e != null && Ra(e));
 	}
 	function Hu(e, t, n, r) {
 		var i = (n & 335544064) === n;
@@ -5809,7 +5809,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				Hu(e, t, n, r);
 				break;
 			case 3:
-				Hu(e, t, n, r), i && hu && (e = e.containerInfo, e = e.nodeType === 9 ? e.body : e.nodeName === "HTML" ? e.ownerDocument.body : e, e.style.viewTransitionName === "root" && (e.style.viewTransitionName = ""), e = e.ownerDocument.documentElement, e !== null && e.style.viewTransitionName === "none" && (e.style.viewTransitionName = "")), a & 2048 && (a = null, t.alternate !== null && (a = t.alternate.memoizedState.cache), t = t.memoizedState.cache, t !== a && (t.refCount++, a != null && za(a)));
+				Hu(e, t, n, r), i && hu && (e = e.containerInfo, e = e.nodeType === 9 ? e.body : e.nodeName === "HTML" ? e.ownerDocument.body : e, e.style.viewTransitionName === "root" && (e.style.viewTransitionName = ""), e = e.ownerDocument.documentElement, e !== null && e.style.viewTransitionName === "none" && (e.style.viewTransitionName = "")), a & 2048 && (a = null, t.alternate !== null && (a = t.alternate.memoizedState.cache), t = t.memoizedState.cache, t !== a && (t.refCount++, a != null && Ra(a)));
 				break;
 			case 12:
 				if (a & 2048) {
@@ -5988,7 +5988,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						r != null && r.refCount++;
 					}
 					break;
-				case 24: za(n.memoizedState.cache);
+				case 24: Ra(n.memoizedState.cache);
 			}
 			if (r = n.child, r !== null) r.return = n, du = r;
 			else a: for (n = e; du !== null;) {
@@ -6008,11 +6008,11 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	var ed = {
 		getCacheForType: function(e) {
-			var t = ja(La), n = t.data.get(e);
+			var t = ja(F), n = t.data.get(e);
 			return n === void 0 && (n = e(), t.data.set(e, n)), n;
 		},
 		cacheSignal: function() {
-			return ja(La).controller.signal;
+			return ja(F).controller.signal;
 		}
 	}, td = typeof WeakMap == "function" ? WeakMap : Map, W = 0, G = null, K = null, q = 0, J = 0, nd = null, rd = !1, id = !1, ad = !1, od = 0, Y = 0, sd = 0, cd = 0, ld = 0, ud = 0, dd = 0, fd = null, pd = null, md = !1, hd = 0, gd = 0, _d = Infinity, vd = null, yd = null, X = 0, bd = null, xd = null, Sd = 0, Cd = 0, wd = null, Td = null, Ed = null, Dd = null, Od = null, kd = 0, Ad = null;
 	function jd() {
@@ -6025,7 +6025,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				pt <<= 1, !(pt & 3932160) && (pt = 262144), ud = e;
 			} else ud = 536870912;
 		}
-		return e = Lo.current, e !== null && (e.flags |= 32), ud;
+		return e = Io.current, e !== null && (e.flags |= 32), ud;
 	}
 	function Nd(e, t) {
 		if (t != null) {
@@ -6150,7 +6150,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	function Bd() {
 		if (K !== null) {
 			if (J === 0) var e = K.return;
-			else e = K, Ca = Sa = null, ls(e), fo = null, po = 0, e = K;
+			else e = K, Ca = Sa = null, cs(e), uo = null, fo = 0, e = K;
 			for (; e !== null;) Cl(e.alternate, e), e = e.return;
 			K = null;
 		}
@@ -6160,22 +6160,22 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		return n !== -1 && (e.timeoutHandle = -1, _p(n)), n = e.cancelPendingCommit, n !== null && (e.cancelPendingCommit = null, n()), Sd = 0, Bd(), G = e, K = n = Vi(e.current, null), q = t, J = 0, nd = null, rd = !1, id = _t(e, t), ad = !1, dd = ud = ld = cd = sd = Y = 0, pd = fd = null, md = !1, od = vt(e, t), ji(), n;
 	}
 	function Hd(e, t) {
-		F = null, E.H = vc, t === to || t === ro ? (t = lo(), J = 3) : t === no ? (t = lo(), J = 4) : J = t === Ic ? 8 : typeof t == "object" && t && typeof t.then == "function" ? 6 : 1, nd = t, K === null && (Y = 1, Ac(e, Yi(t, e.current)));
+		I = null, E.H = _c, t === eo || t === no ? (t = co(), J = 3) : t === to ? (t = co(), J = 4) : J = t === Fc ? 8 : typeof t == "object" && t && typeof t.then == "function" ? 6 : 1, nd = t, K === null && (Y = 1, kc(e, Yi(t, e.current)));
 	}
 	function Ud() {
-		var e = Lo.current;
-		return e === null ? !0 : (q & 4194048) === q ? Ro === null : (q & 62914560) === q || q & 536870912 ? e === Ro : !1;
+		var e = Io.current;
+		return e === null ? !0 : (q & 4194048) === q ? Lo === null : (q & 62914560) === q || q & 536870912 ? e === Lo : !1;
 	}
 	function Wd() {
 		var e = E.H;
-		return E.H = vc, e === null ? vc : e;
+		return E.H = _c, e === null ? _c : e;
 	}
 	function Gd() {
 		var e = E.A;
 		return E.A = ed, e;
 	}
 	function Kd() {
-		Y = 4, rd || (q & 4194048) !== q && Lo.current !== null || (id = !0), !(sd & 134217727) && !(cd & 134217727) || G === null || Rd(G, q, ud, !1);
+		Y = 4, rd || (q & 4194048) !== q && Io.current !== null || (id = !0), !(sd & 134217727) && !(cd & 134217727) || G === null || Rd(G, q, ud, !1);
 	}
 	function qd(e, t, n) {
 		var r = W;
@@ -6195,7 +6195,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						case 2:
 						case 9:
 						case 6:
-							Lo.current === null && (t = !0);
+							Io.current === null && (t = !0);
 							var l = J;
 							if (J = 0, nd = null, $d(e, s, c, l), n && id) {
 								o = 0;
@@ -6232,7 +6232,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 							break;
 						case 2:
 						case 9:
-							if (ao(a)) {
+							if (io(a)) {
 								J = 0, nd = null, Qd(t);
 								break;
 							}
@@ -6247,7 +6247,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 							J = 5;
 							break a;
 						case 7:
-							ao(a) ? (J = 0, nd = null, Qd(t)) : (J = 0, nd = null, $d(e, t, a, 7));
+							io(a) ? (J = 0, nd = null, Qd(t)) : (J = 0, nd = null, $d(e, t, a, 7));
 							break;
 						case 5:
 							var s = null;
@@ -6304,7 +6304,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 				t = Yc(n, t, t.pendingProps, t.type.render, t.ref, q);
 				break;
 			case 5:
-				ls(t);
+				cs(t);
 				var r = t;
 				r === ua && (P ? (ga(r), r.tag === 5 && r.stateNode != null && (N = r.stateNode)) : (ga(r), P = !0));
 			default: Cl(n, t), t = K = Hi(t, od), t = hl(n, t, od);
@@ -6312,19 +6312,19 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		e.memoizedProps = e.pendingProps, t === null ? ef(e) : K = t;
 	}
 	function $d(e, t, n, r) {
-		Ca = Sa = null, ls(t), fo = null, po = 0;
+		Ca = Sa = null, cs(t), uo = null, fo = 0;
 		var i = t.return;
 		try {
-			if (Fc(e, i, t, n, q)) {
-				Y = 1, Ac(e, Yi(n, e.current)), K = null;
+			if (Pc(e, i, t, n, q)) {
+				Y = 1, kc(e, Yi(n, e.current)), K = null;
 				return;
 			}
 		} catch (t) {
 			if (i !== null) throw K = i, t;
-			Y = 1, Ac(e, Yi(n, e.current)), K = null;
+			Y = 1, kc(e, Yi(n, e.current)), K = null;
 			return;
 		}
-		t.flags & 32768 ? (P || r === 1 ? e = !0 : id || q & 536870912 ? e = !1 : (rd = e = !0, (r === 2 || r === 9 || r === 3 || r === 6) && (r = Lo.current, r !== null && r.tag === 13 && (r.flags |= 16384))), tf(t, e)) : ef(t);
+		t.flags & 32768 ? (P || r === 1 ? e = !0 : id || q & 536870912 ? e = !1 : (rd = e = !0, (r === 2 || r === 9 || r === 3 || r === 6) && (r = Io.current, r !== null && r.tag === 13 && (r.flags |= 16384))), tf(t, e)) : ef(t);
 	}
 	function ef(e) {
 		var t = e;
@@ -6375,7 +6375,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	function rf(e, t, n, r, i, a, o) {
 		var s = t.lanes | t.childLanes;
-		if (Cd = s, s |= Ai, Ct(e, n, s, r, i, a), Dd = null, (n & 335544064) === n ? (Od = Ha(e), r = 10262) : (Od = null, r = 10256), (t.subtreeFlags & r) !== 0 || (t.flags & r) !== 0 ? (e.callbackNode = null, e.callbackPriority = 0, yf(et, function() {
+		if (Cd = s, s |= Ai, Ct(e, n, s, r, i, a), Dd = null, (n & 335544064) === n ? (Od = Va(e), r = 10262) : (Od = null, r = 10256), (t.subtreeFlags & r) !== 0 || (t.flags & r) !== 0 ? (e.callbackNode = null, e.callbackPriority = 0, yf(et, function() {
 			return ff(), null;
 		})) : (e.callbackNode = null, e.callbackPriority = 0), Hl = !1, r = !!(t.flags & 13878), t.subtreeFlags & 13878 || r) {
 			r = E.T, E.T = null, i = D.p, D.p = 2, a = W, W |= 4;
@@ -6488,7 +6488,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 	}
 	function uf(e, t) {
-		(e.pooledCacheLanes &= t) === 0 && (t = e.pooledCache, t != null && (e.pooledCache = null, za(t)));
+		(e.pooledCacheLanes &= t) === 0 && (t = e.pooledCache, t != null && (e.pooledCache = null, Ra(t)));
 	}
 	function df() {
 		return Ed !== null && (Ed.skipTransition(), Ed = null), sf(), cf(), lf(), ff();
@@ -6512,7 +6512,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		}
 	}
 	function pf(e, t, n) {
-		t = Yi(n, t), t = Mc(e.stateNode, t, 2), e = wo(e, t, 2), e !== null && (St(e, 2), Ef(e));
+		t = Yi(n, t), t = jc(e.stateNode, t, 2), e = Co(e, t, 2), e !== null && (St(e, 2), Ef(e));
 	}
 	function Z(e, t, n) {
 		if (e.tag === 3) pf(e, e, n);
@@ -6524,7 +6524,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 			if (t.tag === 1) {
 				var r = t.stateNode;
 				if (typeof t.type.getDerivedStateFromError == "function" || typeof r.componentDidCatch == "function" && (yd === null || !yd.has(r))) {
-					e = Yi(n, e), n = Nc(2), r = wo(t, n, 2), r !== null && (Pc(n, r, t, e), St(r, 2), Ef(r));
+					e = Yi(n, e), n = Mc(2), r = Co(t, n, 2), r !== null && (Nc(n, r, t, e), St(r, 2), Ef(r));
 					break;
 				}
 			}
@@ -6654,7 +6654,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	function Pf() {
 		if (Tf === 0) {
-			var e = Ga;
+			var e = Wa;
 			e === 0 && (e = ft, ft <<= 1, !(ft & 261888) && (ft = 256)), Tf = e;
 		}
 		return Tf;
@@ -6675,14 +6675,14 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 						if (r.defaultPrevented) {
 							if (Tf !== 0) {
 								var e = new FormData(i, o);
-								ic(n, {
+								rc(n, {
 									pending: !0,
 									data: e,
 									method: i.method,
 									action: a
 								}, null, e);
 							}
-						} else typeof a == "function" && (s.preventDefault(), e = new FormData(i, o), ic(n, {
+						} else typeof a == "function" && (s.preventDefault(), e = new FormData(i, o), rc(n, {
 							pending: !0,
 							data: e,
 							method: i.method,
@@ -8194,7 +8194,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	function Cm(e) {
 		var t = Vt(e);
-		t !== null && t.tag === 5 && t.type === "form" ? oc(t) : xm.r(e);
+		t !== null && t.tag === 5 && t.type === "form" ? ac(t) : xm.r(e);
 	}
 	var wm = typeof document > "u" ? null : document;
 	function Tm(e, t, n) {
@@ -8603,17 +8603,17 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 		this.tag = 1, this.containerInfo = e, this.pingCache = this.current = this.pendingChildren = null, this.timeoutHandle = -1, this.callbackNode = this.next = this.pendingContext = this.context = this.cancelPendingCommit = null, this.callbackPriority = 0, this.expirationTimes = xt(-1), this.entangledLanes = this.shellSuspendCounter = this.errorRecoveryDisabledLanes = this.expiredLanes = this.warmLanes = this.pingedLanes = this.suspendedLanes = this.pendingLanes = 0, this.entanglements = xt(0), this.hiddenUpdates = xt(null), this.identifierPrefix = r, this.onUncaughtError = i, this.onCaughtError = a, this.onRecoverableError = o, this.pooledCache = null, this.pooledCacheLanes = 0, this.formState = c, this.transitionTypes = null, this.incompleteTransitions = /* @__PURE__ */ new Map();
 	}
 	function lh(e, t, n, r, i, a, o, s, c, l, u, d) {
-		return e = new ch(e, t, n, o, c, l, u, d, s), t = 1, !0 === a && (t |= 24), a = zi(3, null, null, t), e.current = a, a.stateNode = e, t = Ra(), t.refCount++, e.pooledCache = t, t.refCount++, a.memoizedState = {
+		return e = new ch(e, t, n, o, c, l, u, d, s), t = 1, !0 === a && (t |= 24), a = zi(3, null, null, t), e.current = a, a.stateNode = e, t = La(), t.refCount++, e.pooledCache = t, t.refCount++, a.memoizedState = {
 			element: r,
 			isDehydrated: n,
 			cache: t
-		}, xo(a), e;
+		}, bo(a), e;
 	}
 	function uh(e) {
 		return e ? (e = Li, e) : Li;
 	}
 	function dh(e, t, n, r, i, a) {
-		i = uh(i), r.context === null ? r.context = i : r.pendingContext = i, r = Co(t), r.payload = { element: n }, a = a === void 0 ? null : a, a !== null && (r.callback = a), n = wo(e, r, t), n !== null && (Pd(n, e, t), To(n, e, t));
+		i = uh(i), r.context === null ? r.context = i : r.pendingContext = i, r = So(t), r.payload = { element: n }, a = a === void 0 ? null : a, a !== null && (r.callback = a), n = Co(e, r, t), n !== null && (Pd(n, e, t), wo(n, e, t));
 	}
 	function fh(e, t) {
 		if (e = e.memoizedState, e !== null && e.dehydrated !== null) {
@@ -8904,7 +8904,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 					break;
 				}
 				var a = Vt(n);
-				a !== null && (e.splice(t, 3), t -= 3, ic(a, {
+				a !== null && (e.splice(t, 3), t -= 3, rc(a, {
 					pending: !0,
 					data: i,
 					method: n.method,
@@ -9021,7 +9021,7 @@ var e = (e, t) => () => (t || (e((t = { exports: {} }).exports, t, t.exports), e
 	}
 	e.createRoot = function(e, t) {
 		if (!c(e)) throw Error(o(299));
-		var n = !1, r = "", i = Dc, a = Oc, s = kc;
+		var n = !1, r = "", i = Ec, a = Dc, s = Oc;
 		return t != null && (!0 === t.unstable_strictMode && (n = !0), t.identifierPrefix !== void 0 && (r = t.identifierPrefix), t.onUncaughtError !== void 0 && (i = t.onUncaughtError), t.onCaughtError !== void 0 && (a = t.onCaughtError), t.onRecoverableError !== void 0 && (s = t.onRecoverableError)), t = lh(e, 1, !1, null, null, n, r, null, i, a, s, Uh), e[Mt] = t.current, Wf(e), new Wh(t);
 	};
 })), l = /* @__PURE__ */ e(((e, t) => {
@@ -9806,6 +9806,10 @@ var ae = 4e3, oe = {
 							label: "Texte + visuels"
 						},
 						{
+							value: "members",
+							label: "Cartes membres"
+						},
+						{
 							value: "stack",
 							label: "Empilé"
 						},
@@ -9903,6 +9907,47 @@ var ae = 4e3, oe = {
 						type: "string",
 						default: "",
 						maxLength: 500
+					}
+				},
+				{
+					key: "members",
+					label: "Membres",
+					description: "Cartes membres : nom, rôle et photo.",
+					type: "array",
+					default: [],
+					maxItems: 8,
+					items: {
+						type: "object",
+						default: {
+							name: "John Doe",
+							role: "Fonction",
+							image: ""
+						},
+						properties: [
+							{
+								key: "name",
+								label: "Nom",
+								description: "Nom affiché.",
+								type: "string",
+								default: "John Doe",
+								maxLength: 80
+							},
+							{
+								key: "role",
+								label: "Rôle",
+								description: "Fonction ou description.",
+								type: "string",
+								default: "",
+								maxLength: 120
+							},
+							{
+								key: "image",
+								label: "Photo",
+								description: "URL de la photo.",
+								type: "image",
+								default: ""
+							}
+						]
 					}
 				},
 				{
@@ -11699,7 +11744,31 @@ var ot = {
 			}) : null]
 		})]
 	}),
-	team: ({ panel: e, chat: t }) => /* @__PURE__ */ (0, S.jsxs)("div", {
+	team: ({ panel: e, chat: t }) => Array.isArray(e.members) && e.members.length > 0 ? /* @__PURE__ */ (0, S.jsxs)(S.Fragment, { children: [e.text ? /* @__PURE__ */ (0, S.jsx)(Be, {
+		text: e.text,
+		enabled: t.markdown
+	}) : null, /* @__PURE__ */ (0, S.jsx)("div", {
+		className: "team-grid",
+		children: e.members.map((e, t) => /* @__PURE__ */ (0, S.jsxs)("article", {
+			className: "team-card",
+			children: [e.image ? /* @__PURE__ */ (0, S.jsx)("img", {
+				className: "team-card__img",
+				src: e.image,
+				alt: "",
+				loading: "lazy"
+			}) : /* @__PURE__ */ (0, S.jsx)("div", {
+				className: "team-card__img team-card__img--placeholder",
+				"aria-hidden": "true",
+				children: /* @__PURE__ */ (0, S.jsx)(C, {
+					name: "users",
+					size: 28
+				})
+			}), /* @__PURE__ */ (0, S.jsxs)("div", {
+				className: "team-card__body",
+				children: [/* @__PURE__ */ (0, S.jsx)("h3", { children: e.name || "Membre" }), e.role ? /* @__PURE__ */ (0, S.jsx)("p", { children: e.role }) : null]
+			})]
+		}, `${e.name}-${t}`))
+	})] }) : /* @__PURE__ */ (0, S.jsxs)("div", {
 		className: "panel-grid panel-grid--team",
 		children: [/* @__PURE__ */ (0, S.jsx)("div", {
 			className: "panel-grid__col panel-grid__col--text",
@@ -12260,7 +12329,11 @@ var Tt = class {
 		super({
 			...e,
 			kind: e.kind ?? e.type ?? "text"
-		}), this.title = k(e.title ?? e.titre, ""), this.text = k(e.text ?? e.texte, ""), this.images = Array.isArray(e.images) ? e.images.filter((e) => typeof e == "string" && e.trim() !== "") : [], this.icon = k(e.icon ?? e.icone, ""), this.tileId = k(e.tileId ?? e.tile, ""), this.maxItems = Number.isFinite(e.maxItems) ? Math.max(1, Math.min(8, e.maxItems)) : null, this.tile = e.element instanceof Dt ? e.element : null;
+		}), this.title = k(e.title ?? e.titre, ""), this.text = k(e.text ?? e.texte, ""), this.images = Array.isArray(e.images) ? e.images.filter((e) => typeof e == "string" && e.trim() !== "") : [], this.members = Array.isArray(e.members) ? e.members.filter((e) => typeof e == "object" && !!e && !Array.isArray(e)).map((e) => ({
+			name: k(e.name, ""),
+			role: k(e.role, ""),
+			image: k(e.image, "")
+		})).filter((e) => e.name !== "" || e.role !== "" || e.image !== "") : [], this.icon = k(e.icon ?? e.icone, ""), this.tileId = k(e.tileId ?? e.tile, ""), this.maxItems = Number.isFinite(e.maxItems) ? Math.max(1, Math.min(8, e.maxItems)) : null, this.tile = e.element instanceof Dt ? e.element : null;
 	}
 	toJSON() {
 		return {
@@ -12270,6 +12343,7 @@ var Tt = class {
 			title: this.title,
 			text: this.text,
 			images: [...this.images],
+			...this.members.length > 0 ? { members: this.members } : {},
 			...this.icon ? { icon: this.icon } : {},
 			...this.maxItems === null ? {} : { maxItems: this.maxItems },
 			tileId: this.tileId
@@ -12464,12 +12538,19 @@ function Lt(e) {
 }
 function Rt(e) {
 	let t = Pt.has(e.type) ? e.type : "card";
-	return t === "grid" ? "gallery" : t === "form" ? "contact" : t === "card" && e.layout === "hero" ? "welcome" : t === "card" && e.layout === "split" ? "team" : "text";
+	return t === "grid" ? "gallery" : t === "form" ? "contact" : t === "card" && e.layout === "hero" ? "welcome" : t === "card" && (e.layout === "split" || e.layout === "members") ? "team" : "text";
 }
-function zt(e, t, n) {
+function zt(e) {
+	return Array.isArray(e) ? e.filter((e) => typeof e == "object" && !!e && !Array.isArray(e)).map((e) => ({
+		name: Ft(e.name, "John Doe"),
+		role: Ft(e.role),
+		image: Ft(e.image)
+	})).filter((e) => e.name !== "" || e.role !== "" || e.image !== "").slice(0, 8) : [];
+}
+function Bt(e, t, n) {
 	return t.length > 0 ? t : e === "welcome" ? [ht(n?.image_welcome_1, mt.welcome1), ht(n?.image_welcome_2, mt.welcome2)] : e === "team" ? [ht(n?.image_equipe, mt.team)] : [];
 }
-function Bt(e = {}) {
+function Vt(e = {}) {
 	let t = Lt(e?.sections), n = [], r = [];
 	for (let [i, a] of t.entries()) {
 		if (typeof a != "object" || !a || Array.isArray(a) || a.enabled === !1) continue;
@@ -12487,7 +12568,8 @@ function Bt(e = {}) {
 			kind: m,
 			title: u,
 			text: f,
-			images: zt(m, p, e),
+			images: Bt(m, p, e),
+			members: zt(s.members),
 			icon: Ft(t.icon, "file"),
 			tileId: c,
 			element: _
@@ -12502,13 +12584,13 @@ function Bt(e = {}) {
 }
 //#endregion
 //#region src/core/ui-node.js
-var Vt = 0;
-function Ht(e = "n") {
-	return Vt += 1, `${e}-${Vt}`;
+var Ht = 0;
+function Ut(e = "n") {
+	return Ht += 1, `${e}-${Ht}`;
 }
-var Ut = class {
+var j = class {
 	constructor(e, t = {}, n = []) {
-		this.id = t.id ?? Ht(e || "node"), this.type = String(e || "node"), this.key = t.key ?? this.id, this.props = t && typeof t == "object" ? { ...t } : {}, this.children = [], this.meta = {}, this.setChildren(n);
+		this.id = t.id ?? Ut(e || "node"), this.type = String(e || "node"), this.key = t.key ?? this.id, this.props = t && typeof t == "object" ? { ...t } : {}, this.children = [], this.meta = {}, this.setChildren(n);
 	}
 	setProp(e, t) {
 		return this.props[e] = t, this;
@@ -12560,18 +12642,18 @@ var Ut = class {
 			children: this.children.map((e) => e && typeof e.toJSON == "function" ? e.toJSON() : e)
 		};
 	}
-}, j = class extends Ut {
+}, Wt = class extends j {
 	constructor(e = "container", t = {}, n = []) {
 		super(e, t, n);
 	}
-}, Wt = class extends Ut {
+}, Gt = class extends j {
 	constructor(e = "leaf", t = {}) {
 		super(e, t, []);
 	}
 	add() {
 		return this;
 	}
-}, Gt = class extends Wt {
+}, Kt = class extends Gt {
 	constructor(e = "", t = {}) {
 		super("text", {
 			...t,
@@ -12584,20 +12666,20 @@ var Ut = class {
 			text: this.text
 		};
 	}
-}, Kt = class extends Ut {
+}, qt = class extends j {
 	constructor(e, t = {}, n = []) {
 		super("slot", {
 			...t,
 			name: e
 		}, n), this.name = e;
 	}
-}, qt = new class {
+}, Jt = new class {
 	constructor() {
 		this.registry = new w("ui-nodes", [
-			["container", (e, t, n) => new j(e, t, n)],
-			["leaf", (e, t) => new Wt(e, t)],
-			["text", (e, t) => new Gt(t?.text ?? t?.content ?? "", t)],
-			["slot", (e, t, n) => new Kt(t?.name ?? "default", t, n)]
+			["container", (e, t, n) => new Wt(e, t, n)],
+			["leaf", (e, t) => new Gt(e, t)],
+			["text", (e, t) => new Kt(t?.text ?? t?.content ?? "", t)],
+			["slot", (e, t, n) => new qt(t?.name ?? "default", t, n)]
 		]);
 	}
 	register(e, t) {
@@ -12610,18 +12692,18 @@ var Ut = class {
 		return this.create(e, t, n);
 	}
 	container(e = {}, t = []) {
-		return new j(e.type ?? "container", e, t);
+		return new Wt(e.type ?? "container", e, t);
 	}
 	leaf(e, t = {}) {
-		return new Wt(e, t);
-	}
-	text(e, t = {}) {
 		return new Gt(e, t);
 	}
-	slot(e, t = {}, n = []) {
-		return new Kt(e, t, n);
+	text(e, t = {}) {
+		return new Kt(e, t);
 	}
-}(), Jt = class extends Ut {
+	slot(e, t = {}, n = []) {
+		return new qt(e, t, n);
+	}
+}(), Yt = class extends j {
 	constructor(e, t = {}, n = []) {
 		super(e, t, n), this.visible = t.visible !== !1, this.enabled = t.enabled !== !1, this.variant = t.variant ?? null;
 	}
@@ -12648,7 +12730,7 @@ var Ut = class {
 			variant: this.variant
 		};
 	}
-}, Yt = class extends Jt {
+}, Xt = class extends Yt {
 	constructor(e, t = {}, n = []) {
 		super(t.type ?? "region", {
 			...t,
@@ -12659,7 +12741,7 @@ var Ut = class {
 	setLayout(e) {
 		return this.layout = e, this.setProp("layout", e), this;
 	}
-}, Xt = class extends Jt {
+}, Zt = class extends Yt {
 	constructor(e, t = {}, n = []) {
 		super("view", {
 			...t,
@@ -12669,7 +12751,7 @@ var Ut = class {
 	}
 	addRegion(e) {
 		if (!e) return this;
-		let t = e instanceof Yt ? e : new Yt(e.name ?? e.id ?? "region", e, e.children ?? []);
+		let t = e instanceof Xt ? e : new Xt(e.name ?? e.id ?? "region", e, e.children ?? []);
 		return this.regions.set(t.name, t), this.children.includes(t) || this.children.push(t), this;
 	}
 	getRegion(e) {
@@ -12682,15 +12764,15 @@ var Ut = class {
 			regions: Array.from(this.regions.keys())
 		};
 	}
-}, Zt = class extends Jt {
+}, Qt = class extends Yt {
 	constructor(e = "stack", t = {}, n = []) {
 		super("layout", {
 			...t,
 			kind: e
 		}, n), this.kind = e;
 	}
-}, Qt = new class {
-	constructor(e = qt) {
+}, M = new class {
+	constructor(e = Jt) {
 		this.factory = e, this.elementRegistry = new w("interface-elements");
 	}
 	registerElement(e, t) {
@@ -12704,16 +12786,16 @@ var Ut = class {
 		} catch {
 			return r(t, n);
 		}
-		return new Jt(e, t, n);
-	}
-	region(e, t = {}, n = []) {
 		return new Yt(e, t, n);
 	}
-	view(e, t = {}, n = []) {
+	region(e, t = {}, n = []) {
 		return new Xt(e, t, n);
 	}
-	layout(e, t = {}, n = []) {
+	view(e, t = {}, n = []) {
 		return new Zt(e, t, n);
+	}
+	layout(e, t = {}, n = []) {
+		return new Qt(e, t, n);
 	}
 	buildAppInterface(e = {}, t = {}) {
 		let n = t.state?.phase ?? "identity", r = this.element("header", {
@@ -12761,12 +12843,12 @@ var Ut = class {
 		return p.setMeta("traversable", !0), p.setMeta("generic", !0), p;
 	}
 }();
-function M(e = {}, t = {}) {
-	return Qt.buildAppInterface(e, t);
+function $t(e = {}, t = {}) {
+	return M.buildAppInterface(e, t);
 }
 //#endregion
 //#region src/core/ui.js
-var $t = Object.freeze([
+var en = Object.freeze([
 	"messages",
 	"media",
 	"modelForm",
@@ -12776,12 +12858,12 @@ var $t = Object.freeze([
 	"attachments",
 	"fallback"
 ]);
-function en(e, t) {
+function tn(e, t) {
 	return Array.isArray(e) && e.includes(t);
 }
-var tn = new class {
+var nn = new class {
 	constructor(e = {}) {
-		this.capabilityNames = e.capabilityNames ?? $t;
+		this.capabilityNames = e.capabilityNames ?? en;
 	}
 	parseDesignOverrides(e) {
 		try {
@@ -12798,7 +12880,7 @@ var tn = new class {
 				...e.brand ?? {},
 				name: r
 			}
-		}, a = (e) => ye(e, i), o = wt(t, e.theme ?? {}), s = Bt(t), c = s.hasSections ? s.tiles : Mt(t), l = s.hasSections ? s.panels : Nt(t, c), u = c.map((e) => new Dt({
+		}, a = (e) => ye(e, i), o = wt(t, e.theme ?? {}), s = Vt(t), c = s.hasSections ? s.tiles : Mt(t), l = s.hasSections ? s.panels : Nt(t, c), u = c.map((e) => new Dt({
 			...e.toJSON(),
 			libelle: a(e.label),
 			description: a(e.description),
@@ -12845,7 +12927,7 @@ var tn = new class {
 				footer: { visible: f.footer?.visible !== !1 },
 				background: { visible: f.background?.visible !== !1 }
 			}
-		}, h = new Set(this.capabilityNames.filter((e) => en(n, e))), g = {
+		}, h = new Set(this.capabilityNames.filter((e) => tn(n, e))), g = {
 			design: o,
 			tiles: u,
 			panels: d,
@@ -12871,29 +12953,29 @@ var tn = new class {
 			},
 			registry: et
 		};
-		return g.ui = M(g, e), g;
+		return g.ui = $t(g, e), g;
 	}
 }();
-function nn(e = {}, t = {}, n = []) {
-	return tn.compose(e, t, n);
+function rn(e = {}, t = {}, n = []) {
+	return nn.compose(e, t, n);
 }
 //#endregion
 //#region src/PopDesign.jsx
-var rn = {
+var an = {
 	photos: [],
 	liens: []
 };
-function an(e) {
+function on(e) {
 	return typeof e == "object" && !!e && Array.isArray(e.photos) && Array.isArray(e.liens);
 }
-function on() {
-	let { ctx: e, phase: t, messages: n, params: r, capabilities: i, actions: a } = re(), o = (0, u.useMemo)(() => nn(e, r, i), [
+function sn() {
+	let { ctx: e, phase: t, messages: n, params: r, capabilities: i, actions: a } = re(), o = (0, u.useMemo)(() => rn(e, r, i), [
 		e,
 		r,
 		i
-	]), s = (0, u.useMemo)(() => xe(n), [n]), [c, l] = (0, u.useState)(null), [d, f] = (0, u.useState)(""), [p, m] = (0, u.useState)(!1), [h, g] = (0, u.useState)(() => e.resources?.media ?? rn), _ = (0, u.useRef)(null), v = !!e.state?.typing, y = e.state?.status === "finalisee", b = v || y, ee = Array.isArray(e.resources?.modelForm) ? e.resources.modelForm : [], te = Array.isArray(e.state?.pendingAttachments) ? e.state.pendingAttachments : [], ne = e.state?.fallback ?? null, x = c === null ? null : o.panels.find((e) => e.id === c) ?? null;
+	]), s = (0, u.useMemo)(() => xe(n), [n]), [c, l] = (0, u.useState)(null), [d, f] = (0, u.useState)(""), [p, m] = (0, u.useState)(!1), [h, g] = (0, u.useState)(() => e.resources?.media ?? an), _ = (0, u.useRef)(null), v = !!e.state?.typing, y = e.state?.status === "finalisee", b = v || y, ee = Array.isArray(e.resources?.modelForm) ? e.resources.modelForm : [], te = Array.isArray(e.state?.pendingAttachments) ? e.state.pendingAttachments : [], ne = e.state?.fallback ?? null, x = c === null ? null : o.panels.find((e) => e.id === c) ?? null;
 	(0, u.useEffect)(() => {
-		g(e.resources?.media ?? rn);
+		g(e.resources?.media ?? an);
 	}, [e.resources?.media]), (0, u.useEffect)(() => {
 		c !== null && x === null && l(null);
 	}, [c, x]), (0, u.useEffect)(() => {
@@ -12924,7 +13006,7 @@ function on() {
 	}, se = async () => {
 		try {
 			let e = await a.request("media");
-			an(e) && g(e);
+			on(e) && g(e);
 		} catch {}
 	}, ce = `url(${JSON.stringify(o.content.background)})`;
 	return /* @__PURE__ */ (0, S.jsxs)("div", {
@@ -13019,5 +13101,5 @@ function on() {
 }
 //#endregion
 //#region src/index.js
-te("onirtech-template-pop-design", on, { css: t });
+te("onirtech-template-pop-design", sn, { css: t });
 //#endregion

@@ -39,8 +39,21 @@ function panelKind(render) {
   if (type === "grid") return "gallery";
   if (type === "form") return "contact";
   if (type === "card" && render.layout === "hero") return "welcome";
-  if (type === "card" && render.layout === "split") return "team";
+  if (type === "card" && (render.layout === "split" || render.layout === "members")) return "team";
   return "text";
+}
+
+function members(value) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .filter((entry) => entry !== null && typeof entry === "object" && !Array.isArray(entry))
+    .map((entry) => ({
+      name: text(entry.name, "John Doe"),
+      role: text(entry.role),
+      image: text(entry.image),
+    }))
+    .filter((entry) => entry.name !== "" || entry.role !== "" || entry.image !== "")
+    .slice(0, 8);
 }
 
 function panelImages(kind, images, params) {
@@ -93,6 +106,7 @@ export function createStructuredSections(params = {}) {
       title,
       text: body,
       images: panelImages(kind, images, params),
+      members: members(content.members),
       icon: text(nav.icon, "file"),
       tileId: id,
       element: tile,

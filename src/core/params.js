@@ -78,6 +78,7 @@ const SECTION_ITEM_SCHEMA = {
         { key: "layout", label: "Mise en page", description: "Variante du type.", type: "select", default: "stack", options: [
           { value: "hero", label: "Hero (2 visuels)" },
           { value: "split", label: "Texte + visuels" },
+          { value: "members", label: "Cartes membres" },
           { value: "stack", label: "Empilé" },
           { value: "media", label: "Média" },
         ] },
@@ -104,6 +105,15 @@ const SECTION_ITEM_SCHEMA = {
         { key: "description", label: "Description", description: "Résumé court.", type: "text", default: "", maxLength: 400 },
         { key: "text", label: "Texte", description: "Contenu long (Markdown).", type: "text", default: "", maxLength: 1200 },
         { key: "images", label: "Images", description: "URLs ou chemins d'images fixes.", type: "array", default: [], maxItems: 8, items: { type: "string", default: "", maxLength: 500 } },
+        { key: "members", label: "Membres", description: "Cartes membres : nom, rôle et photo.", type: "array", default: [], maxItems: 8, items: {
+          type: "object",
+          default: { name: "John Doe", role: "Fonction", image: "" },
+          properties: [
+            { key: "name", label: "Nom", description: "Nom affiché.", type: "string", default: "John Doe", maxLength: 80 },
+            { key: "role", label: "Rôle", description: "Fonction ou description.", type: "string", default: "", maxLength: 120 },
+            { key: "image", label: "Photo", description: "URL de la photo.", type: "image", default: "" },
+          ],
+        } },
         { key: "links", label: "Liens", description: "URLs de liens complémentaires.", type: "array", default: [], maxItems: 8, items: { type: "string", default: "", maxLength: 500 } },
       ],
     },

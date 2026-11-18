@@ -4,7 +4,7 @@
   "id": "pop-design",
   "name": "Pop Design",
   "description": "Template générique : en-tête sur photo, tuiles à fenêtres, galerie et chatbot paramétrable (Markdown, suggestions, pièces jointes, secours).",
-  "version": "2.6.5",
+  "version": "2.6.6",
   "publisher": {
     "id": "onirtech",
     "name": "ONIRTECH",
@@ -40,9 +40,9 @@
           "height": 760
         }
       },
-      "integrity": "sha256-p8J14rfdOnyQWcNdH4YZgRwCvmudcHVTKkc4uNcrjwc="
+      "integrity": "sha256-9DO8GLmmFv7mBvz6Wj5mhG90x6SPv2+5yEMfX4Wcml0="
     },
-    "integrity": "sha256-+87NYhygmCmQ6sWSQPMj0Zm/zyon7yI8EkD4CfzdcI8="
+    "integrity": "sha256-p/tHgEW9Q9Lzb7vBIuSUFxUZpon0yRLOSIYdLlLe+XM="
   },
   "capabilities": [
     "messages",
@@ -562,6 +562,10 @@
                     "label": "Texte + visuels"
                   },
                   {
+                    "value": "members",
+                    "label": "Cartes membres"
+                  },
+                  {
                     "value": "stack",
                     "label": "Empilé"
                   },
@@ -668,6 +672,47 @@
                   "type": "string",
                   "default": "",
                   "maxLength": 500
+                }
+              },
+              {
+                "key": "members",
+                "label": "Membres",
+                "description": "Cartes membres : nom, rôle et photo.",
+                "type": "array",
+                "default": [],
+                "maxItems": 8,
+                "items": {
+                  "type": "object",
+                  "default": {
+                    "name": "John Doe",
+                    "role": "Fonction",
+                    "image": ""
+                  },
+                  "properties": [
+                    {
+                      "key": "name",
+                      "label": "Nom",
+                      "description": "Nom affiché.",
+                      "type": "string",
+                      "default": "John Doe",
+                      "maxLength": 80
+                    },
+                    {
+                      "key": "role",
+                      "label": "Rôle",
+                      "description": "Fonction ou description.",
+                      "type": "string",
+                      "default": "",
+                      "maxLength": 120
+                    },
+                    {
+                      "key": "image",
+                      "label": "Photo",
+                      "description": "URL de la photo.",
+                      "type": "image",
+                      "default": ""
+                    }
+                  ]
                 }
               },
               {

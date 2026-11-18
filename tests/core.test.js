@@ -328,7 +328,7 @@ describe("discussion", () => {
 describe("sections structurées", () => {
   const sections = [
     { id: "welcome", role: "welcome", navigation: { label: "Bienvenue", icon: "home" }, render: { type: "card", layout: "hero" }, content: { title: "Bienvenue", text: "Texte" } },
-    { id: "team", role: "team", navigation: { label: "Équipe", icon: "users" }, render: { type: "card", layout: "split" }, content: { title: "Équipe", text: "Notre équipe" } },
+    { id: "team", role: "team", navigation: { label: "Équipe", icon: "users" }, render: { type: "card", layout: "members" }, content: { title: "Équipe", text: "Notre équipe", members: [{ name: "John Doe", role: "Fondateur", image: "https://exemple.com/john.jpg" }] } },
     { id: "catalogue", role: "catalogue", navigation: { label: "Produits", icon: "handshake" }, render: { type: "grid", layout: "media", source: "medias", max_items: 3 }, content: { title: "Produits" } },
     { id: "services", role: "services", navigation: { label: "Services", icon: "file" }, render: { type: "text", layout: "stack" }, content: { title: "Services", text: "Conseil" } },
     { id: "contact", role: "contact", navigation: { label: "Contact", icon: "comments" }, render: { type: "form", layout: "stack", source: "contact" }, content: { title: "Contact" } },
@@ -342,6 +342,9 @@ describe("sections structurées", () => {
     ]);
     expect(result.panels.map((panel) => panel.kind)).toEqual([
       "welcome", "team", "gallery", "text", "contact",
+    ]);
+    expect(result.panels[1].members).toEqual([
+      { name: "John Doe", role: "Fondateur", image: "https://exemple.com/john.jpg" },
     ]);
     expect(result.panels[2].maxItems).toBe(3);
   });

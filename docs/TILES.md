@@ -111,3 +111,28 @@ Correspondance avec l'ancien modèle :
 Si `sections` est renseigné, il est prioritaire. Sinon le template retombe sur
 `tuiles_json`. Les images de `source: medias` viennent toujours de la
 photothèque et non de `content.images`.
+
+### Variante `layout: "members"`
+
+Pour une équipe, utiliser `render.type: "card"` et `render.layout: "members"`.
+Les personnes vont dans `content.members` :
+
+```json
+{
+  "id": "team",
+  "role": "team",
+  "navigation": { "label": "Équipe", "icon": "users" },
+  "render": { "type": "card", "layout": "members", "source": "static" },
+  "content": {
+    "title": "Notre équipe",
+    "description": "Trois profils pour vous accompagner.",
+    "members": [
+      { "name": "John Doe", "role": "Fondateur", "image": "https://…/john.jpg" },
+      { "name": "Jane Doe", "role": "Responsable boutique", "image": "https://…/jane.jpg" }
+    ]
+  }
+}
+```
+
+Chaque membre est rendu en carte avec photo, nom et rôle. `content.images` n'est
+pas utilisé dans ce mode.
