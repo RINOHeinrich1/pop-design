@@ -30,7 +30,7 @@ function PanelImages({ images, className = "", icon = "image" }) {
 function Gallery({ panel, media, canMedia, onOpenMedia, onRequestMedia }) {
   const photos = Array.isArray(media?.photos) ? media.photos : [];
   const liens = Array.isArray(media?.liens) ? media.liens : [];
-  const items = [
+  const allItems = [
     ...(Array.isArray(panel.images) ? panel.images : []).map((url, index) => ({
       id: `panel-${index}`,
       libelle: panel.title,
@@ -38,6 +38,8 @@ function Gallery({ panel, media, canMedia, onOpenMedia, onRequestMedia }) {
     })),
     ...photos,
   ];
+  const items =
+    typeof panel.maxItems === "number" ? allItems.slice(0, panel.maxItems) : allItems;
 
   if (items.length === 0 && liens.length === 0) {
     return (

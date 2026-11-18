@@ -7,6 +7,7 @@ import { buildDesign } from "./design.js";
 import { PanelModel, TileModel } from "./element.js";
 import { boolParam, textParam } from "./params.js";
 import { createPanels, normalizeTiles } from "./tiles.js";
+import { createStructuredSections } from "./sections.js";
 import { buildView, viewRegistry } from "./view-registry.js";
 import { buildAppInterface } from "./interface.js";
 
@@ -39,7 +40,11 @@ export class UIComposer {
     const i = (value) => interpolate(value, effectiveCtx);
     const design = buildDesign(params, ctx.theme ?? {});
 
-    const tiles = normalizeTiles(params).map((tile) => new TileModel({
+    const structured = createStructuredSections(params);
+    const sourceTiles = structured.hasSections ? structured.tiles : normalizeTiles(params);
+    const sourcePanels = structured.hasSections ? structured.panels : createPanels(params, sourceTiles);
+
+    const tiles = sourceTiles.map((tile) => new TileModel({
       ...tile.toJSON(),
       libelle: i(tile.label),
       description: i(tile.description),
@@ -47,7 +52,7 @@ export class UIComposer {
       texte: i(tile.text),
     }));
 
-    const panels = createPanels(params, tiles).map((panel) => {
+    const panels = sourcePanels.map((panel) => {
       const model = new PanelModel({
         ...panel.toJSON(),
         title: i(panel.title),

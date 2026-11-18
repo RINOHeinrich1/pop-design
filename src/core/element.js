@@ -89,6 +89,7 @@ export class PanelModel extends VisualElement {
       : [];
     this.icon = stringOr(input.icon ?? input.icone, "");
     this.tileId = stringOr(input.tileId ?? input.tile, "");
+    this.maxItems = Number.isFinite(input.maxItems) ? Math.max(1, Math.min(8, input.maxItems)) : null;
     this.tile = input.element instanceof TileModel ? input.element : null;
   }
 
@@ -101,6 +102,7 @@ export class PanelModel extends VisualElement {
       text: this.text,
       images: [...this.images],
       ...(this.icon ? { icon: this.icon } : {}),
+      ...(this.maxItems === null ? {} : { maxItems: this.maxItems }),
       tileId: this.tileId,
     };
   }

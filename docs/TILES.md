@@ -63,3 +63,51 @@ Les paramètres `titre_welcome`, `texte_welcome`, `titre_equipe`, `texte_equipe`
 
 `nom_assistant` remplace le nom de l'organisation dans le chat et les
 interpolations `{marque}` ; vide, il retombe sur `ctx.brand.name`.
+
+## Modèle recommandé : `sections`
+
+L'ancien `tuiles_json` reste supporté, mais le modèle structuré sépare les trois
+axes :
+
+```json
+{
+  "id": "catalogue",
+  "role": "catalogue",
+  "enabled": true,
+  "navigation": { "label": "Produits", "icon": "handshake" },
+  "render": {
+    "type": "grid",
+    "layout": "media",
+    "source": "medias",
+    "media_type": "photo",
+    "max_items": 5
+  },
+  "content": {
+    "title": "Nos produits en images",
+    "description": "Les 5 produits du catalogue.",
+    "text": "",
+    "images": [],
+    "links": []
+  }
+}
+```
+
+- `role` : sens métier libre (`welcome`, `team`, `catalogue`, `faq`…).
+- `render.type` : type structurel (`card`, `text`, `image`, `grid`, `form`).
+- `render.layout` : variante (`hero`, `split`, `stack`, `media`).
+- `render.source` : alimentation (`static`, `medias`, `contact`).
+- `content` : données réellement affichées.
+
+Correspondance avec l'ancien modèle :
+
+| Ancien `tuiles_json[].type` | `sections[]` |
+| --- | --- |
+| `welcome` | `role: welcome`, `render.type: card`, `layout: hero` |
+| `team` | `role: team`, `render.type: card`, `layout: split` |
+| `gallery` | `role: catalogue`, `render.type: grid`, `source: medias` |
+| `contact` | `role: contact`, `render.type: form` |
+| `text` | `render.type: text` |
+
+Si `sections` est renseigné, il est prioritaire. Sinon le template retombe sur
+`tuiles_json`. Les images de `source: medias` viennent toujours de la
+photothèque et non de `content.images`.
