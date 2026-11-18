@@ -9687,6 +9687,14 @@ var ae = 4e3, oe = {
 		maxLength: 60
 	},
 	{
+		key: "nom_assistant",
+		label: "Nom de l'assistant",
+		description: "Nom affiché dans le chat ; vide = nom de l'organisation.",
+		type: "string",
+		default: "",
+		maxLength: 60
+	},
+	{
 		key: "sous_titre",
 		label: "Sous-titre",
 		description: "Phrase d'accueil sous le titre ; {marque} et {lien} remplacés.",
@@ -12119,72 +12127,78 @@ var It = new class {
 		}
 	}
 	compose(e = {}, t = {}, n = []) {
-		let r = (t) => ge(t, e), i = ct(t, e.theme ?? {}), a = vt(t).map((e) => new dt({
+		let r = E(t, "nom_assistant") || e.brand?.name || "", i = r === "" ? e : {
+			...e,
+			brand: {
+				...e.brand ?? {},
+				name: r
+			}
+		}, a = (e) => ge(e, i), o = ct(t, e.theme ?? {}), s = vt(t).map((e) => new dt({
 			...e.toJSON(),
-			libelle: r(e.label),
-			description: r(e.description),
-			titre: r(e.title),
-			texte: r(e.text)
-		})), o = yt(t, a).map((n) => {
-			let i = new ft({
+			libelle: a(e.label),
+			description: a(e.description),
+			titre: a(e.title),
+			texte: a(e.text)
+		})), c = yt(t, s).map((n) => {
+			let r = new ft({
 				...n.toJSON(),
-				title: r(n.title),
-				text: r(n.text),
-				images: n.images.map((e) => r(e)),
+				title: a(n.title),
+				text: a(n.text),
+				images: n.images.map((e) => a(e)),
 				tileId: n.tileId
 			});
-			return i.view = Ye(i, {
+			return r.view = Ye(r, {
 				params: t,
 				ctx: e
-			}), i;
-		}), s = this.parseDesignOverrides(t).elements ?? {}, c = _e(t);
-		c.accueil = r(c.accueil), c.placeholder = r(c.placeholder), c.placeholderContact = r(c.placeholderContact), c.messageVide = r(c.messageVide), c.labels = Object.fromEntries(Object.entries(c.labels).map(([e, t]) => [e, r(t)])), c.identity &&= Object.fromEntries(Object.entries(c.identity).map(([e, t]) => [e, typeof t == "string" ? r(t) : t]));
-		let l = {
-			title: r(E(t, "titre")),
-			subtitle: r(E(t, "sous_titre")),
+			}), r;
+		}), l = this.parseDesignOverrides(t).elements ?? {}, u = _e(t);
+		u.accueil = a(u.accueil), u.placeholder = a(u.placeholder), u.placeholderContact = a(u.placeholderContact), u.messageVide = a(u.messageVide), u.labels = Object.fromEntries(Object.entries(u.labels).map(([e, t]) => [e, a(t)])), u.identity &&= Object.fromEntries(Object.entries(u.identity).map(([e, t]) => [e, typeof t == "string" ? a(t) : t]));
+		let d = {
+			title: a(E(t, "titre")),
+			subtitle: a(E(t, "sous_titre")),
 			logo: et(t?.logo_url, e.brand?.logoUrl),
 			background: $e(t?.image_fond, Qe.background),
 			underline: $e(t?.image_soulignement, Qe.underline),
 			avatarAssistant: tt(t?.avatar_assistant_url),
 			avatarUser: tt(t?.avatar_utilisateur_url),
-			identityTitle: r(E(t, "titre_identite")),
-			identityText: r(E(t, "texte_identite")),
-			footerText: r(E(t, "texte_footer")),
+			identityTitle: a(E(t, "titre_identite")),
+			identityText: a(E(t, "texte_identite")),
+			footerText: a(E(t, "texte_footer")),
 			footerLink: E(t, "lien_footer"),
 			showCredit: ue(t, "afficher_credit"),
-			brandName: e.brand?.name ?? "",
+			brandName: r,
 			linkLabel: e.link?.label ?? "",
 			locale: e.locale ?? "fr",
 			elements: {
 				header: {
-					logo: s.header?.logo !== !1,
-					kicker: s.header?.kicker !== !1,
-					title: s.header?.title !== !1,
-					underline: s.header?.underline !== !1,
-					subtitle: s.header?.subtitle !== !1
+					logo: l.header?.logo !== !1,
+					kicker: l.header?.kicker !== !1,
+					title: l.header?.title !== !1,
+					underline: l.header?.underline !== !1,
+					subtitle: l.header?.subtitle !== !1
 				},
-				footer: { visible: s.footer?.visible !== !1 },
-				background: { visible: s.background?.visible !== !1 }
+				footer: { visible: l.footer?.visible !== !1 },
+				background: { visible: l.background?.visible !== !1 }
 			}
-		}, u = new Set(this.capabilityNames.filter((e) => Ft(n, e))), d = {
-			design: i,
-			tiles: a,
-			panels: o,
-			chat: c,
-			content: l,
-			granted: u,
-			has: (e) => u.has(e),
+		}, f = new Set(this.capabilityNames.filter((e) => Ft(n, e))), p = {
+			design: o,
+			tiles: s,
+			panels: c,
+			chat: u,
+			content: d,
+			granted: f,
+			has: (e) => f.has(e),
 			schemas: {
 				fields: {
 					identity: A.getFieldSchema("identity"),
 					contactMessage: A.getFieldSchema("contact-message")
 				},
 				views: {
-					tiles: a.map((n) => Ye(n, {
+					tiles: s.map((n) => Ye(n, {
 						params: t,
 						ctx: e
 					})),
-					panels: o.map((n) => n.view ?? Ye(n, {
+					panels: c.map((n) => n.view ?? Ye(n, {
 						params: t,
 						ctx: e
 					}))
@@ -12192,7 +12206,7 @@ var It = new class {
 			},
 			registry: A
 		};
-		return d.ui = Nt(d, e), d;
+		return p.ui = Nt(p, e), p;
 	}
 }();
 function Lt(e = {}, t = {}, n = []) {

@@ -33,6 +33,7 @@ const OPTIONS = {
 
 export const PARAM_DEFINITIONS = [
   { key: "titre", label: "Titre", description: "Titre de l'en-tête (fourni par le backend/configuration).", type: "string", default: "", maxLength: 60 },
+  { key: "nom_assistant", label: "Nom de l'assistant", description: "Nom affiché dans le chat ; vide = nom de l'organisation.", type: "string", default: "", maxLength: 60 },
   { key: "sous_titre", label: "Sous-titre", description: "Phrase d'accueil sous le titre ; {marque} et {lien} remplacés.", type: "text", default: "", maxLength: 300 },
   { key: "logo_url", label: "Logo", description: "Image du logo (backend/marque).", type: "image", default: "" },
   { key: "image_fond", label: "Image de fond", description: "Photo plein écran (backend).", type: "image", default: "" },

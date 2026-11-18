@@ -17,6 +17,7 @@ import {
   shouldShowSuggestions,
 } from "../src/core/chat.js";
 import { buildDesign, contrastInk } from "../src/core/design.js";
+import { createUiModel } from "../src/core/ui.js";
 import { PanelModel, TileModel, uniqueElements } from "../src/core/element.js";
 import {
   DEFAULTS,
@@ -36,8 +37,8 @@ import {
 } from "../src/core/tiles.js";
 
 describe("paramètres publics", () => {
-  it("expose exactement 40 paramètres valides pour le contrat hôte", () => {
-    expect(PARAM_DEFINITIONS).toHaveLength(40);
+  it("expose exactement 41 paramètres valides pour le contrat hôte", () => {
+    expect(PARAM_DEFINITIONS).toHaveLength(41);
 
     const keys = PARAM_DEFINITIONS.map((param) => param.key);
     expect(new Set(keys).size).toBe(keys.length);
@@ -314,6 +315,23 @@ describe("discussion", () => {
     expect(text).toContain("ACME");
     expect(text).toContain("Campagne");
     expect(text).toContain(String(new Date().getFullYear()));
+  });
+});
+
+describe("identité de l'assistant", () => {
+  it("surcharge le nom de l'organisation avec nom_assistant", () => {
+    const model = createUiModel(
+      { brand: { name: "ONIRTECH" } },
+      { nom_assistant: "Maison Kolo", sous_titre: "Bonjour {marque}" },
+      [],
+    );
+    expect(model.content.brandName).toBe("Maison Kolo");
+    expect(model.content.subtitle).toBe("Bonjour Maison Kolo");
+  });
+
+  it("retombe sur le nom de l'organisation quand nom_assistant est vide", () => {
+    const model = createUiModel({ brand: { name: "ONIRTECH" } }, {}, []);
+    expect(model.content.brandName).toBe("ONIRTECH");
   });
 });
 

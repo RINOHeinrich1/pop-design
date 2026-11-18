@@ -4,7 +4,7 @@
   "id": "pop-design",
   "name": "Pop Design",
   "description": "Template générique : en-tête sur photo, tuiles à fenêtres, galerie et chatbot paramétrable (Markdown, suggestions, pièces jointes, secours).",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "publisher": {
     "id": "onirtech",
     "name": "ONIRTECH",
@@ -40,9 +40,9 @@
           "height": 760
         }
       },
-      "integrity": "sha256-KqOZc0RyubhjhznSiBqDH/uKXjUfEEgGGElrz+5EdDQ="
+      "integrity": "sha256-zXDey+0gCWrigO5PmiH7KDy5wCDVP+oxGdF4KUoa15A="
     },
-    "integrity": "sha256-3a0e6vv29UUmdpvkIV3CVOXYAhfVFr3T3ionyQkv4r4="
+    "integrity": "sha256-jynr5MWH0le/Oq4RNav/yTBNXQHDipSfv8j3W/qxViE="
   },
   "capabilities": [
     "messages",
@@ -57,6 +57,14 @@
       "key": "titre",
       "label": "Titre",
       "description": "Titre de l'en-tête (fourni par le backend/configuration).",
+      "type": "string",
+      "default": "",
+      "maxLength": 60
+    },
+    {
+      "key": "nom_assistant",
+      "label": "Nom de l'assistant",
+      "description": "Nom affiché dans le chat ; vide = nom de l'organisation.",
       "type": "string",
       "default": "",
       "maxLength": 60

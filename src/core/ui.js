@@ -34,7 +34,9 @@ export class UIComposer {
   }
 
   compose(ctx = {}, params = {}, capabilities = []) {
-    const i = (value) => interpolate(value, ctx);
+    const brandName = textParam(params, "nom_assistant") || ctx.brand?.name || "";
+    const effectiveCtx = brandName === "" ? ctx : { ...ctx, brand: { ...(ctx.brand ?? {}), name: brandName } };
+    const i = (value) => interpolate(value, effectiveCtx);
     const design = buildDesign(params, ctx.theme ?? {});
 
     const tiles = normalizeTiles(params).map((tile) => new TileModel({
@@ -83,7 +85,7 @@ export class UIComposer {
       footerText: i(textParam(params, "texte_footer")),
       footerLink: textParam(params, "lien_footer"),
       showCredit: boolParam(params, "afficher_credit"),
-      brandName: ctx.brand?.name ?? "",
+      brandName,
       linkLabel: ctx.link?.label ?? "",
       locale: ctx.locale ?? "fr",
       elements: {

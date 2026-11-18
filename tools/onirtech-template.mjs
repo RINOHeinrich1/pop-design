@@ -27,7 +27,7 @@ const loadEntry = async (manifest) => readFile(join(dir, manifest.ui.entry.repla
 const PARAM_TYPES = ["string", "text", "number", "boolean", "color", "url", "image", "select"];
 const PARAM_KEY = /^[a-z][a-z0-9_]{1,40}$/;
 const COLOR = /^#[0-9a-fA-F]{6}$/;
-const MAX_PARAMS = 40;
+const MAX_PARAMS = 64;
 const MAX_PARAMS_BYTES = 16 * 1024;
 const MAX_PARAM_STRING = 2000;
 
