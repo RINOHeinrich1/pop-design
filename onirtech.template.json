@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "kind": "template",
+  "id": "pop-design",
+  "name": "Pop Design",
+  "description": "Template générique : en-tête sur photo, tuiles à fenêtres, galerie et chatbot paramétrable (Markdown, suggestions, pièces jointes, secours).",
+  "version": "2.6.2",
+  "publisher": {
+    "id": "onirtech",
+    "name": "ONIRTECH",
+    "trustLevel": "official"
+  },
+  "compatibility": {
+    "hostProtocol": "onirtech.template-host.v1"
+  },
+  "ui": {
+    "mode": "web-component",
+    "entry": "./dist/index.js",
+    "element": "onirtech-template-pop-design",
+    "shadowDom": "open",
+    "widget": {
+      "entry": "./dist/widget.js",
+      "element": "onirtech-widget-pop-design",
+      "display": {
+        "defaultPosition": "bottom-right",
+        "allowedPositions": [
+          "bottom-right",
+          "bottom-left"
+        ],
+        "closedSize": {
+          "width": 64,
+          "height": 64
+        },
+        "openSize": {
+          "width": 420,
+          "height": 680
+        },
+        "maxSize": {
+          "width": 520,
+          "height": 760
+        }
+      },
+      "integrity": "sha256-KqOZc0RyubhjhznSiBqDH/uKXjUfEEgGGElrz+5EdDQ="
+    },
+    "integrity": "sha256-Ix1DkJiZBp4exrcHv3mj4mesormUcaMm9OrAJ3NMaf8="
+  },
+  "capabilities": [
+    "messages",
+    "media",
+    "theme",
+    "fallback",
+    "knowledge",
+    "userState"
+  ],
+  "params": [
+    {
+      "key": "titre",
+      "label": "Titre",
+      "description": "Titre de l'en-tête (fourni par le backend/configuration).",
+      "type": "string",
+      "default": "",
+      "maxLength": 60
+    },
+    {
+      "key": "sous_titre",
+      "label": "Sous-titre",
+      "description": "Phrase d'accueil sous le titre ; {marque} et {lien} remplacés.",
+      "type": "text",
+      "default": "",
+      "maxLength": 300
+    },
+    {
+      "key": "logo_url",
+      "label": "Logo",
+      "description": "Image du logo (backend/marque).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "image_fond",
+      "label": "Image de fond",
+      "description": "Photo plein écran (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "image_soulignement",
+      "label": "Soulignement du titre",
+      "description": "Trait décoratif (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "image_welcome_1",
+      "label": "Visuel « Bienvenue » 1",
+      "description": "Image panneau (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "image_welcome_2",
+      "label": "Visuel « Bienvenue » 2",
+      "description": "Image panneau (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "image_equipe",
+      "label": "Portrait d'équipe",
+      "description": "Photo panneau équipe (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "avatar_assistant_url",
+      "label": "Avatar de l'assistant",
+      "description": "Avatar assistant (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "avatar_utilisateur_url",
+      "label": "Avatar du visiteur",
+      "description": "Avatar visiteur (backend).",
+      "type": "image",
+      "default": ""
+    },
+    {
+      "key": "couleur_accent",
+      "label": "Couleur d'accent",
+      "description": "Accent UI (backend/thème).",
+      "type": "color",
+      "default": "#006599"
+    },
+    {
+      "key": "couleur_principale",
+      "label": "Couleur des cartes",
+      "description": "Fond des cartes (backend/thème).",
+      "type": "color",
+      "default": "#2c2a35"
+    },
+    {
+      "key": "couleur_texte",
+      "label": "Couleur du texte",
+      "description": "Texte principal (backend/thème).",
+      "type": "color",
+      "default": "#ffffff"
+    },
+    {
+      "key": "ambiance",
+      "label": "Ambiance",
+      "description": "Palette générale.",
+      "type": "select",
+      "default": "pop",
+      "options": [
+        {
+          "value": "pop",
+          "label": "Original (photo + cartes sombres)"
+        },
+        {
+          "value": "nuit",
+          "label": "Nuit profonde"
+        },
+        {
+          "value": "clair",
+          "label": "Clair / papier"
+        },
+        {
+          "value": "sable",
+          "label": "Sable chaleureux"
+        },
+        {
+          "value": "ocean",
+          "label": "Océan"
+        }
+      ]
+    },
+    {
+      "key": "densite",
+      "label": "Densité",
+      "description": "Espacement et taille.",
+      "type": "select",
+      "default": "confort",
+      "options": [
+        {
+          "value": "confort",
+          "label": "Confort"
+        },
+        {
+          "value": "compact",
+          "label": "Compact"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ]
+    },
+    {
+      "key": "typographie",
+      "label": "Typographie",
+      "description": "Famille de police.",
+      "type": "select",
+      "default": "pop",
+      "options": [
+        {
+          "value": "pop",
+          "label": "Originale (sans-serif)"
+        },
+        {
+          "value": "editorial",
+          "label": "Éditorial (serif)"
+        },
+        {
+          "value": "technique",
+          "label": "Technique (monospace)"
+        }
+      ]
+    },
+    {
+      "key": "arrondi",
+      "label": "Arrondi",
+      "description": "Angle des éléments.",
+      "type": "select",
+      "default": "arrondi",
+      "options": [
+        {
+          "value": "droit",
+          "label": "Droit"
+        },
+        {
+          "value": "doux",
+          "label": "Doux"
+        },
+        {
+          "value": "arrondi",
+          "label": "Arrondi"
+        }
+      ]
+    },
+    {
+      "key": "titre_welcome",
+      "label": "Titre « Bienvenue »",
+      "description": "Titre panneau (backend).",
+      "type": "string",
+      "default": "Bienvenue",
+      "maxLength": 60
+    },
+    {
+      "key": "texte_welcome",
+      "label": "Texte « Bienvenue »",
+      "description": "Contenu panneau (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 1200
+    },
+    {
+      "key": "titre_equipe",
+      "label": "Titre « Équipe »",
+      "description": "Titre panneau (backend).",
+      "type": "string",
+      "default": "Équipe",
+      "maxLength": 60
+    },
+    {
+      "key": "texte_equipe",
+      "label": "Texte « Équipe »",
+      "description": "Contenu panneau (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 1200
+    },
+    {
+      "key": "titre_realisations",
+      "label": "Titre « Réalisations »",
+      "description": "Titre panneau (backend).",
+      "type": "string",
+      "default": "Réalisations",
+      "maxLength": 60
+    },
+    {
+      "key": "titre_contact",
+      "label": "Titre « Contact »",
+      "description": "Titre panneau (backend).",
+      "type": "string",
+      "default": "Contact",
+      "maxLength": 60
+    },
+    {
+      "key": "texte_contact",
+      "label": "Texte « Contact »",
+      "description": "Texte panneau (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 600
+    },
+    {
+      "key": "titre_identite",
+      "label": "Titre du formulaire",
+      "description": "Titre formulaire (backend).",
+      "type": "string",
+      "default": "",
+      "maxLength": 80
+    },
+    {
+      "key": "texte_identite",
+      "label": "Texte du formulaire",
+      "description": "Texte formulaire (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 400
+    },
+    {
+      "key": "placeholder_message",
+      "label": "Placeholder du message",
+      "description": "Aide saisie (backend).",
+      "type": "string",
+      "default": "",
+      "maxLength": 120
+    },
+    {
+      "key": "placeholder_contact",
+      "label": "Placeholder du panneau Contact",
+      "description": "Aide saisie (backend).",
+      "type": "string",
+      "default": "",
+      "maxLength": 120
+    },
+    {
+      "key": "label_envoyer",
+      "label": "Libellé du bouton Envoyer",
+      "description": "Libellé (backend).",
+      "type": "string",
+      "default": "Envoyer",
+      "maxLength": 40
+    },
+    {
+      "key": "label_terminer",
+      "label": "Libellé du bouton Terminer",
+      "description": "Libellé (backend).",
+      "type": "string",
+      "default": "Terminer",
+      "maxLength": 40
+    },
+    {
+      "key": "message_vide",
+      "label": "Message de fil vide",
+      "description": "Texte fil vide (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 300
+    },
+    {
+      "key": "texte_bienvenue",
+      "label": "Accueil de la discussion",
+      "description": "Accueil (backend).",
+      "type": "text",
+      "default": "",
+      "maxLength": 600
+    },
+    {
+      "key": "suggestions",
+      "label": "Suggestions de départ",
+      "description": "Suggestions (backend), une par ligne.",
+      "type": "text",
+      "default": "",
+      "maxLength": 1200
+    },
+    {
+      "key": "entree_envoyer",
+      "label": "Entrée envoie le message",
+      "description": "Comportement d'envoi.",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "key": "texte_footer",
+      "label": "Texte du pied de page",
+      "description": "Pied de page (backend).",
+      "type": "string",
+      "default": "",
+      "maxLength": 200
+    },
+    {
+      "key": "lien_footer",
+      "label": "Lien du pied de page",
+      "description": "Lien pied de page (backend).",
+      "type": "url",
+      "default": "https://onirtech.com"
+    },
+    {
+      "key": "afficher_credit",
+      "label": "Afficher le crédit",
+      "description": "Afficher le crédit.",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "key": "design_json",
+      "label": "Design avancé (JSON)",
+      "description": "Tokens/éléments visuels (backend).",
+      "type": "text",
+      "default": "{}",
+      "maxLength": 2000
+    },
+    {
+      "key": "tuiles_json",
+      "label": "Tuiles & panneaux (JSON)",
+      "description": "Configuration des tuiles/panneaux (backend).",
+      "type": "text",
+      "default": "[{\"id\":\"welcome\",\"type\":\"welcome\",\"icone\":\"home\",\"libelle\":\"Bienvenue\",\"description\":\"\"},{\"id\":\"equipe\",\"type\":\"team\",\"icone\":\"users\",\"libelle\":\"Équipe\",\"description\":\"\"},{\"id\":\"realisations\",\"type\":\"gallery\",\"icone\":\"handshake\",\"libelle\":\"Réalisations\",\"description\":\"\"},{\"id\":\"contact\",\"type\":\"contact\",\"icone\":\"comments\",\"libelle\":\"Contact\",\"description\":\"\"}]",
+      "maxLength": 2000
+    },
+    {
+      "key": "chat_json",
+      "label": "Discussion avancée (JSON)",
+      "description": "Options de discussion (backend).",
+      "type": "text",
+      "default": "{}",
+      "maxLength": 2000
+    }
+  ],
+  "network": []
+}
