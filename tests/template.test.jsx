@@ -402,6 +402,37 @@ describe("Markdown, connaissance et état", () => {
     expect(root(el).querySelector(".msg-row--assistant .avatar")).toBeNull();
   });
 
+  it("affiche les photos de la photothèque jointes à une réponse", () => {
+    const openMedia = vi.fn();
+    const { el } = mount(
+      chatCtx({
+        actions: { openMedia },
+        state: {
+          messages: [
+            {
+              id: "a1",
+              role: "assistant",
+              content: "Voici le produit.",
+              medias: [
+                {
+                  type: "photo",
+                  libelle: "Casque Kolo Studio",
+                  url: "https://cdn.example/casque.jpg",
+                },
+              ],
+            },
+          ],
+        },
+      }),
+    );
+
+    const image = root(el).querySelector(".msg__medias img");
+    expect(image).toBeTruthy();
+    expect(image.getAttribute("src")).toBe("https://cdn.example/casque.jpg");
+    click(image.closest("button"));
+    expect(openMedia).toHaveBeenCalledWith("https://cdn.example/casque.jpg");
+  });
+
   it("affiche les sources de connaissance et l'état du visiteur", () => {
     const { el } = mount(
       chatCtx({
@@ -586,6 +617,40 @@ describe("tuiles et panneaux", () => {
     expect(link.textContent).toContain("Documentation");
     click(link);
     expect(openMedia).toHaveBeenCalledWith("https://example.com/doc");
+  });
+
+  it("met à jour la galerie avec les médias renvoyés par request(media)", async () => {
+    const request = vi.fn(() =>
+      Promise.resolve({
+        photos: [
+          { id: "p1", libelle: "Produit", url: "https://cdn.example/produit.jpg" },
+        ],
+        liens: [],
+      }),
+    );
+    const { el } = mount(
+      chatCtx({
+        actions: { request },
+        params: { tuiles_json: TILES_JSON, titre_realisations: "Nos réalisations" },
+        resources: { media: { photos: [], liens: [] } },
+      }),
+    );
+
+    click(tiles(el)[2]);
+    const button = [...root(el).querySelectorAll(".pop-panel button")].find((entry) =>
+      entry.textContent.includes("Charger la galerie"),
+    );
+    expect(button).toBeTruthy();
+    await act(async () => {
+      button.click();
+      await Promise.resolve();
+    });
+
+    const thumb = root(el).querySelector(".gallery__thumb");
+    expect(thumb).toBeTruthy();
+    expect(thumb.querySelector("img").getAttribute("src")).toBe(
+      "https://cdn.example/produit.jpg",
+    );
   });
 
   it("demande la capacité media quand la galerie est vide", () => {

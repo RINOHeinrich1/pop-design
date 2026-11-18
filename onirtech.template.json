@@ -4,7 +4,7 @@
   "id": "pop-design",
   "name": "Pop Design",
   "description": "Template générique : en-tête sur photo, tuiles à fenêtres, galerie et chatbot paramétrable (Markdown, suggestions, pièces jointes, secours).",
-  "version": "2.6.2",
+  "version": "2.6.3",
   "publisher": {
     "id": "onirtech",
     "name": "ONIRTECH",
@@ -42,7 +42,7 @@
       },
       "integrity": "sha256-KqOZc0RyubhjhznSiBqDH/uKXjUfEEgGGElrz+5EdDQ="
     },
-    "integrity": "sha256-Ix1DkJiZBp4exrcHv3mj4mesormUcaMm9OrAJ3NMaf8="
+    "integrity": "sha256-3a0e6vv29UUmdpvkIV3CVOXYAhfVFr3T3ionyQkv4r4="
   },
   "capabilities": [
     "messages",

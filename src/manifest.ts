@@ -14,7 +14,7 @@ const manifest = {
   name: "Pop Design",
   description:
     "Template générique : en-tête sur photo, tuiles à fenêtres, galerie et chatbot paramétrable (Markdown, suggestions, pièces jointes, secours).",
-  version: "2.6.2",
+  version: "2.6.3",
   publisher: { id: "onirtech", name: "ONIRTECH", trustLevel: "official" },
   compatibility: { hostProtocol: "onirtech.template-host.v1" },
   ui: {
