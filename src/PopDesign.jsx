@@ -17,6 +17,17 @@ import { MAX_MESSAGE, normalizeMessages } from "./core/chat.js";
 import { createUiModel } from "./core/ui.js";
 import { Icon } from "./Icon.jsx";
 
+const EMPTY_MEDIA = { photos: [], liens: [] };
+
+function isMediaResources(value) {
+  return (
+    value !== null &&
+    typeof value === "object" &&
+    Array.isArray(value.photos) &&
+    Array.isArray(value.liens)
+  );
+}
+
 export function PopDesign() {
   const { ctx, phase, messages, params, capabilities, actions } = useTemplate();
   const model = useMemo(
@@ -28,12 +39,12 @@ export function PopDesign() {
   const [panelId, setPanelId] = useState(null);
   const [contactDraft, setContactDraft] = useState("");
   const [navOpen, setNavOpen] = useState(false);
+  const [media, setMedia] = useState(() => ctx.resources?.media ?? EMPTY_MEDIA);
   const panelRef = useRef(null);
 
   const typing = Boolean(ctx.state?.typing);
   const finished = ctx.state?.status === "finalisee";
   const locked = typing || finished;
-  const media = ctx.resources?.media ?? { photos: [], liens: [] };
   const modelFields = Array.isArray(ctx.resources?.modelForm) ? ctx.resources.modelForm : [];
   const pendingAttachments = Array.isArray(ctx.state?.pendingAttachments)
     ? ctx.state.pendingAttachments
@@ -41,6 +52,11 @@ export function PopDesign() {
   const fallback = ctx.state?.fallback ?? null;
   const panel =
     panelId === null ? null : model.panels.find((entry) => entry.id === panelId) ?? null;
+
+  // Les médias peuvent être chargés après le premier rendu (photothèque).
+  useEffect(() => {
+    setMedia(ctx.resources?.media ?? EMPTY_MEDIA);
+  }, [ctx.resources?.media]);
 
   // Une tuile retirée par paramètre ne doit pas laisser un panneau orphelin.
   useEffect(() => {
@@ -95,6 +111,15 @@ export function PopDesign() {
 
   const finish = () => {
     if (!finished) actions.finish();
+  };
+
+  const requestMedia = async () => {
+    try {
+      const value = await actions.request("media");
+      if (isMediaResources(value)) setMedia(value);
+    } catch {
+      // La galerie reste sur son état courant ; l'hôte journalise l'erreur.
+    }
   };
 
   const backgroundImage = `url(${JSON.stringify(model.content.background)})`;
@@ -185,9 +210,7 @@ export function PopDesign() {
           onOpenMedia={(url) => {
             if (typeof url === "string" && url !== "") actions.openMedia(url);
           }}
-          onRequestMedia={() => {
-            void actions.request("media");
-          }}
+          onRequestMedia={requestMedia}
           panelRef={panelRef}
           content={model.content}
         />

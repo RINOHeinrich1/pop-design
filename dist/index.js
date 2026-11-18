@@ -12543,30 +12543,36 @@ function Yt(e = {}, t = {}, n = []) {
 }
 //#endregion
 //#region src/PopDesign.jsx
-function Xt() {
+var Xt = {
+	photos: [],
+	liens: []
+};
+function Zt(e) {
+	return typeof e == "object" && !!e && Array.isArray(e.photos) && Array.isArray(e.liens);
+}
+function Qt() {
 	let { ctx: e, phase: t, messages: n, params: r, capabilities: i, actions: a } = re(), o = (0, u.useMemo)(() => Yt(e, r, i), [
 		e,
 		r,
 		i
-	]), s = (0, u.useMemo)(() => ve(n), [n]), [c, l] = (0, u.useState)(null), [d, f] = (0, u.useState)(""), [p, m] = (0, u.useState)(!1), h = (0, u.useRef)(null), g = !!e.state?.typing, _ = e.state?.status === "finalisee", v = g || _, y = e.resources?.media ?? {
-		photos: [],
-		liens: []
-	}, b = Array.isArray(e.resources?.modelForm) ? e.resources.modelForm : [], ee = Array.isArray(e.state?.pendingAttachments) ? e.state.pendingAttachments : [], te = e.state?.fallback ?? null, ne = c === null ? null : o.panels.find((e) => e.id === c) ?? null;
+	]), s = (0, u.useMemo)(() => ve(n), [n]), [c, l] = (0, u.useState)(null), [d, f] = (0, u.useState)(""), [p, m] = (0, u.useState)(!1), [h, g] = (0, u.useState)(() => e.resources?.media ?? Xt), _ = (0, u.useRef)(null), v = !!e.state?.typing, y = e.state?.status === "finalisee", b = v || y, ee = Array.isArray(e.resources?.modelForm) ? e.resources.modelForm : [], te = Array.isArray(e.state?.pendingAttachments) ? e.state.pendingAttachments : [], ne = e.state?.fallback ?? null, x = c === null ? null : o.panels.find((e) => e.id === c) ?? null;
 	(0, u.useEffect)(() => {
-		c !== null && ne === null && l(null);
-	}, [c, ne]), (0, u.useEffect)(() => {
+		g(e.resources?.media ?? Xt);
+	}, [e.resources?.media]), (0, u.useEffect)(() => {
+		c !== null && x === null && l(null);
+	}, [c, x]), (0, u.useEffect)(() => {
 		if (c === null) return;
 		let e = (e) => {
 			e.key === "Escape" && l(null);
 		};
-		return window.addEventListener("keydown", e), h.current?.focus(), () => window.removeEventListener("keydown", e);
+		return window.addEventListener("keydown", e), _.current?.focus(), () => window.removeEventListener("keydown", e);
 	}, [c]);
-	let x = (e, t = []) => {
+	let ie = (e, t = []) => {
 		let n = String(e ?? "").trim();
-		if (v || n.length > 4e3) return !1;
+		if (b || n.length > 4e3) return !1;
 		let r = Array.isArray(t) ? t.filter((e) => typeof e == "string" && e !== "") : [];
 		return n === "" && r.length === 0 ? !1 : (r.length > 0 ? a.sendMessage(n, r) : a.sendMessage(n), !0);
-	}, ie = (n) => {
+	}, w = (n) => {
 		if (n.preventDefault(), t !== "identity") return;
 		let r = n.currentTarget, i = new FormData(r), o = String(i.get("nom") ?? "").trim(), s = String(i.get("email") ?? "").trim();
 		if (o === "" || s === "") return;
@@ -12575,21 +12581,26 @@ function Xt() {
 			email: s
 		};
 		e.consent && (c.consentement = i.get("consentement") === "on"), a.submitIdentity(c);
-	}, w = (e) => {
+	}, ae = (e) => {
 		f(""), l(e), m(!1);
-	}, ae = () => {
-		_ || a.finish();
-	}, oe = `url(${JSON.stringify(o.content.background)})`;
+	}, oe = () => {
+		y || a.finish();
+	}, se = async () => {
+		try {
+			let e = await a.request("media");
+			Zt(e) && g(e);
+		} catch {}
+	}, ce = `url(${JSON.stringify(o.content.background)})`;
 	return /* @__PURE__ */ (0, S.jsxs)("div", {
 		className: `pop ${o.design.className} ${t === "chat" ? "pop--chat-dominant" : "pop--entry"}`,
 		style: o.design.vars,
 		"data-phase": t,
 		"data-ambiance": o.design.ambiance,
-		"aria-busy": g ? "true" : void 0,
+		"aria-busy": v ? "true" : void 0,
 		children: [
 			o.content.elements?.background?.visible === !1 ? null : /* @__PURE__ */ (0, S.jsx)("div", {
 				className: "pop-bg",
-				style: { backgroundImage: oe },
+				style: { backgroundImage: ce },
 				"aria-hidden": "true"
 			}),
 			/* @__PURE__ */ (0, S.jsx)(qe, { content: o.content }),
@@ -12610,8 +12621,8 @@ function Xt() {
 					id: "pop-mobile-menu",
 					children: /* @__PURE__ */ (0, S.jsx)(ct, {
 						tiles: o.tiles,
-						onOpen: w,
-						galleryCount: Array.isArray(y.photos) ? y.photos.length : 0
+						onOpen: ae,
+						galleryCount: Array.isArray(h.photos) ? h.photos.length : 0
 					})
 				}) : null]
 			}),
@@ -12622,8 +12633,8 @@ function Xt() {
 					"aria-label": "Navigation",
 					children: /* @__PURE__ */ (0, S.jsx)(ct, {
 						tiles: o.tiles,
-						onOpen: w,
-						galleryCount: Array.isArray(y.photos) ? y.photos.length : 0
+						onOpen: ae,
+						galleryCount: Array.isArray(h.photos) ? h.photos.length : 0
 					})
 				}), /* @__PURE__ */ (0, S.jsx)("main", {
 					className: "pop-col pop-col--main pop-main",
@@ -12631,17 +12642,17 @@ function Xt() {
 						content: o.content,
 						chat: o.chat,
 						consent: e.consent,
-						onSubmit: ie
+						onSubmit: w
 					}) : /* @__PURE__ */ (0, S.jsx)(Ge, {
 						model: o,
 						messages: s,
-						typing: g,
-						finished: _,
-						fallback: te,
-						pendingAttachments: ee,
-						modelFields: b,
-						onSend: x,
-						onFinish: ae,
+						typing: v,
+						finished: y,
+						fallback: ne,
+						pendingAttachments: te,
+						modelFields: ee,
+						onSend: ie,
+						onFinish: oe,
 						actions: a
 					})
 				})]
@@ -12650,23 +12661,21 @@ function Xt() {
 				content: o.content,
 				chat: o.chat
 			}),
-			ne ? /* @__PURE__ */ (0, S.jsx)(at, {
-				panel: ne,
-				media: y,
+			x ? /* @__PURE__ */ (0, S.jsx)(at, {
+				panel: x,
+				media: h,
 				capabilities: i,
 				chat: o.chat,
 				contactDraft: d,
 				setContactDraft: f,
-				onSend: x,
+				onSend: ie,
 				onClose: () => l(null),
-				locked: v,
+				locked: b,
 				onOpenMedia: (e) => {
 					typeof e == "string" && e !== "" && a.openMedia(e);
 				},
-				onRequestMedia: () => {
-					a.request("media");
-				},
-				panelRef: h,
+				onRequestMedia: se,
+				panelRef: _,
 				content: o.content
 			}) : null
 		]
@@ -12674,5 +12683,5 @@ function Xt() {
 }
 //#endregion
 //#region src/index.js
-te("onirtech-template-pop-design", Xt, { css: t });
+te("onirtech-template-pop-design", Qt, { css: t });
 //#endregion
